@@ -1,7 +1,5 @@
 package Practical01Task1;
 
-
-
 import java.util.Scanner;
 
 public class ReverseText {
