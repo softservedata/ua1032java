@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 
 /**
  * JavaDoc Comment.
- *
+ * <p>
  * This is <font color="RED"><b>Super</b> Class</font>.
  */
 public class Appl {
@@ -41,6 +41,11 @@ public class Appl {
         System.out.println("Hello " + name + " Your age is " + age);
         System.out.print("Read double: ");
         double t = Double.parseDouble(br.readLine());
-        System.out.println(" t = " + (t * 2) );
+        System.out.println(" t = " + (t * 2));
+        //
+        double pi = 3.1415;
+        System.out.printf("\npi = %4.2f", pi);
+        System.out.printf("\npi = %4.3f", pi);
+        System.out.println("\npi = " + pi);
     }
 }
