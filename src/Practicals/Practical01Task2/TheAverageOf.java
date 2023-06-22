@@ -1,4 +1,4 @@
-package Practical01Task2;
+package Practicals.Practical01Task2;
 
 import java.util.Scanner;
 

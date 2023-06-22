@@ -1,4 +1,4 @@
-package HomeWork01Task2;
+package HomeWork.HomeWork01Task2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
