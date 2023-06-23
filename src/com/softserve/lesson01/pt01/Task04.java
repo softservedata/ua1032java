@@ -1,4 +1,4 @@
-package com.softserve.hw01.PracticalTasks;
+package com.softserve.lesson01.pt01;
 
 import java.io.BufferedReader;
 import java.io.IOException;
