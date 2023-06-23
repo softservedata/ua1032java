@@ -5,9 +5,11 @@ import java.io.InputStreamReader;
 public class HW1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         //1. Flower bed is shaped like a circle. Calculate its perimeter and area. Input the radius from the console, and output obtained results.
         //2. Define two String variables name and address. Output question "What is your name? to the console. Read the value of name and output next question: "Where do you live, (name)?" to the console. Read the value of address from the console and output the complete information.
         //3. Three phone calls were made from different countries, each with a different cost per minute (c1, c2, and c3) and duration (t1, t2, and t3). Input all the source data from the console, calculate the cost of each call and the total cost, and output the results to the console.
+
         System.out.print("Task: ");
         int choice = Integer.parseInt(br.readLine());
         switch (choice){
