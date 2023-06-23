@@ -1,4 +1,4 @@
-package com.softserve.edu;
+package com.softserve.Practical;
 
 public class Appl {
 
