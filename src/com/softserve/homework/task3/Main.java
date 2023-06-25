@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        //Task 1
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         //Task 3
         System.out.print("Enter the cost per minute for the first call: ");
