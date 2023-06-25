@@ -5,7 +5,6 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        //Task 1
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //Task 2
