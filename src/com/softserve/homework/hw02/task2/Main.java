@@ -1,7 +1,5 @@
 package com.softserve.homework.hw02.task2;
 
-import com.softserve.homework.hw02.task1.TriangleArea;
-
 import java.util.Scanner;
 
 public class Main {
