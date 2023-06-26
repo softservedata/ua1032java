@@ -1,4 +1,4 @@
-package com.softserve.Practicals.p1.task4;
+package com.softserve.practicals.p1.task4;
 
 import java.util.Scanner;
 
