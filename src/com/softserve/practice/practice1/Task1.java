@@ -1,6 +1,4 @@
-package com.softserve.practice;
-
-import java.io.IOException;
+package com.softserve.practice.practice1;
 
 public class Task1 {
     public static void main(String[] args)  {
