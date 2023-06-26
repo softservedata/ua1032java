@@ -7,6 +7,6 @@ public class Hw1_1 {
         String program = "program";
 
         String result = program + "\n" + first + "\n" + my;
-        System.out.println();
+        System.out.println(result);
     }
 }
