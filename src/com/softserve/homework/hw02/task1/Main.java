@@ -21,5 +21,7 @@ public class Main {
 
         System.out.println("The area of the triangle is: " + roundedArea);
 
+        Scanner close;
+
     }
 }
