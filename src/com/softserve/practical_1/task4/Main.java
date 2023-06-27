@@ -1,4 +1,4 @@
-package com.softserve.practical.task4;
+package com.softserve.practical_1.task4;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
