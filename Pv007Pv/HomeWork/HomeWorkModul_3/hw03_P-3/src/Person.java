@@ -32,7 +32,7 @@ public class Person {
 
     // The method output() - to output information about the person.
     public String output() {
-        if (birthYear >= 0) {
+        if (birthYear <= 0) {
             return "Name: " + firstName + "\n" + "Lastname: " + lastName;
 
         } else {
