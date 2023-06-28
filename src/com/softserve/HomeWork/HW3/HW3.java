@@ -1,4 +1,5 @@
 package com.softserve.HomeWork.HW3;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -18,6 +19,7 @@ public class HW3 {
         System.out.print("Task: ");
         int choice = Integer.parseInt(br.readLine());
         switch (choice){
+            //Task1
             case 1:
                 /*
                 double a1,b1,c1;
@@ -39,7 +41,7 @@ public class HW3 {
 
                 break;
 
-
+            //Task2
             case 2:
                 /*
                 int a2,b2,c2;
@@ -66,6 +68,20 @@ public class HW3 {
                 int min2 = minElement(array);
                 System.out.println("Minimal element: "+ min2);
 
+                break;
+            //Task3
+            case 3:
+                Person per1 = new Person();
+                Person per2 = new Person("Rostyslav", "Pasternak", 2004);
+                Person per3 = new Person("Oleg", "Petrenko");
+
+                System.out.println(per1);
+                System.out.println(per2);
+                System.out.println(per3);
+
+                per2.changeName("Shasha", "Ivanenko");
+
+                System.out.println("Age per2: "+ per2.getAge());
                 break;
 
             default:
