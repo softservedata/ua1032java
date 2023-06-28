@@ -5,11 +5,28 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 public class Person {
-    private String firstName = "noName";
-    private String lastName = "noLastName";
-    private int birthYear = 2023;
+    private String firstName;
+    private String lastName;
+    private int birthYear;
 
-    Person() throws  IOException{
+    Person(){
+        lastName ="noName";
+        firstName = "noLastName";
+        birthYear = 2023;
+    }
+    Person(String firstName, String lastName, int birthYear ){
+
+        this.lastName =lastName;
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+    }
+
+    Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        birthYear = 2023;
+    }
+    public void input() throws  IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.print("First name: ");
@@ -21,17 +38,6 @@ public class Person {
         System.out.print("Year: ");
         birthYear = Integer.parseInt(br.readLine());
     }
-    Person(String firstName, String lastName, int birthYear ){
-        this.lastName =lastName;
-        this.firstName = firstName;
-        this.birthYear = birthYear;
-    }
-
-    Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
     public void changeName(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;

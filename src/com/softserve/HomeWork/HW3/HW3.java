@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 public class HW3 {
      public static int minElement(int[] array){
         int min = array[0];
+
         for(int i = 0; i<array.length; i++){
             if(min>array[i]){
                 min = array[i];
@@ -21,6 +22,7 @@ public class HW3 {
         switch (choice){
             //Task1
             case 1:
+
                 /*
                 double a1,b1,c1;
 
@@ -34,8 +36,10 @@ public class HW3 {
                 double p = a1 + b1 + c1;
                 double s = Math.sqrt(p / 2 * (p / 2 - a1) * (p / 2 - b1) * (p / 2 - c1));
                 */
-                Triangle tri1 = new Triangle();
-                Triangle tri2 = new Triangle(12,13,14);
+
+                Triangle tri1 = new Triangle(); //input information from console
+                Triangle tri2 = new Triangle(12,13,14); //constructor with 3 parameters
+                //print triangle
                 System.out.println(tri1);
                 System.out.println(tri2);
 
@@ -45,14 +49,14 @@ public class HW3 {
             case 2:
                 /*
                 int a2,b2,c2;
-
+                //input number
                 System.out.print("First number: ");
                 a2 = Integer.parseInt(br.readLine());
                 System.out.print("Second number: ");
                 b2 = Integer.parseInt(br.readLine());
                 System.out.print("Third number: ");
                 c2 = Integer.parseInt(br.readLine());
-
+                //find min
                 int min1 = a2;
                 if (min1>b2){
                     min1 = b2;
@@ -60,28 +64,34 @@ public class HW3 {
                 if(min1>c2){
                     min1 = c2;
                 }
-
+                //print min element
                 System.out.println("Minimal element: "+ min1);
 
                  */
+                //create array of number
                 int[] array = {4,1,4,2,5,1,0,-2};
+                //find min
                 int min2 = minElement(array);
+                //print min element
                 System.out.println("Minimal element: "+ min2);
 
                 break;
             //Task3
             case 3:
-                Person per1 = new Person();
+                Person per1 = new Person(); //default constructor
+                per1.input();//input per1 from console
+                //constructor with 3 parameters
                 Person per2 = new Person("Rostyslav", "Pasternak", 2004);
+                //constructor with 2 parameters
                 Person per3 = new Person("Oleg", "Petrenko");
+                //print
                 System.out.println(per1);
                 System.out.println(per2);
                 System.out.println(per3);
 
                 per2.changeName("Shasha", "Ivanenko");
-
+                //calculate and print age
                 System.out.println("Age per2: "+ per2.getAge());
-
 
                 System.out.print("Array size:");
                 int size = Integer.parseInt(br.readLine());
@@ -100,6 +110,7 @@ public class HW3 {
                 break;
 
             default:
+                //error
                 System.out.print("Such a task does not exist");
                 break;
 
