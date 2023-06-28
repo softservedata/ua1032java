@@ -18,7 +18,7 @@ public class HW3 {
         System.out.print("Task: ");
         int choice = Integer.parseInt(br.readLine());
         switch (choice){
-            case 1:{
+            case 1:
                 /*
                 double a1,b1,c1;
 
@@ -39,8 +39,8 @@ public class HW3 {
 
                 break;
 
-            }
-            case 2:{
+
+            case 2:
                 /*
                 int a2,b2,c2;
 
@@ -67,12 +67,12 @@ public class HW3 {
                 System.out.println("Minimal element: "+ min2);
 
                 break;
-            }
-            default:{
+
+            default:
                 System.out.print("Such a task does not exist");
                 break;
 
-            }
+
         }
     }
 
