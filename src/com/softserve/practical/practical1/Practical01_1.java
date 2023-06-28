@@ -1,10 +1,10 @@
-package com.softserve.practical;
+package com.softserve.practical.practical1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Practical01_01 {
+public class Practical01_1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str1, str2, str3;
