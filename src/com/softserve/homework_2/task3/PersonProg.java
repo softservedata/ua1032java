@@ -79,8 +79,5 @@ class Person {
         System.out.println("Age: " + getAge());
     }
 
-    public void changeName(String fn, String ln) {
-        firstName = fn;
-        lastName = ln;
-    }
+
 }
