@@ -15,6 +15,7 @@ public class HW3 {
                 System.out.println(tri1);
                 System.out.println(tri2);
                 break;
+
             }
             default:{
                 System.out.print("Such a task does not exist");
