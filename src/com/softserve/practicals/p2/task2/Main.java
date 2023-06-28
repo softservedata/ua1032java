@@ -20,7 +20,6 @@ import com.softserve.homework.hw02.task3.Person;
 public class Main {
     public static void main ( String[] args ) {
 
-
 //        Employee taras = new Employee();
 //        taras.input("Taras", 8, 8);
 //
@@ -39,6 +38,6 @@ public class Main {
         Employee employee2 = new Employee("Ivan", 12.75, 35);
         Employee employee3 = new Employee("Ivan", 15, 45);
 
-        System.out.println("Total salary of all employees: " + Employee.getTotalSum());
+         System.out.println("Total salary of all employees: " + Employee.getTotalSum());
     }
 }

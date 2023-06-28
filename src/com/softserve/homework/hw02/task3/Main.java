@@ -14,9 +14,6 @@ In the main() method create 5 objects of Person type and input information about
  */
 public class Main {
     public static void main ( String[] args ) {
-
-
-
             Person taras = new Person();
             taras.input("Taras", "Shevchenko", 1814);
 
@@ -37,10 +34,5 @@ public class Main {
             lesya.output();
             panas.output();
             lina.output();
-
-
-
-
-
     }
 }
