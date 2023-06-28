@@ -24,6 +24,7 @@ public class Homework03_3 {
         Person p5 = new Person();
 
         p5.input();
+        p1.changeName("Ilya", "Dubai");
 
         p1.output();
         p2.output();
