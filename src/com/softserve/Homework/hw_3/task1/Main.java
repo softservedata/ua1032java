@@ -1,4 +1,4 @@
-package com.softserve.homework_2.task1;
+package com.softserve.Homework.hw_3.task1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
