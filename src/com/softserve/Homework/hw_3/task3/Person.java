@@ -1,24 +1,7 @@
-package com.softserve.homework_2.task3;
+package com.softserve.Homework.hw_3.task3;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
-
-public class PersonProg {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Person[] persons = new Person[5];
-
-        for (int i = 0; i < 5; i++) {
-            persons[i] = new Person();
-            persons[i].input(reader);
-        }
-
-        for (Person person : persons) {
-            person.output();
-        }
-    }
-}
 
 class Person {
     private String firstName;
@@ -78,7 +61,7 @@ class Person {
         System.out.println("Birth year: " + birthYear);
         System.out.println("Age: " + getAge());
     }
-    public void changeName(String fn, String ln) {
+    public void changeName(String fn, String ln){
         firstName = fn;
         lastName = ln;
     }
