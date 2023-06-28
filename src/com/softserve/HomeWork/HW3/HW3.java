@@ -71,6 +71,7 @@ public class HW3 {
                 //create array of number
                 int[] array = {4,1,4,2,5,1,0,-2};
                 //find min
+
                 int min2 = minElement(array);
                 //print min element
                 System.out.println("Minimal element: "+ min2);
