@@ -74,7 +74,6 @@ public class HW3 {
                 Person per1 = new Person();
                 Person per2 = new Person("Rostyslav", "Pasternak", 2004);
                 Person per3 = new Person("Oleg", "Petrenko");
-
                 System.out.println(per1);
                 System.out.println(per2);
                 System.out.println(per3);
@@ -82,6 +81,22 @@ public class HW3 {
                 per2.changeName("Shasha", "Ivanenko");
 
                 System.out.println("Age per2: "+ per2.getAge());
+
+
+                System.out.print("Array size:");
+                int size = Integer.parseInt(br.readLine());
+
+                //create array of people
+                Person[] arr = new Person[size];
+                //input
+                for(int i = 0; i<size; i++){
+                    arr[i] = new Person();
+                }
+                //print
+                for(int i = 0; i<arr.length;i++){
+                    System.out.println(i+1 + ". "+arr[i]);
+                }
+
                 break;
 
             default:

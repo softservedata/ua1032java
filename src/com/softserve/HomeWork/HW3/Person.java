@@ -12,13 +12,13 @@ public class Person {
     Person() throws  IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("First name: ");
+        System.out.print("First name: ");
         firstName = br.readLine();
 
-        System.out.println("LastName: ");
+        System.out.print("LastName: ");
         lastName = br.readLine();
 
-        System.out.println("Year: ");
+        System.out.print("Year: ");
         birthYear = Integer.parseInt(br.readLine());
     }
     Person(String firstName, String lastName, int birthYear ){
