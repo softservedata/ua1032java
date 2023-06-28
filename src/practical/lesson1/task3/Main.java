@@ -1,5 +1,5 @@
 //Practical 3
-package practical.task3;
+package practical.lesson1.task3;
 
 import java.io.BufferedReader;
 import java.io.IOException;

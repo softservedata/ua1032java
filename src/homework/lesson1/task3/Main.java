@@ -1,5 +1,5 @@
 //Homework 3
-package homework.task3;
+package homework.lesson1.task3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
