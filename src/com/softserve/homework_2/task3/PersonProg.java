@@ -2,7 +2,7 @@ package com.softserve.homework_2.task3;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
+
 
 public class PersonProg {
     public static void main(String[] args) throws IOException {
@@ -58,7 +58,7 @@ class Person {
     }
 
     public int getAge() {
-        return LocalDate.now().getYear() - birthYear;
+        return 2023 - birthYear;
     }
 
     public void input(BufferedReader reader) throws IOException {
