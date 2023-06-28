@@ -7,7 +7,7 @@ public class App01 {
         System.out.print("radius = " );
         int r = sc.nextInt();
         double p = 2 * 3.14 * r;
-        double a = 3.14 * r * r;
+        double a = Math.PI * r * r;
         System.out.println("perimeter = " + p);
         System.out.println("area = " + a);
     }
