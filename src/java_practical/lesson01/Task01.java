@@ -13,7 +13,12 @@ class Task01 {
         }
         scanner.close();
 
-        System.out.println("Output in reverse order: ");
+        System.out.println("Input order: ");
+        for (int i = 0; i < 3; i++) {
+            System.out.println(strings[i]);
+        }
+
+        System.out.println("\nOutput in reverse order: ");
         for (int i = 2; i >= 0; i--) {
             System.out.println(strings[i]);
         }
