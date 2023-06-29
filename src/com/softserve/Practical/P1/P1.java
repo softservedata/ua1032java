@@ -41,8 +41,10 @@ public class P1 {
 
         System.out.println("Arithmetic operators(+-*/): ");
         String str = br.readLine();
+
         System.out.println("Second number: ");
         int b3 = Integer.parseInt(br.readLine());
+
         if(str.contains("+")){
             System.out.println(a3+" + "+b3+" = " +(a3+b3));
         }

@@ -3,6 +3,8 @@ package com.softserve.Practical.P3;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
+import java.util.Scanner;
+
 public class P3 {
     public static int getTotal(int... number){
         int sum = 0;
@@ -14,6 +16,9 @@ public class P3 {
     public static double getAverage(int... number){
         double sum = getTotal(number);
         return sum/number.length;
+    }
+    public static int getNumber(String str){
+        return Integer.parseInt(str.replaceAll("\\D", ""));
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -27,5 +32,13 @@ public class P3 {
         System.out.println("The sum of " + a+" and " +b +" is " +getTotal(a,b));
         System.out.println("The average of " + a+" and " +b +" is " +getAverage(a,b));
 
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        a = getNumber(str);
+        str = sc.nextLine();
+        b = getNumber(str);
+
+        System.out.println("The sum of " + a+" and " +b +" is " +getTotal(a,b));
+        System.out.println("The average of " + a+" and " +b +" is " +getAverage(a,b));
     }
 }
