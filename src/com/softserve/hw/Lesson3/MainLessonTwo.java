@@ -1,6 +1,4 @@
-package com.softserve.hw.Lesson2;
-
-import java.time.LocalDate;
+package com.softserve.hw.Lesson3;
 
 public class MainLessonTwo {
     public static void main(String[] args) {

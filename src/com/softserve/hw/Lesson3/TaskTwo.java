@@ -1,4 +1,4 @@
-package com.softserve.hw.Lesson2;
+package com.softserve.hw.Lesson3;
 
 import java.util.Scanner;
 
