@@ -1,6 +1,6 @@
-package com.softserve.edu01.homeworks;
+package com.softserve.edu01.practical;
 import java.util.Scanner;
-public class Hw1_2 {
+public class Pt1_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number: ");

@@ -1,7 +1,7 @@
-package com.softserve.edu01.homeworks;
+package com.softserve.edu01.practical;
 import java.util.Scanner;
 
-public class Hw1_4 {
+public class Pt1_4 {
     public static void main(String[] args) {
         Scanner task = new Scanner(System.in);
 
