@@ -1,3 +1,5 @@
+package HomeWork1;
+
 import java.util.Scanner;
 
 public class Third_Task {
