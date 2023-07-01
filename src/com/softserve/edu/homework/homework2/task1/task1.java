@@ -1,4 +1,4 @@
-package com.softserve.edu.homework2.task1;
+package com.softserve.edu.homework.homework2.task1;
 
 import java.lang.Math;
 import java.io.BufferedReader;

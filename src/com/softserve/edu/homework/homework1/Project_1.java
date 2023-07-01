@@ -1,6 +1,6 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-package com.softserve.edu.homework1;
+package com.softserve.edu.homework.homework1;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;

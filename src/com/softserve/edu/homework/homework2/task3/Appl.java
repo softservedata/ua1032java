@@ -1,4 +1,4 @@
-package com.softserve.edu.homework2.task3;
+package com.softserve.edu.homework.homework2.task3;
 
 public class Appl {
 
