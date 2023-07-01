@@ -1,9 +1,8 @@
-package com.softserve.practical;
+package com.softserve.practical.practicalTask_3;
 
-import com.softserve.practical.practicalTask_3.TaskOneCalculate;
 import com.softserve.practical.practicalTask_3.TaskTwoEmployee;
 
-public class mainPractical {
+public class mainPractical_3 {
     public static void main(String[] args) {
 //        TaskOneCalculate ts = new TaskOneCalculate(52,63);
 //        System.out.println(ts.getTotal());
