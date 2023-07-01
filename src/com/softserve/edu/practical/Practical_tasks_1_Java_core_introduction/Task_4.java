@@ -1,4 +1,4 @@
-package com.softserve.edu.practical.Practical_tasks_1;
+package com.softserve.edu.practical.Practical_tasks_1_Java_core_introduction;
 
 import java.io.BufferedReader;
 import java.io.IOException;
