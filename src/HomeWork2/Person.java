@@ -1,4 +1,6 @@
 package HomeWork2;
+import java.time.Year;
+
 
 public class Person {
     private  String firstName;
@@ -39,8 +41,8 @@ public class Person {
         this.birthYear = birthYear;
     }
 
-    public int getYear (){
-        return 2023 -  birthYear;
+    public int getAge (){
+        return Year.now().getValue() -  birthYear;
     }
 
 
@@ -60,7 +62,7 @@ public class Person {
     public void output (){
         System.out.print(firstName);
         System.out.print("  " + lasttName);
-        System.out.print("  "+birthYear);
+        System.out.println("  "+birthYear);
     }
 
     @Override
