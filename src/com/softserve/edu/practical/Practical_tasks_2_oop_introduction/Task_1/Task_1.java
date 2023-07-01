@@ -13,9 +13,7 @@ public class Task_1 {
         System.out.println(" Average  : " + Average);
         return 0;
     }
-    public static int getNumber (String str){
-        return Integer.parseInt(str.replaceAll("\\D", ""));
-    }
+    public static int getNumber (String str){return Integer.parseInt(str.replaceAll("\\D", ""));}
     public static void main (String args[]) throws IOException {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the first number(string type)  : ");
@@ -27,7 +25,6 @@ public class Task_1 {
         System.out.println(" conversion from string to int of the first number  : " + numberA);
         int numberB = getNumber(b);
         System.out.println(" conversion from string to int of the second number  : " + numberB);
-
         getTotal(numberA,numberB);
         getAverage(numberA,numberB);
     }
