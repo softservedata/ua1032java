@@ -1,4 +1,4 @@
-package com.softserve.hw.Lesson3;
+package com.softserve.hw.lesson3;
 
 import java.time.LocalDate;
 import java.util.Scanner;

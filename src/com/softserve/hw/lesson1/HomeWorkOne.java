@@ -1,8 +1,8 @@
-package com.softserve.hw.Lesson1;
+package com.softserve.hw.lesson1;
 
 import java.util.Scanner;
 
-public class homeWorkOne {
+public class HomeWorkOne {
     public static void main(String[] args) {
 
         perimeterAndAreaCircle();

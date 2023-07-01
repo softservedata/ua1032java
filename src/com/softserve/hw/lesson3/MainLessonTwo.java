@@ -1,4 +1,4 @@
-package com.softserve.hw.Lesson3;
+package com.softserve.hw.lesson3;
 
 public class MainLessonTwo {
     public static void main(String[] args) {
