@@ -22,7 +22,7 @@ public class AppDog {
         //Check if there are no two dogs with the same name
         System.out.println("If there are dogs wit the same name? : "+ Dog.hasDogsSameName(dogs));
 
-        //find oldest dog and output age and breed
+        //find oldest dog and output name and breed
         System.out.println("Oldest dog: ");
         System.out.println(Dog.findOldestDog(dogs).toString());
     }
