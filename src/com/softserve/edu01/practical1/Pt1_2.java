@@ -1,4 +1,4 @@
-package com.softserve.edu01.practical;
+package com.softserve.edu01.practical1;
 import java.util.Scanner;
 public class Pt1_2 {
     public static void main(String[] args) {
