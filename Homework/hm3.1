@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Input side 1: ");
+        double side1 = scanner.nextDouble();
+        System.out.print("Input side 2: ");
+        double side2 = scanner.nextDouble();
+        System.out.print("Input side 3: ");
+        double side3 = scanner.nextDouble();
+
+        double area = calculateTriangleArea(side1, side2, side3);
+        System.out.println("The area of triangle is: " +area);
+
+    }
+    public static double calculateTriangleArea(double side1, double side2, double side3)
+    {
+        double halfperimetr = (side1 + side2 + side3) / 2;
+        double area = Math.sqrt(halfperimetr * (halfperimetr - side1)* (halfperimetr - side2)* (halfperimetr - side3));
+        return area;
+    }
+}
