@@ -1,4 +1,4 @@
-package HomeWork2;
+package homeWork2;
 
 public class Triangle {
     private int a;

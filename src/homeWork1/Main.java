@@ -1,6 +1,4 @@
-package HomeWork1;
-
-import HomeWork1.First_Task;
+package homeWork1;
 
 public class Main {
     public static void main(String [] var) {
