@@ -1,8 +1,8 @@
-package java_practical.lesson01;
+package com.softserve.edu.java_homework.lesson01;
 
 import java.util.Scanner;
 
-class Task04 {
+class Task02 {
     public static void main(String[] args) {
         System.out.println("How are you?");
 
