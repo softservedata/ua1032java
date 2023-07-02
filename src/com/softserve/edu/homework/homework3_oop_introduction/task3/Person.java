@@ -1,4 +1,4 @@
-package com.softserve.edu.homework.homework2_oop_introduction.task3;
+package com.softserve.edu.homework.homework3_oop_introduction.task3;
 
 import java.util.Scanner;
 

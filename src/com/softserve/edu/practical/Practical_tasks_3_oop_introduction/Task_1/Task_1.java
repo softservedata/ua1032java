@@ -1,4 +1,4 @@
-package com.softserve.edu.practical.Practical_tasks_2_oop_introduction.Task_1;
+package com.softserve.edu.practical.Practical_tasks_3_oop_introduction.Task_1;
 
 import java.io.IOException;
 import java.util.Scanner;

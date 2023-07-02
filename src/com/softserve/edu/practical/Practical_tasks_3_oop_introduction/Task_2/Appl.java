@@ -1,4 +1,4 @@
-package com.softserve.edu.practical.Practical_tasks_2_oop_introduction.Task_2;
+package com.softserve.edu.practical.Practical_tasks_3_oop_introduction.Task_2;
 
 public class Appl {
     public static void main(String[] args){
