@@ -1,6 +1,4 @@
-package com.softserve.HomeWork.HW4;
-
-import java.util.Objects;
+package com.softserve.HomeWork.HW4.task1_2_3_4;
 
 public class Student {
     String name;

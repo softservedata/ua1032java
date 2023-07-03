@@ -1,4 +1,4 @@
-package com.softserve.HomeWork.HW4;
+package com.softserve.HomeWork.HW4.task1_2_3_4;
 
 import java.io.BufferedReader;
 import java.io.IOException;

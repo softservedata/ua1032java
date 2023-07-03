@@ -1,6 +1,4 @@
-package com.softserve.HomeWork.HW4;
-
-import java.security.PublicKey;
+package com.softserve.HomeWork.HW4.task1_2_3_4;
 
 public enum HTTPError {
     ERROR_400(400, "400"),
