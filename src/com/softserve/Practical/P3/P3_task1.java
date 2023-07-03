@@ -5,7 +5,8 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class P3 {
+public class P3_task1 {
+
     public static int getTotal(int... number){
         int sum = 0;
         for (int temp: number){
