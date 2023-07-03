@@ -1,61 +1,48 @@
 package com.softserve.hw03.Task03;
 
-import org.w3c.dom.ls.LSOutput;
+import java.util.Scanner;
 
-enum Season{
-    WINTER("Winter"){
-    public Season nextSeason(){ return SPRING; }
-    },
-    SPRING("Spring"){
-    public Season nextSeason(){ return SUMMER; }
-    },
-    SUMMER("Summer"){
-        public Season nextSeason(){ return AUTUMN; }
-    },
-    AUTUMN("Autumn"){
-        public Season nextSeason(){ return WINTER; }
-    };
-    private String name;
+enum HTTPEror{
+    BADREQUEST(400),
+    UNAUTHORIZED(401),
+    FORBIDDEN(403),
+    NOTFOUND(404),
+    UNTERNALSERVERERROR(500);
 
-    private Season(String name) {
-        this.name = name;
+    private int numberOFError;
+
+    private HTTPEror(int numberOFError) {
+        this.numberOFError = numberOFError;
     }
 
-    public abstract Season nextSeason();
 }
-
 public class Main {
     public static void main(String[] args) {
-        Season season = null;
-        String month = "March";
-        switch(month){
-            case "December":
-            case "January":
-            case "February":
-                season = Season.WINTER;
+        Scanner sc = new Scanner(System.in);
+        HTTPEror httperror = null;
+        System.out.print("Enter the number of Error: ");
+        int number = sc.nextInt();
+        switch (number){
+            case 400:
+                httperror = HTTPEror.BADREQUEST;
                 break;
-            case "March":
-            case "April":
-            case "May":
-                season = Season.SPRING;
+            case 401:
+                httperror = HTTPEror.UNAUTHORIZED;
                 break;
-            case "June":
-            case "Jule":
-            case "August":
-                season = Season.SUMMER;
+            case 403:
+                httperror = HTTPEror.FORBIDDEN;
                 break;
-            case "September":
-            case "October":
-            case "November":
-                season = Season.AUTUMN;
+            case 404:
+                httperror = HTTPEror.NOTFOUND;
+                break;
+            case 500:
+                httperror = HTTPEror.UNTERNALSERVERERROR;
                 break;
             default:
-                System.out.println("No this month\n");
+                System.out.println("Number not found\n");
                 throw new IllegalArgumentException("Error: Invalid Argument");
+
         }
-        System.out.println("season = " + season);
-        System.out.println("Next season = " + season.nextSeason());
-
-
+        System.out.println("Error = " + httperror);
     }
 }
