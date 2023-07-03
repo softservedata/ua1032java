@@ -10,10 +10,8 @@ public class Main {
         int num1 = Integer.parseInt(reader.readLine());
         int num2 = Integer.parseInt(reader.readLine());
         int num3 = Integer.parseInt(reader.readLine());
-
         int max = Math.max(num1, Math.max(num2, num3));
         int min = Math.min(num1, Math.min(num2, num3));
-
         System.out.println("Maximum value: " + max);
         System.out.println("Minimum value: " + min);
     }

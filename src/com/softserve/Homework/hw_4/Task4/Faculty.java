@@ -4,13 +4,10 @@ enum Season {
     SPRING("Spring"),
     SUMMER("Summer"),
     Autumn("Autumn");
-
     private final String name;
-
     Season(String name) {
         this.name = name;
     }
-
     public String getName() {
         return name;
     }
@@ -19,7 +16,6 @@ enum Season {
 class Faculty {
     private int numberOfStudents;
     private Season currentSeason;
-
     public Faculty(int numberOfStudents, Season currentSeason) {
         this.numberOfStudents = numberOfStudents;
         this.currentSeason = currentSeason;

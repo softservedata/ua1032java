@@ -11,7 +11,6 @@ public class Main {
         float num1 = Float.parseFloat(reader.readLine());
         float num2 = Float.parseFloat(reader.readLine());
         float num3 = Float.parseFloat(reader.readLine());
-
         if (num1 >= -5 && num1 <= 5 && num2 >= -5 && num2 <= 5 && num3 >= -5 && num3 <= 5) {
             System.out.println("All numbers belong to the range [-5, 5]");
         } else {

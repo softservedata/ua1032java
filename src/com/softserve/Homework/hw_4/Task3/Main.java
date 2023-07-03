@@ -14,12 +14,10 @@ public class Main {
 
         private final int code;
         private final String description;
-
         HTTPError(int code, String description) {
             this.code = code;
             this.description = description;
         }
-
         public static String getErrorDescription(int code) {
             for (HTTPError error : values()) {
                 if (error.code == code) {
@@ -29,7 +27,6 @@ public class Main {
             return null;
         }
     }
-
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter an HTTP error code: ");
