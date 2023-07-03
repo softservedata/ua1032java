@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /** Input three integer numbers and and output the maximum and minimum values of them to
  the console.*/
 public class HTTPerror {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // A BufferedReader object is created to read the input value from the console.
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the HTTP error code");
