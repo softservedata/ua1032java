@@ -1,4 +1,4 @@
-package com.softserve.Practical.P4;
+package com.softserve.Practical.P4.task1_2_3;
 
 public enum Continents {
     ASIA,

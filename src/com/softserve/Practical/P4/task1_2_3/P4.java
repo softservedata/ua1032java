@@ -1,4 +1,4 @@
-package com.softserve.Practical.P4;
+package com.softserve.Practical.P4.task1_2_3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -80,13 +80,6 @@ public class P4 {
     /*EUROPE*/          default -> Continents.EUROPE;
                  };
                  System.out.println(con);
-
-                break;
-            case 4:
-
-                break;
-            case 5:
-                break;
             default:
                 System.out.print("Such a task does not exist");
                 break;
