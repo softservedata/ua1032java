@@ -6,6 +6,38 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 
 public class H4 {
+    public static float[] inputArray()throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int size1;
+        System.out.print("Size of array: ");
+        size1 = Integer.parseInt(br.readLine());
+        float[] number = new float[size1];
+
+        for(int i = 0; i<size1;i++){
+            System.out.print((i+1)+". Element: ");
+            number[i] = Float.parseFloat(br.readLine());
+        }
+        return number;
+    }
+    public static float minElement(float... numbers){
+        float min = numbers[0];
+        for(float number: numbers){
+            if(number < min){
+                min = number;
+            }
+        }
+        return min;
+    }
+    public static float maxElement(float... numbers){
+        float max = numbers[0];
+        for(float number: numbers){
+            if(number > max){
+                max = number;
+            }
+        }
+        return max;
+    }
+
     public static void main(String[] args)throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,20 +56,9 @@ public class H4 {
                 a1 = Math.min(a1,a2);
                 a2 = Math.max(temp,a2);
 
-                System.out.println(a1);
-                System.out.println(a2);
-                int size;
+                float[] number1 = inputArray();
 
-                System.out.print("Size of array: ");
-                size = Integer.parseInt(br.readLine());
-                float[] number1 = new float[size];
-
-                for(int i = 0; i<size;i++){
-                    System.out.print((i+1)+". Element: ");
-                    number1[i] = Float.parseFloat(br.readLine());
-                }
-
-                for (int i = 0; i <size; i++){
+                for (int i = 0; i <number1.length; i++){
                     if(number1[i] >= a1 && number1[i] <= a2){
                         System.out.println( a1 +" < "+number1[i]+" < " + a2+"; ");
                     }
@@ -46,9 +67,15 @@ public class H4 {
             //TASK 2
             case 2:
 
+                float[] number2 = inputArray();
+
+                System.out.println("Min: "+ minElement(number2));
+                System.out.println("Max: "+ maxElement(number2));
+
                 break;
             //TASK 3
             case 3:
+
                 break;
         }
     }
