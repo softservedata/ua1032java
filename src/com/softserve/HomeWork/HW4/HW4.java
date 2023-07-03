@@ -42,7 +42,7 @@ public class HW4 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Task: ");
         int choice = Integer.parseInt(br.readLine());
-        switch (choice){
+        switch(choice){
             //TASK 1
             case 1:
                 System.out.print("First interval: ");
@@ -57,7 +57,7 @@ public class HW4 {
 
                 float[] number1 = inputArray();
 
-                for (int i = 0; i <number1.length; i++){
+                for(int i = 0; i <number1.length; i++){
                     if(number1[i] >= a1 && number1[i] <= a2){
                         System.out.println( a1 +" < "+number1[i]+" < " + a2+"; ");
                     }
@@ -80,6 +80,15 @@ public class HW4 {
                 System.out.println(error1);
                 System.out.println(error);
 
+                break;
+            case 4:
+                Student st = new Student("Shasha",Group.PMA_21);
+                System.out.println(st);
+                st.nextGroup();
+                System.out.println(st);
+                break;
+            default:
+                System.out.print("Such a task does not exist");
                 break;
         }
     }
