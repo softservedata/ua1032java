@@ -12,6 +12,7 @@ class Task01 {
         double side2 = scanner.nextDouble();
         System.out.print("Input side 3: " );
         double side3 = scanner.nextDouble();
+        scanner.close();
 
         double area = Math.round(getArea(side1, side2, side3) * 100.0) / 100.0;
         System.out.println("The area of the triangle is: : " + area);
