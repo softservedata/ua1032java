@@ -11,6 +11,7 @@ class Task02 {
             System.out.print("Enter a number: ");
             numbers[i] = scanner.nextInt();
         }
+        scanner.close();
 
         int smallestNumb = getMinNumber(numbers);
         System.out.println("The smallest number is: " + smallestNumb);
