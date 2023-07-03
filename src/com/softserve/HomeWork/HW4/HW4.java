@@ -1,11 +1,10 @@
-package com.softserve.HomeWork.H4;
+package com.softserve.HomeWork.HW4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 
-public class H4 {
+public class HW4 {
     public static float[] inputArray()throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int size1;
@@ -75,6 +74,11 @@ public class H4 {
                 break;
             //TASK 3
             case 3:
+                HTTPError error = HTTPError.ERROR_402;
+                HTTPError error1 = HTTPError.getErrorByCode(401);
+
+                System.out.println(error1);
+                System.out.println(error);
 
                 break;
         }
