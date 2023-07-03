@@ -4,6 +4,6 @@ public enum Breed {
     LABRADOR,
     BULLDOG,
     GERMAN_SHEPHERD,
-    RETRIVER
+    RETRIVER;
 
 }
