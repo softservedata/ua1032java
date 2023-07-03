@@ -1,5 +1,4 @@
 package com.softserve.Homework.hw_4.Task5;
-
 public class Main {
     public static void main(String[] args) {
         Dog dog1 = new Dog("Buddy", Breed.GOLDEN_RETRIEVER, 5);

@@ -13,7 +13,6 @@ enum Breed {
         return name;
     }
 }
-
 class Dog {
     private String name;
     private Breed breed;
