@@ -15,6 +15,15 @@ public class P4 {
         }
         return max;
     }
+    public static Product biggestQuntity(Product... items){
+        Product max = items[0];
+        for (Product item:items){
+            if (item.getQuantity() > max.getQuantity()){
+                max = item;
+            }
+        }
+        return max;
+    }
     public static void main(String[] args)throws IOException {
         int size = 3;
         Product[] arr = new Product[size];
@@ -23,7 +32,7 @@ public class P4 {
             arr[i].input();
         }
         System.out.println("The most expensive item "+ expensiveProduct(arr));
-
+        System.out.println("The biggest quantity "+biggestQuntity(arr));
 
     }
 }
