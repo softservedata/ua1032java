@@ -10,22 +10,22 @@ public class task2 {
 
         BufferedReader least = new BufferedReader (new InputStreamReader(System.in));
         System.out.print("Input the first number : ");
-        double a = Integer.parseInt(least.readLine());
+        double a = Double.parseDouble(least.readLine());
 
         System.out.print("Input the second number : ");
-        double b = Integer.parseInt(least.readLine());
+        double b = Double.parseDouble(least.readLine());
 
         System.out.print("Input the third number : ");
-        double c = Integer.parseInt(least.readLine());
+        double c = Double.parseDouble(least.readLine());
 
         if(a > b && a > c) {
-            System.out.println("The smallest number is : " + a);
+            System.out.println("the largest number is : " + a);
         }
         else if (b > a && b > c){
-            System.out.println("The smallest number is : " + b);
+            System.out.println("the largest number is : " + b);
         }
         else if (c > a && c > b){
-            System.out.println("The smallest number is : " + c);
+            System.out.println("the largest number is : " + c);
         }
         else {System.out.println("all numbers are equal");
         }
