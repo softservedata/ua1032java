@@ -9,13 +9,13 @@ public class task1 {
     public static void main(String[] args) throws IOException {
         BufferedReader area = new BufferedReader (new InputStreamReader(System.in));
         System.out.print("Input Side 1 : ");
-        double x = Integer.parseInt(area.readLine());
+        double x = Double.parseDouble(area.readLine());
 
         System.out.print("Input Side 2 : ");
-        double y = Integer.parseInt(area.readLine());
+        double y = Double.parseDouble(area.readLine());
 
         System.out.print("Input Side 3 : ");
-        double l = Integer.parseInt(area.readLine());
+        double l = Double.parseDouble(area.readLine());
         double p = 0.5*(x+y+l);
         System.out.println("The area of the triangle is " + Math.sqrt(p*(p-x)*(p-y)*(p-l)) + " м²");
     }
