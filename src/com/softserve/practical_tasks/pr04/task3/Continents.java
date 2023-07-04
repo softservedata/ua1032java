@@ -23,54 +23,15 @@ public class Continents {
     }
 
     public static String determineContinent(Countries country) {
-        String continent;
 
-        switch (country) {
-            case EGYPT:
-            case NIGERIA:
-            case KENYA:
-            case MOROCCO:
-                continent = "Africa";
-                break;
-
-            case CHINA:
-            case INDIA:
-            case JAPAN:
-            case SOUTH_KOREA:
-            case SAUDI_ARABIA:
-                continent = "Asia";
-                break;
-
-            case GERMANY:
-            case UKRAINE:
-            case FRANCE:
-            case UNITED_KINGDOM:
-            case ITALY:
-            case SPAIN:
-                continent = "Europe";
-                break;
-
-            case UNITED_STATES:
-            case CANADA:
-            case MEXICO:
-            case JAMAICA:
-                continent = "North America";
-                break;
-
-            case BRAZIL:
-            case ARGENTINA:
-            case COLOMBIA:
-            case PERU:
-            case CHILE:
-                continent = "South America";
-                break;
-
-            default:
-                continent = "Unknown";
-                break;
-        }
-
-        return continent;
+        return switch (country) {
+            case EGYPT, NIGERIA, KENYA, MOROCCO -> "Africa";
+            case CHINA, INDIA, JAPAN, SOUTH_KOREA, SAUDI_ARABIA -> "Asia";
+            case GERMANY, UKRAINE, FRANCE, UNITED_KINGDOM, ITALY, SPAIN -> "Europe";
+            case UNITED_STATES, CANADA, MEXICO, JAMAICA -> "North America";
+            case BRAZIL, ARGENTINA, COLOMBIA, PERU, CHILE -> "South America";
+            default -> "Unknown";
+        };
     }
 
 }
