@@ -41,7 +41,6 @@ public class Main {
             default:
                 System.out.println("Number not found\n");
                 throw new IllegalArgumentException("Error: Invalid Argument");
-
         }
         System.out.println("Error = " + httperror);
     }
