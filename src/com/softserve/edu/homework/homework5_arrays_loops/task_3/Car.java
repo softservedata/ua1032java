@@ -12,14 +12,8 @@ public class Car {
         this.year_of_production = year_of_production;
         this.engine_capacity = engine_capacity;
     }
-    public String getType(){
-        return type;
-    }
     public int getYear_of_production(){
         return year_of_production;
-    }
-    public double getEngine_capacity(){
-        return engine_capacity;
     }
     @Override
     public String toString(){
