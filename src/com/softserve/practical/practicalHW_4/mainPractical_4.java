@@ -1,4 +1,4 @@
-package com.softserve.practical.practicalTask_4;
+package com.softserve.practical.practicalHW_4;
 
 public class mainPractical_4 {
     public static void main(String[] args) {

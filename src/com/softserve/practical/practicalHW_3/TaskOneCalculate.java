@@ -1,4 +1,4 @@
-package com.softserve.practical.practicalTask_3;
+package com.softserve.practical.practicalHW_3;
 
 public class TaskOneCalculate {
     double numberOne;

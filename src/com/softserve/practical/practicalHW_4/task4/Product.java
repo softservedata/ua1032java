@@ -1,4 +1,4 @@
-package com.softserve.practical.practicalTask_4.task4;
+package com.softserve.practical.practicalHW_4.task4;
 
 public class Product {
     private String name;

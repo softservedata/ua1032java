@@ -1,6 +1,4 @@
-package com.softserve.practical.practicalTask_3;
-
-import com.softserve.practical.practicalTask_3.TaskTwoEmployee;
+package com.softserve.practical.practicalHW_3;
 
 public class mainPractical_3 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package com.softserve.practical.practicalTask_4.task5;
+package com.softserve.practical.practicalHW_4.task5;
 
-import com.softserve.practical.practicalTask_4.task4.Product;
+import com.softserve.practical.practicalHW_4.task4.Product;
 
 public class mainProduct {
     public static void main(String[] args) {
