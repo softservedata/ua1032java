@@ -38,7 +38,6 @@ public class HWTaskThree {
     }
 
     private static HTTPError findErrorName(int error) {
-        while(true) {
         switch (error) {
             case 300:
                 return HTTPError.MULTIPLE_CHOICES_300;
@@ -49,7 +48,6 @@ public class HWTaskThree {
             default:
                 System.out.println("Input 300, 400 or 500 for HTTP Error.");
                 return null;
-        }
         }
     }
 }
