@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ApplRangeNumbers {
@@ -7,6 +8,7 @@ public class ApplRangeNumbers {
         float thirdNumber;
 
         Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
         System.out.println("Input first number: ");
         firstNumber = scanner.nextFloat();
 
@@ -17,15 +19,12 @@ public class ApplRangeNumbers {
         thirdNumber = scanner.nextFloat();
 
         boolean range;
-        if (firstNumber <= 5f && firstNumber >= -5f) {
-            System.out.println("The number belongs to the range");
-        } else if (secondNumber <= 5f && secondNumber >= -5f) {
-            System.out.println("The number belongs to the range");
-        } else if (thirdNumber <= 5f && thirdNumber >= -5f) {
-            System.out.println("The number belongs to the range");
+        if(firstNumber <= 5f && firstNumber >= -5f &&
+                secondNumber <= 5f && secondNumber >= -5f &&
+                thirdNumber <= 5f && thirdNumber >= -5f) {
+            System.out.println("They are all belong to the range [-5, 5].");
         } else {
-            System.out.println("No number belongs to the range");
-
+            System.out.println("They are not all belong to the range [-5, 5].");
         }
     }
 }
