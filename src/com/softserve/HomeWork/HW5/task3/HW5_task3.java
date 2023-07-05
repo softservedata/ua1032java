@@ -44,6 +44,5 @@ public class HW5_task3 {
         Car[] arr = input();
         arr = sort(arr);
         print(arr);
-
     }
 }
