@@ -5,6 +5,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Product {
+//    private static Product expensiveProd;
+//    private static Product biggestProduct;
+//    private void audit(){
+//        if(expensiveProd.price < this.price){
+//            expensiveProd = new Product(name,price,quantity);
+//        }
+//        if(biggestProduct.quantity <this.quantity){
+//            biggestProduct = new Product(name,price,quantity);
+//        }
+//    }
     private String name;
     private double price;
     private int quantity;
@@ -18,6 +28,7 @@ public class Product {
         name = "Noname";
         price = 0;
         quantity = 0;
+
     }
 
     public void input()throws IOException {
@@ -28,6 +39,7 @@ public class Product {
         price = Double.parseDouble(br.readLine());
         System.out.print("Quantity: ");
         quantity = Integer.parseInt(br.readLine());
+
 
     }
     @Override
