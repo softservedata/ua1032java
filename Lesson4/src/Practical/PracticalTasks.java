@@ -3,8 +3,6 @@ package Practical;
 import java.util.Scanner;
 
 public class PracticalTasks {
-
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -66,7 +64,7 @@ public class PracticalTasks {
     }
 
     public static void thirdPracticalTasks(Scanner scanner) {
-        enum Continent{
+        enum Continent {
             AFRICA,
             ANTARCTICA,
             ASIA,
@@ -76,7 +74,7 @@ public class PracticalTasks {
             SOUTH_AMERICA
         }
         System.out.println("Enter the name of the country:");
-        String countryName= scanner.nextLine().toUpperCase();
+        String countryName = scanner.nextLine().toUpperCase();
         Continent continent;
         switch (countryName) {
             case "USA", "CANADA", "MEXICO", "PANAMA" -> continent = Continent.NORTH_AMERICA;
