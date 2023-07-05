@@ -1,4 +1,4 @@
-package com.softserve.lesson3.pt03.task02;
+package com.softserve.lesson03.pt03.task02;
 
 public class Employee {
 

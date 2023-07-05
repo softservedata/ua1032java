@@ -1,4 +1,4 @@
-package com.softserve.lesson3.hw03.task03;
+package com.softserve.lesson03.hw03.task03;
 
 import java.io.IOException;
 

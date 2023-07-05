@@ -1,4 +1,4 @@
-package com.softserve.lesson3.hw03.task01;
+package com.softserve.lesson03.hw03.task01;
 
 public class TriangleApp {
     public static void main(String[] args) {

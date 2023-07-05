@@ -1,4 +1,4 @@
-package com.softserve.lesson3.hw03.task02;
+package com.softserve.lesson03.hw03.task02;
 
 public class MinNumApp {
     public static void main(String[] args) {

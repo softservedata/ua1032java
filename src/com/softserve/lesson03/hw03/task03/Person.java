@@ -1,11 +1,9 @@
-package com.softserve.lesson3.hw03.task03;
+package com.softserve.lesson03.hw03.task03;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.Year;
-import java.util.Calendar;
-import java.util.Date;
 
 public class Person {
     private String firstName;

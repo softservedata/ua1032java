@@ -1,4 +1,4 @@
-package com.softserve.lesson3.pt03.task01;
+package com.softserve.lesson03.pt03.task01;
 
 public class CalcApp {
 
