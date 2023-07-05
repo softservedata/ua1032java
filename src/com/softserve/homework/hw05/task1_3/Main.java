@@ -21,9 +21,8 @@ public class Main {
                 System.out.print( "Number " + (i + 1) + ": " );
                 arr[i] = scanner.nextInt();
             }
-        System.out.println( "Array: " + Arrays.toString( arr ) ); 
-            
-            
+            System.out.println( "Array: " + Arrays.toString( arr ) );
+
             int secondPositivePosition = -1;
             int elementsCount = 0;
             for (int i = 0; i < 5; i++) {
