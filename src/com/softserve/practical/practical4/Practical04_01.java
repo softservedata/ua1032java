@@ -3,7 +3,6 @@ package com.softserve.practical.practical4;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.sql.SQLOutput;
 
 public class Practical04_01 {
     // TODO: Input three numbers from console. Find out and output result how many of them are

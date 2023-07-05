@@ -28,6 +28,7 @@ public class Practical04_02 {
                 break;
             case 4:
                 week = Week.THURSDAY;
+                break;
             case 5:
                 week = Week.FRIDAY;
                 break;
