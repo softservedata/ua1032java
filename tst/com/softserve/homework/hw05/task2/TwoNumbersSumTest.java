@@ -12,10 +12,8 @@ public class TwoNumbersSumTest {
     TwoNumbersSum sum = new TwoNumbersSum();
     double actual;
     double expected;
-
     expected = 4;
     actual = sum(2 , 2);
-
     Assertions.assertEquals( expected, actual, 0.001 );
 }
 
@@ -25,10 +23,8 @@ public class TwoNumbersSumTest {
         TwoNumbersSum sum = new TwoNumbersSum( );
         double actual;
         double expected;
-
         expected = 5.25;
         actual = sum( 1.25, 4 );
-
         Assertions.assertEquals( expected, actual, 0.001 );
     }
 }
