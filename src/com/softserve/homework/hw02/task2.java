@@ -10,8 +10,10 @@ public class task2 {
         String address;
         System.out.println("What is your name?");
         name = sc.nextLine();
-        System.out.println("Where do you live "+ name +"?");
-        address=sc.nextLine();
-        System.out.println(name+" lives in "+address);
+        System.out.println("Where do you live " + name + "?");
+        address = sc.nextLine();
+        System.out.println(name + " lives in " + address);
+
+        sc.close();
     }
 }

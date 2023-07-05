@@ -6,8 +6,8 @@ public class task3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double c1,c2,c3;
-        double t1,t2,t3;
+        double c1, c2, c3;
+        double t1, t2, t3;
         double c11, c22, c33;
         System.out.println("Input costs per minute");
         System.out.print("cost 1: ");
@@ -25,12 +25,14 @@ public class task3 {
         System.out.print("duration 3: ");
         t3 = sc.nextDouble();
 
-        c11=c1*t1;
-        c22=c2*t2;
-        c33=c3*t3;
+        c11 = c1 * t1;
+        c22 = c2 * t2;
+        c33 = c3 * t3;
         System.out.println();
-        System.out.println("cost of call 1: "+c11);
-        System.out.println("cost of call 2: "+c22);
-        System.out.println("cost of call 3: "+c33);
+        System.out.println("cost of call 1: " + c11);
+        System.out.println("cost of call 2: " + c22);
+        System.out.println("cost of call 3: " + c33);
+
+        sc.close();
     }
 }
