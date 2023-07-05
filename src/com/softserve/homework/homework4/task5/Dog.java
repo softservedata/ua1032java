@@ -1,7 +1,5 @@
 package com.softserve.homework.homework4.task5;
 
-import java.util.Objects;
-
 public class Dog {
     private String name;
     private Breed breed;
