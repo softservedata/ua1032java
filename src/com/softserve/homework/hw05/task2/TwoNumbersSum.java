@@ -8,7 +8,7 @@ If the user inputs a positive response, the loop should repeat; otherwise, it sh
 
 import java.util.Scanner;
 
-public class Main {
+public class TwoNumbersSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String choice;
