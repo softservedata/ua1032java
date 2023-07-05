@@ -1,4 +1,4 @@
-package com.softserve.HW5.task2;
+package com.softserve.HomeWork.HW5.task2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.softserve.HW5.task1.HW_task1_1;
+package com.softserve.HomeWork.HW5.task1.task1_1;
 
 public enum Month {
     January("January",1,30),

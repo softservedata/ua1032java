@@ -1,10 +1,10 @@
-package com.softserve.HW5.task1.HW_task1_2;
+package com.softserve.HomeWork.HW5.task1.task1_2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class HW_task1_2 {
+public class HW5_task1_2 {
     public static int[] inputArray()throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int size1;
