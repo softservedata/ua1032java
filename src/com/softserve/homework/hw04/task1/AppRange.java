@@ -14,6 +14,7 @@ public class AppRange {
 
         System.out.println("NUMBERS: " + number1+", " + number2+", "+number3);
         System.out.println(Range.checkRange(number1,number2,number3));
-
+        sc.close();
     }
 }
+//тут можна було не робити через енум, а просто вивести результат в консоль
