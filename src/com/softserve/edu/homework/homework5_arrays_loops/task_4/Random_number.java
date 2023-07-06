@@ -4,11 +4,11 @@ public class Random_number {
     public static void main(String [] args){
        Scanner input = new Scanner(System.in);
        int min = -10;
-       int max = 20;
+       int max = 15;
        max -= min;
        int a = (int)((Math.random() * ++max)) + min;
-       for (int i = 0; i < 20; i++){
-           System.out.print("Try to guess a number in the range [-10;20] : ");
+       for (int i = 0; i < 15; i++){
+           System.out.print("Try to guess a number in the range [-10;15] : ");
            int b = Integer.parseInt(input.nextLine());
            if (b > a){
                System.out.println("Too high, try again.\n");
