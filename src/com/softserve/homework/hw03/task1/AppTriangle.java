@@ -16,16 +16,16 @@ public class AppTriangle {
         side1 = sc.nextDouble();
 
         System.out.println("Input Side 2: ");
-        side2=sc.nextDouble();
+        side2 = sc.nextDouble();
 
         System.out.println("Input Side 3: ");
-        side3=sc.nextDouble();
+        side3 = sc.nextDouble();
 
         Triangle triangle1 = new Triangle(side1, side2, side3);
 
         System.out.println(triangle1);
 
-        System.out.println("The area of the triangle is " + Triangle.findArea(side1,side2,side3));
-
+        System.out.println("The area of the triangle is " + Triangle.findArea(side1, side2, side3));
+        sc.close();
     }
 }

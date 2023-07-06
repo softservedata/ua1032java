@@ -12,7 +12,7 @@ public class AppFindSmallest {
         int thirdNumber;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Input first number: ");
+        System.out.println("Input first number: ");// Input first integer number
         firstNumber = sc.nextInt();
 
         System.out.println("Input second number: ");
@@ -26,6 +26,6 @@ public class AppFindSmallest {
         System.out.println(trioNumbers1);
 
         System.out.println("The smallest is " + TrioNumbers.findSmallestNumber(trioNumbers1));
-
+sc.close();
     }
 }

@@ -1,7 +1,7 @@
 package com.softserve.homework.hw03.task1;
 
 import static java.lang.Math.sqrt;
-
+// тут, якщо підійти глобально, то можна було б зробити перевірку на те, чи такий трикутник існує
 public class Triangle {
     private double side1;
 
@@ -39,17 +39,17 @@ public class Triangle {
         this.side3 = side3;
     }
 
-    public static double findArea(double side1, double side2, double side3){
-        double p=(side1+side2+side3)/2;
-        return sqrt(p*(p-side1)*(p-side2)*(p-side3));
+    public static double findArea(double side1, double side2, double side3) {
+        double p = (side1 + side2 + side3) / 2;
+        return sqrt(p * (p - side1) * (p - side2) * (p - side3));
     }
 
     @Override
     public String toString() {
         return "Triangle{" +
-                "side1= " + side1 +
-                ", side2= " + side2 +
-                ", side3= " + side3 +
-                '}';
+            "side1= " + side1 +
+            ", side2= " + side2 +
+            ", side3= " + side3 +
+            '}';
     }
 }

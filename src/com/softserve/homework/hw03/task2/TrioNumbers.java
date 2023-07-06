@@ -37,7 +37,7 @@ public class TrioNumbers {
     public void setThirdNumber(int thirdNumber) {
         this.thirdNumber = thirdNumber;
     }
-
+// було б правильно передбачити випадок, коли всі числа однакові
     public static int findSmallestNumber(TrioNumbers trioNumbers){
         int smallest = trioNumbers.getFirstNumber();
         if(trioNumbers.getSecondNumber() < trioNumbers.getFirstNumber()){
