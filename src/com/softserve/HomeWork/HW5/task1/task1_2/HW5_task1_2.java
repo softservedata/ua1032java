@@ -33,8 +33,7 @@ public class HW5_task1_2 {
         }
         return true;
     }
-    public static void main(String[] args)throws IOException {
-        int[] array = inputArray();
+    public static int func(int[] array){
         int answer;
         if (isPositive(array)){
             System.out.println("the number is positive");
@@ -49,8 +48,13 @@ public class HW5_task1_2 {
                 answer *=array[i];
             }
         }
+        return answer;
+    }
+
+    public static void main(String[] args)throws IOException {
+        int[] array = inputArray();
+        int answer;
+        answer = func(array);
         System.out.println("Answer: " + answer);
-
-
     }
 }

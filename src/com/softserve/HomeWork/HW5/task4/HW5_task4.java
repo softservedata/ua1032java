@@ -12,7 +12,6 @@ public class HW5_task4 {
         System.out.print("Limits: ");
         int b = Integer.parseInt(br.readLine());
 
-
         int number;
         int i= 0;
         int rand =(int) ((Math.random()*(Math.abs(Math.max(a,b))+1- Math.abs(Math.min(a,b)))) + Math.min(a,b)); //[a; b]
@@ -31,6 +30,5 @@ public class HW5_task4 {
         System.out.println("You win! ");
         System.out.println("Attempt: "+ i);
         System.out.println("Answer: "+rand);
-
     }
 }
