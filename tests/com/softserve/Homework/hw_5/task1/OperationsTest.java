@@ -19,7 +19,7 @@ public class OperationsTest {
     }
 
     @Test
-    public void testFindMinIndex() {
+    public void testFindIndexOfMinValue() {
         int[] numbers = {1, -2, 3, -4, 5};
         int excepted = 4;
         int actual = OperationsWithArray.findMinIndex(numbers);
