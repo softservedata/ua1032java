@@ -1,16 +1,22 @@
 package com.softserve.java_homework.lesson03;
 
+import java.util.Scanner;
+
 public class Task03 {
     public static void main(String[] args) {
-        Faculty[] faculties = new Faculty[5];
-        faculties[0] = new Faculty(30, Faculty.Season.FALL);
-        faculties[1] = new Faculty(35, Faculty.Season.SUMMER);
-        faculties[2] = new Faculty(33, Faculty.Season.WINTER);
-        faculties[3] = new Faculty(36, Faculty.Season.SPRING);
-        faculties[4] = new Faculty(40, Faculty.Season.FALL);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number representing an HTTP error: ");
+        String errorMessage = getErrorMessage(scanner);
+        scanner.close();
 
-        for (Faculty faculty : faculties) {
-            System.out.println(faculty.toString());
+        System.out.println(errorMessage);
+    }
+
+    public static String getErrorMessage(Scanner scanner) {
+        int code = scanner.nextInt();
+        for (HTTP.HTTPError error : HTTP.HTTPError.values()) {
+            if (error.getCode() == code) return error.getMessage();
         }
+        return "Unknown error";
     }
 }
