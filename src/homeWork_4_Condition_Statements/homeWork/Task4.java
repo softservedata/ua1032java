@@ -1,4 +1,4 @@
-package homeWork_4_Condition_Statements.HomeWork;
+package homeWork_4_Condition_Statements.homeWork;
 
 import java.util.Scanner;
 

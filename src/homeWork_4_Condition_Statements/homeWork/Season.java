@@ -1,4 +1,4 @@
-package homeWork_4_Condition_Statements.HomeWork;
+package homeWork_4_Condition_Statements.homeWork;
 
 public enum  Season {
     WINTER("Winter"), SPRING("Spring"), SUMMER("Summer"), AUTUMN("Autumn");
