@@ -1,6 +1,6 @@
 package com.softserve.hw.lesson6.task1;
 
-public class Bird {
+public abstract class Bird {
     String feathers;
     int Layeggs;
 
