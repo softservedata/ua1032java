@@ -16,25 +16,25 @@ public class Task02 {
         int numberOfDay = scanner.nextInt();
         switch (numberOfDay) {
             case 1 -> {
-                return "Monday";
+                return "EN: Monday, UA: Понеділок";
             }
             case 2 -> {
-                return "Tuesday";
+                return "EN: Tuesday, UA: Вівторок";
             }
             case 3 -> {
-                return "Wednesday";
+                return "EN: Wednesday, UA: Середа";
             }
             case 4 -> {
-                return "Thursday";
+                return "EN: Thursday, UA: Четвер";
             }
             case 5 -> {
-                return "Friday";
+                return "EN: Friday, UA: П'ятниця";
             }
             case 6 -> {
-                return "Saturday";
+                return "EN: Saturday, UA: Субота";
             }
             case 7 -> {
-                return "Sunday";
+                return "EN: Sunday, UA: Неділя";
             }
             default -> {
                 return "";
