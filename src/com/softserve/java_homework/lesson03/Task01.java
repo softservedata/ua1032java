@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Float[] numbers = new Float[3];
+        float[] numbers = new float[3];
         for (int i = 0; i < numbers.length; i++) {
             System.out.print("Enter a number: ");
             numbers[i] = scanner.nextFloat();
@@ -16,7 +16,7 @@ public class Task01 {
         System.out.println("Are they all belong to the range [-5, 5]: " + result);
     }
 
-    public static boolean checkRangeOfNumbers(Float[] numbers) {
+    public static boolean checkRangeOfNumbers(float[] numbers) {
         return numbers[0] <= 5 && numbers[0] >= -5
                 && numbers[1] <= 5 && numbers[1] >= -5
                 && numbers[2] <= 5 && numbers[2] >= -5;
