@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.nar
 *.ear
@@ -47,7 +47,7 @@ replay_pid*
 /bin/
 /build/
 /doc/
-/lib/
+#/lib/
 /test-output/
 /allure-results/
 /.classpath
@@ -71,7 +71,7 @@ workspace.xml
 /**/doc/
 /**/bin/
 /**/build/
-/**/lib/
+#/**/lib/
 /**/test-output/
 /**/allure-results/
 /**/report/
