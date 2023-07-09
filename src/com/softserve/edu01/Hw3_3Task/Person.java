@@ -1,72 +1,69 @@
 package com.softserve.edu01.Hw3_3Task;
 
-import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Person {
-    private String name;
-    private String surname;
-    private int yearBirthday;
+    private String firstName;
+    private String lastName;
+    private int birthYear;
 
     public Person() {
     }
 
-    public Person(String name, String surname) {
-        this.name = name;
-        this.surname = surname;
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public int getYearBirthday() {
-        return yearBirthday;
+    public int getBirthYear() {
+        return birthYear;
     }
 
-    public void setYearBirthday(int yearBirthday) {
-        this.yearBirthday = yearBirthday;
-    }
-
-    public int getAge() {
-        LocalDate currentDate = LocalDate.now();
-        int currentYear = currentDate.getYear();
-        return currentYear - yearBirthday;
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
     }
 
     public void input() {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Birth Year: ");
-        yearBirthday = scanner.nextInt();
-
-        scanner.nextLine(); // Consume the remaining newline character
-
-        System.out.println();
+        System.out.println("Enter your first name");
+        firstName = scanner.nextLine();
+        System.out.println("Enter your last name");
+        lastName = scanner.nextLine();
+        System.out.println("Enter your birth year");
+        birthYear = scanner.nextInt();
     }
 
     public void output() {
-        System.out.println("Name: " + name + " " + surname);
-        System.out.println("Birth Year: " + yearBirthday);
-        System.out.println("Age: " + getAge());
-        System.out.println();
+        System.out.println("Your first name: " + firstName);
+        System.out.println("Your last name: " + lastName);
+        System.out.println("Your birth year: " + birthYear);
     }
 
     public void changeName(String fn, String ln) {
-        name = fn;
-        surname = ln;
+        if (fn != null && !fn.isEmpty()) {
+            firstName = fn;
+        }
+
+        if (ln != null && !ln.isEmpty()) {
+            lastName = ln;
+        }
     }
+
 }
 
