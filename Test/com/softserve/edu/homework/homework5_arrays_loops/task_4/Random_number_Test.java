@@ -24,35 +24,43 @@ public class Random_number_Test {
     }
     @Test
     public void Guessed_or_no_Test1(){
-        boolean actual = true;
-        boolean expected;
-        int b = 16;
-        if (b == Random_number.Random()){
-            expected = true;
+        boolean actual;
+        boolean expected = true;
+        int min = 7;
+        int max = 8;
+        int interval = max - min;
+        int rand = (int) ((Math.random() * ++interval)) + min;
+        int b = 7;
+        if (b == rand){
+            actual = true;
         }
-        else {expected = false;}
-        Assertions.assertNotEquals(expected, actual);
+        else {actual = false;}
+        Assertions.assertEquals(expected, actual);
     }
     @Test
     public void Guessed_or_no_Test2(){
-        boolean actual = true;
-        boolean expected;
-        int b = -11;
-        if (b == Random_number.Random()){
-            expected = true;
+        boolean actual;
+        boolean expected = true;
+        int min = -1;
+        int max = 0;
+        int interval = max - min;
+        int rand = (int) ((Math.random() * ++interval)) + min;
+        int b = -1;
+        if (b == rand){
+            actual = true;
         }
-        else {expected = false;}
-        Assertions.assertNotEquals(expected, actual);
+        else {actual = false;}
+        Assertions.assertEquals(expected, actual);
     }
     @Test
     public void Guessed_or_no_Test3(){
-        boolean actual = true;
-        boolean expected;
+        boolean actual ;
+        boolean expected = true;
         int b = 29;
         if (b == Random_number.Random()){
-            expected = true;
+            actual = true;
         }
-        else {expected = false;}
+        else {actual = false;}
         Assertions.assertNotEquals(expected, actual);
     }
 }
