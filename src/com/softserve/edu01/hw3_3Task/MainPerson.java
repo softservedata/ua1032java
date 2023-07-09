@@ -1,4 +1,4 @@
-package com.softserve.edu01.Hw3_3Task;
+package com.softserve.edu01.hw3_3Task;
 
 public class MainPerson {
     public static void main(String[] args) {
