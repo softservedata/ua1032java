@@ -13,14 +13,15 @@ public class Appl {
         cars [3] = new Car("Supercar",2020, 7.9);
 
         System.out.print("Enter the year of the car you want to get : ");
-        int x = Integer.parseInt(input.nextLine());
+        int year = Integer.parseInt(input.nextLine());
         for (Car car : cars) {
-            if (Objects.equals(car.getYear_of_production(), x)) {
+            if (Objects.equals(car.getYear_of_production(), year)) {
                 System.out.println("\nWe can offer you this car : ");
                 System.out.println(car);
                 break;
             }
         }
+
         Car change;
         for (int i = 0; i < cars.length;i++){
             for(int j = 0; j < cars.length;j++){
@@ -33,8 +34,8 @@ public class Appl {
         }
         System.out.println("\nСars are sorted by year :\n");
 
-        for (int i = 0; i < cars.length ; i++){
-            System.out.println(cars[i]);
+        for (Car car : cars) {
+            System.out.println(car);
         }
     }
 }

@@ -1,7 +1,5 @@
 package com.softserve.edu.homework.homework5_arrays_loops.task_3;
 
-import java.util.Scanner;
-
 
 public class Car {
     private String type;
@@ -12,6 +10,7 @@ public class Car {
         this.year_of_production = year_of_production;
         this.engine_capacity = engine_capacity;
     }
+
     public int getYear_of_production(){
         return year_of_production;
     }
@@ -19,6 +18,4 @@ public class Car {
     public String toString(){
         return "Machine type : " + type +";  Year of manufacture of the car  :  "+year_of_production+";  engine volume of the car  :  "+ engine_capacity;
     }
-
-
 }
