@@ -13,9 +13,9 @@ public enum Month {
     October("October",10,31),
     November("November",11,30),
     December("December",12,31);
-    private String name;
-    private int numberMonth;
-    private int days;
+    private final String name;
+    private final int numberMonth;
+    private final int days;
 
     Month(String name, int numberMonth, int days) {
         this.name = name;
