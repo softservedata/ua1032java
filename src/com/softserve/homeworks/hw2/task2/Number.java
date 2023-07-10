@@ -1,7 +1,7 @@
 package com.softserve.homeworks.hw2.task2;
 
 public class Number {
-    private int firstnumber;
+    private int firstnumber;// аналогічно до першої таски
     private int secondnumber;
     private int thirdnumber;
 
@@ -36,7 +36,7 @@ public class Number {
     }
 
     public static int minNumber(Number number1) {
-        int smallest = Math.min(number1.getFirstnumber(), Math.min(number1.getSecondnumber(), number1.getThirdnumber()));
-        return smallest;
+        return Math.min(number1.getFirstnumber(), Math.min(number1.getSecondnumber(), number1.getThirdnumber()));
+
     }
 }
