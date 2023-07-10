@@ -3,9 +3,9 @@ package com.softserve.hw.lesson4.task5;
 import java.util.Objects;
 
 public class Dog {
-    private String name;
-    private Breed breed;
-    private int age;
+    private final String name;
+    private final Breed breed;
+    private final int age;
 
     public Dog(String name, Breed breed, int age) {
         this.name = name;

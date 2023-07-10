@@ -2,7 +2,7 @@ package com.softserve.hw.lesson3;
 
 import java.time.LocalDate;
 import java.util.Scanner;
-
+// Don't forget to format your code before commiting
 public class Person {
     private String firstName;
 
@@ -59,19 +59,21 @@ public class Person {
 
     public void output() {
         System.out.printf("""
-                First name: %s
-                Last name: %s
-                Birth year: %d
-                """, getFirstName(), getLastname(), getBirthYear());
+            First name: %s
+            Last name: %s
+            Birth year: %d
+            """, getFirstName(), getLastname(), getBirthYear());
     }
-    public void changeName(String fn){
-        firstName=fn;
+
+    public void changeName(String fn) {
+        firstName = fn;
 
     }
-    public void changeName(String fn,String ln){
-        if (fn!=null){
-            firstName=fn;
+
+    public void changeName(String fn, String ln) {
+        if (fn != null) {
+            firstName = fn;
         }
-        lastname=ln;
+        lastname = ln;
     }
 }

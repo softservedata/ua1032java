@@ -2,7 +2,7 @@ package com.softserve.hw.lesson4.task1_2;
 
 import java.util.Scanner;
 
-public class TasckOneAndTwo {
+public class TasckOneAndTwo { //Tasks :)
     public static void range() {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
