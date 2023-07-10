@@ -25,7 +25,7 @@ public class RandomNumber {
             if (guess > randomNumber) {
                 System.out.println("Too high, try again.");
             } else if (guess < randomNumber) {
-                System.out.println("Too high, try again.");
+                System.out.println("Too low, try again.");// here was a mistake
             } else {
                 System.out.println("Congratulations! You guessed the number.");
             }

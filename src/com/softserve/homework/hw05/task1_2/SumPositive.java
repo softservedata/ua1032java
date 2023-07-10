@@ -31,7 +31,10 @@ public class SumPositive {
                     elementsCount++;
                 }
             } else {
+                //if (arr[i] <= 0) {
+                // не вистачало іфа,тому щоб у тебе рахувався добуток не тільки останніх 5 елементів, а всіх, що були менші за 0
                 product = product * arr[i];
+            //}
             }
         }
         if ( elementsCount == 5 ) {
