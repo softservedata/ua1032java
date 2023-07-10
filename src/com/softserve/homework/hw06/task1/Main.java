@@ -6,6 +6,12 @@ Create classes FlyingBird and NonFlyingBird.
 Create classes Eagle, Swallow, Penguin and Kiwi.
 In main() method create an array Bird and add different birds to it.
 Call fly() method for all of it. Output the information about each type of created bird.
+
+Створіть абстрактний клас під назвою Bird за схемою з атрибутами feathers і layEggs і методом abstaract fly().
+Створіть класи FlyingBird і NonFlyingBird.
+Створіть класи Орел, Ластівка, Пінгвін і Ківі.
+У методі main() створіть масив Bird і додайте до нього різних птахів.
+Викличте метод fly() для всього цього. Виведіть інформацію про кожен вид створеного птаха.
  */
 
 import java.util.Arrays;
