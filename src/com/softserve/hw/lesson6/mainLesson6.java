@@ -24,7 +24,7 @@ public class mainLesson6 {
 //        for (Bird b : arrayBird) {
 //            b.fly();
 //        }
-/**-----------------------task2Car-------------------------*/
+/**-----------------------task2-------------------------*/
 //        Developer d = new Developer("Jon", 23, "Junior Java dev", 1400);
 //        Developer d1 = new Developer("Mike", 21, "Midl Java dev", 2200);
 //        Developer d2 = new Developer("Iva", 24, "Senior Java dev", 3000);
