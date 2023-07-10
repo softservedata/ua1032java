@@ -32,8 +32,18 @@ public class AppStud {
 		//Arrays.sort(students);
 		//Arrays.sort(students, new Student.ByDestName());
 		//Arrays.sort(students, new Student().new ByAge());
-		Arrays.sort(students, new Student.ByNameAndAge());
+		// Arrays.sort(students, new Student.ByNameAndAge());
 		//Arrays.sort(students, new Student.ByNameAndAge());
+		//
+		Arrays.sort(students, new Comparator<Student>() {
+				@Override
+				public int compare(Student st1, Student st2) {
+					int byName = st1.getName().compareTo(st2.getName());
+					return byName == 0 ? -st1.getAge() + st2.getAge() : byName;
+				}
+			}
+		);
+		//
 		//
 //		Collections.sort(students);
 		//Collections.sort(students, new Student.ByNameAndAge());
