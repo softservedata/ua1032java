@@ -1,7 +1,5 @@
 package com.softserve.practical.practical5.task4;
 
-import com.softserve.homework.homework5.task3.Car;
-
 import java.util.Scanner;
 
 public class Practical05_04 {
