@@ -40,7 +40,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car { " +
-                " type = " + type +
+                " type = " + type.getCarType() +
                 ", year = " + year +
                 ", engineCapacity = " + engineCapacity +
                 " } ";

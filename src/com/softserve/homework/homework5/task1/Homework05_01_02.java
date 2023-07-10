@@ -44,9 +44,6 @@ public class Homework05_01_02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] numbers = new int[10];
-        boolean isSumPositive = true;
-        int sum = 0;
-        int product = 1;
 
         System.out.println("Enter 10 integer numbers: ");
         for(int i = 0; i < numbers.length; i++){

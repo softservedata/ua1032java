@@ -1,6 +1,5 @@
 package com.softserve.homework.homework5.task1;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -72,8 +71,6 @@ public class Homework05_01_03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] numbers = new int[5];
-
-        int product = 1;
 
         System.out.println("Enter 5 integer numbers: ");
         for(int i = 0; i < numbers.length; i++){

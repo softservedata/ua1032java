@@ -23,7 +23,7 @@ public class Homework05_03 {
     }
 
     public static void sortCarsByYear(Car[] cars){
-        Car temp = new Car();
+        Car temp;
 
         for(int i = 0; i < cars.length - 1; i++){
             for(int j = i + 1; j < cars.length; j++){
