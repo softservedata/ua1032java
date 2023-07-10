@@ -1,5 +1,8 @@
-package com.softserve.edu.Homeworks2.Homework06;
+package com.softserve.edu.Homeworks3.Homework03;
+
+import java.time.LocalDate;
 import java.util.Scanner;
+
 public class Person {
     //three fields
     private String firstName;
@@ -8,34 +11,39 @@ public class Person {
 
 
     // property to get and set firstName
-    public String getFirstName(){
+    public String getFirstName() {
         return firstName;
     }
-    private void setFirstName(String firstName){
+
+    private void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
     // property to get and set lastName
-    public String getLastName(){
+    public String getLastName() {
         return lastName;
     }
-    private void setLastName(String lastName){
+
+    private void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    //propery to get and set birthYear
-    public int getBirthYear() {return birthYear;}
-    private void setBirthYear(int birthYear){
+    //property to get and set birthYear
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    private void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
     }
 
 
     //default constructor
-    public Person(){
+    public Person() {
     }
 
     //constructor with two parameters
-    public Person(String firstName, String lastName, int birthYear){
+    public Person(String firstName, String lastName, int birthYear) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthYear = birthYear;
@@ -43,14 +51,14 @@ public class Person {
 
 
     //calculating the age of a person
-    public int getAge(){
-        int year = 2023;
-        int age = year - getBirthYear();
-        return age;
+    public int getAge() {
+        int year = LocalDate.now().getYear();//better to use LocalDate.now().getYear() instead of Calendar.getInstance().get(Calendar.YEAR)
+        return year - getBirthYear();
+        // return age;
     }
 
     //we input here values
-    public void input(){
+    public void input() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Write first name: ");
         String firstName = scan.nextLine();
@@ -65,18 +73,21 @@ public class Person {
         setBirthYear(birthYear);
     }
 
-    public void changeName(String fn, String ln){
+    public void changeName(String fn, String ln) {
         setFirstName(fn);
         setLastName(ln);
     }
-    public void changeFirstName(String fn){
+
+    public void changeFirstName(String fn) {
         setFirstName(fn);
     }
-    public void changeLastName(String ln){
+
+    public void changeLastName(String ln) {
         setLastName(ln);
     }
+
     //output's the values
-    public void output(){
+    public void output() {
         System.out.println("First name of the person: " + getFirstName());
         System.out.println("Last name of the person: " + getLastName());
         System.out.println("Birth year: " + getBirthYear());

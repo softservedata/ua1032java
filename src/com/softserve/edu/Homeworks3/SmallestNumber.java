@@ -1,6 +1,8 @@
-package com.softserve.edu.Homeworks2;
+package com.softserve.edu.Homeworks3;
+
 import java.util.Scanner;
-public class Homework05 {
+
+public class SmallestNumber {
     public static int FindSmallNum(int a, int b, int c) {
         if (a <= b && a <= c) {
             return a;
@@ -29,7 +31,7 @@ public class Homework05 {
         n3 = scan.nextInt();
 
         System.out.println("The smallest number of three numbers is: " + FindSmallNum(n1, n2, n3));
-
+        scan.close();
     }
 
 }
