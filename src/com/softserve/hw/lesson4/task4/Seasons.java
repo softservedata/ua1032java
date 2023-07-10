@@ -7,7 +7,7 @@ public enum Seasons {
         this.nameSeason = nameSeason;
     }
 
-    private String nameSeason;
+    private final String nameSeason;
 
     @Override
     public String toString() {

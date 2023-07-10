@@ -50,9 +50,9 @@ public class Car implements Comparator {
     public static Car seekEar(Car[] array) {
         System.out.println("Please input ear car: ");
         int ear = new Scanner(System.in).nextInt();
-        for (int i = 0; i < array.length; i++) {
-            if (array[i].getEar() == ear) {
-                return array[i];
+        for (Car car : array) {
+            if (car.getEar() == ear) {
+                return car;
             }
         }
         return null;

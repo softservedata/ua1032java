@@ -11,6 +11,6 @@ public class AddTwoNumbers {
             System.out.println(numberOne + numberTwo);
             System.out.println("Repeat these method?");
         }
-        while (sc.next().equals("Yes"));
+        while (sc.next().equals("Yes"));// add equalsIgnoreCase
     }
 }

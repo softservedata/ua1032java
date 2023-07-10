@@ -28,8 +28,8 @@ public class main {
 //        f.setSeasons(Seasons.SUMMER);
 //        System.out.println(f);
 /**-------------------------Task5-----------------------------*/
-        Dog dog1 = new Dog("Charli", Breed.BULLDOG, 5);
-        Dog dog2 = new Dog("Charli", Breed.HUSKY, 10);
+        Dog dog1 = new Dog("Charly", Breed.BULLDOG, 5);
+        Dog dog2 = new Dog("Charly", Breed.HUSKY, 10);
         Dog dog3 = new Dog("Riko", Breed.SHEEPDOG, 3);
         System.out.println(dog1.equals(dog2));//true
         System.out.println(dog1.equals(dog3));//false
