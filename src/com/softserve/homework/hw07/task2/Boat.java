@@ -1,9 +1,6 @@
 package com.softserve.homework.hw07.task2;
 
 public class Boat extends WaterVehicle{
-
-
-
     private int volume;
     public Boat(){
     }
