@@ -27,7 +27,7 @@ public class Hw4_2 {
         } else if (num2 <= num1 && num2 <= num3) {
             System.out.println("Number 2 is MIN value");
         } else if (num3 <= num1 && num3 <= num2) {
-            System.out.println("Number 2 is MIN value");
+            System.out.println("Third is MIN value");
         }
 
     }
