@@ -24,7 +24,7 @@ public class Homework04_02 {
             if(number2 >= number3){
                 System.out.println("Maximum value is " + number2);
             } else {
-                System.out.println("Miximum value is " + number3);
+                System.out.println("Maximum value is " + number3);
             }
             System.out.println("Minimum value is " + number1);
         }
@@ -33,7 +33,7 @@ public class Homework04_02 {
             if(number1 >= number3){
                 System.out.println("Maximum value is " + number1);
             } else {
-                System.out.println("Miximum value is " + number3);
+                System.out.println("Maximum value is " + number3);
             }
             System.out.println("Minimum value is " + number2);
         }
@@ -42,7 +42,7 @@ public class Homework04_02 {
             if(number2 >= number1){
                 System.out.println("Maximum value is " + number2);
             } else {
-                System.out.println("Miximum value is " + number1);
+                System.out.println("Maximum value is " + number1);
             }
             System.out.println("Minimum value is " + number3);
         }
