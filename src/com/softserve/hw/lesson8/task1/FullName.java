@@ -1,6 +1,6 @@
 package com.softserve.hw.lesson8.task1;
 
-public class FullName {
+public class FullName implements Cloneable {
     private String firstName;
     private String secondName;
 
@@ -23,5 +23,10 @@ public class FullName {
 
     public void setSecondName(String secondName) {
         this.secondName = secondName;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

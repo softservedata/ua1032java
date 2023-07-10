@@ -12,8 +12,4 @@ public class Student extends Person {
         return "I am a " + TYPE_PERSON;
     }
 
-    @Override
-    public double getSalary() {
-        return 0;
-    }
 }

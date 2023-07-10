@@ -7,6 +7,6 @@ public abstract class Person {
     }
 
    public abstract String print();
-    public abstract double getSalary();
+//    public abstract double getSalary();
 
 }

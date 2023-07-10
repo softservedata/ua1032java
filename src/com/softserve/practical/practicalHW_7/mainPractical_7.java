@@ -19,15 +19,17 @@ public class mainPractical_7 {
 //            animals.voice();
 //        }
 /**--------------------Task2---------------------------*/
-        Person [] people = new Person[5];
-        people[0] = new Cleaner("Jana",1000);
-        people[1] = new Teacher("Dan",5000);
+        Person[] people = new Person[5];
+        people[0] = new Cleaner("Jana", 1000);
+        people[1] = new Teacher("Dan", 5000);
         people[2] = new Student("Jake");
-        people[3] = new Teacher("Mart",5005);
-        people[4] = new Cleaner("Varen",800);
-        for (Person persons:people) {
+        people[3] = new Teacher("Mart", 5005);
+        people[4] = new Cleaner("Varen", 800);
+        for (Person persons : people) {
             System.out.println(persons.print());
-            System.out.println(persons.getSalary());
+            if (persons instanceof Staff) {
+                System.out.println(((Staff) persons).getSalary());
+            }
         }
     }
 }
