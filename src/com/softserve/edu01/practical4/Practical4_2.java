@@ -1,8 +1,8 @@
-package com.softserve.edu01.hw4;
+package com.softserve.edu01.practical4;
 
 import java.util.Scanner;
 
-public class Hw4_2 {
+public class Practical4_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         var tryAgain = true;

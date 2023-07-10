@@ -6,32 +6,21 @@ public class Hw4_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        System.out.println("Enter first float number");
+        float number1 = scanner.nextFloat();
+        System.out.println("Enter first float number");
+        float number2 = scanner.nextFloat();
+        System.out.println("Enter first float number");
+        float number3 = scanner.nextFloat();
+        
+        boolean allNum = ((number1 >= -5) && (number1 <= 5))
+                && ((number2 >= -5) && (number2 <= 5))
+                && ((number3 >= -5) && (number3 <= 5));
 
-        System.out.println("Enter the first number: ");
-        int num2 = scanner.nextInt();
-
-        System.out.println("Enter the first number: ");
-        int num3 = scanner.nextInt();
-
-        scanner.close();
-
-        int oddCount = 0;
-
-        if (num1 % 2 != 0) {
-            oddCount++;
+        if (allNum) {
+            System.out.println("All numbers are within the range [-5, 5]");
+        } else {
+            System.out.println("One or more numbers are not withing the range [-5, 5.]");
         }
-
-        if (num2 % 2 != 0) {
-            oddCount++;
-        }
-
-        if (num3 % 2 != 0) {
-            oddCount++;
-        }
-
-        System.out.println("Number of odd numbers: " + oddCount);
-
     }
 }
