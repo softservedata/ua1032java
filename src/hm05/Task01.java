@@ -13,7 +13,7 @@ public class Task01 {
         Scanner scanner = new Scanner(System.in);
         int MonthNumber;
 
-        System.out.print("enter a month number:");
+        System.out.print("enter a month number: ");
         MonthNumber = scanner.nextInt();
 
         if (MonthNumber >= 1 && MonthNumber <= 12) {
@@ -22,6 +22,7 @@ public class Task01 {
             System.out.println("Invalid month number! Try again.");
 
         }
+        scanner.close();
     }
 }
 

@@ -13,29 +13,32 @@ public class task03 {
 
         private final String name;
 
-        HTTPError(String name){
-            this.name=name;
+        HTTPError(String name) {
+            this.name = name;
         }
 
-    public String getName() {
+        public String getName() {
             return name;
-    }
-    }
-    public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("enter the HTTP error code:");
-        int errorCode= scanner.nextInt();
-
-        HTTPError error= findError(errorCode);
-        if (error !=null) {
-            System.out.println("Error name:" + error.getName());
-        }else{
-            System.out.println("Unknow error");
         }
     }
-    private static HTTPError findError(int errorCode){
-        for (HTTPError error : HTTPError.values()){
-            if (error.name().equalsIgnoreCase("ERROR_" + errorCode)){
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter the HTTP error code: ");
+        int errorCode = scanner.nextInt();
+
+        HTTPError error = findError(errorCode);
+        if (error != null) {
+            System.out.println("Error name: " + error.getName());
+        } else {
+            System.out.println("Unknown error");
+        }
+        scanner.close();
+    }
+
+    private static HTTPError findError(int errorCode) {
+        for (HTTPError error : HTTPError.values()) {
+            if (error.name().equalsIgnoreCase("ERROR_" + errorCode)) {
                 return error;
             }
         }
