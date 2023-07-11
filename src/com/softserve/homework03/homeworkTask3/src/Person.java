@@ -55,7 +55,7 @@ public class Person {
 
         String birthYear = scanner.nextLine();
         setBirthYear(birthYear);
-
+scanner.close();
     }
 }
 
