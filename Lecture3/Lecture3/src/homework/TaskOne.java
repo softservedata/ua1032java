@@ -3,7 +3,7 @@ package homework;
 import java.util.Scanner;
 
 // Task 1. Write Java console application with method to calculate the area of a triangle.
-
+// Можжна ще як варіант додати перевірку чи існує такий трикутник
 public class TaskOne {
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -24,5 +24,7 @@ public class TaskOne {
         double semiPerimeter = (s1 + s2 + s3) / 2;
         double heronFormula = Math.sqrt(semiPerimeter * (semiPerimeter - s1) * (semiPerimeter - s2) * (semiPerimeter - s3));
         return heronFormula;
+      //  можна одразу повертати результат виразу
+       // return Math.sqrt(semiPerimeter * (semiPerimeter - s1) * (semiPerimeter - s2) * (semiPerimeter - s3));
     }
 }
