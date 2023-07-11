@@ -14,12 +14,14 @@ public class Main {
 
         double area = calculateTriangleArea(side1, side2, side3);
         System.out.println("The area of triangle is: " +area);
-
+        scanner.close();
     }
     public static double calculateTriangleArea(double side1, double side2, double side3)
     {
         double halfperimetr = (side1 + side2 + side3) / 2;
         double area = Math.sqrt(halfperimetr * (halfperimetr - side1)* (halfperimetr - side2)* (halfperimetr - side3));
         return area;
+      //можно одразу  return Math.sqrt(halfperimetr * (halfperimetr - side1)* (halfperimetr - side2)* (halfperimetr - side3));
+
     }
 }
