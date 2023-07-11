@@ -13,6 +13,8 @@ public class Triangle {
         double s = (side1 + side2 + side3) / 2;
         double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
         return area;
+        //можна було просто return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+
     }
 }
 
