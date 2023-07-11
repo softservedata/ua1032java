@@ -1,4 +1,4 @@
-package Practical.second.task;
+package practicalsecondtask;
 
 public class CarTest {
     public static void main(String[] args) {

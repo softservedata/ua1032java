@@ -1,10 +1,11 @@
-package Practical.second.task;
+package practicalsecondtask;
 
-class Sedan extends Car{
+class Sedan extends Car {
 
     public Sedan(String model, int maxSpeed, int yearOfProduction) {
         super(model, maxSpeed, yearOfProduction);
     }
+
     @Override
     public void run() {
         System.out.println("Sedan is running ");

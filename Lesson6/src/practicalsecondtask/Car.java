@@ -1,4 +1,4 @@
-package Practical.second.task;
+package practicalsecondtask;
 
 abstract class Car {
     private String model;
