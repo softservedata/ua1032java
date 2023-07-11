@@ -31,7 +31,7 @@ public class Main {
         finder.setArray1(sc.nextInt());
         System.out.println("Input third number :");
         finder.setArray2(sc.nextInt());
-        System.out.println("The smallest number is :"+finder.getSmallest());
+        System.out.println("The smallest number is :" + finder.getSmallest());
 
 
         //Third Task;
@@ -39,7 +39,7 @@ public class Main {
         Person person2 = new Person("Ivan", "Petrenko");
         Person person3 = new Person();
         Person person4 = new Person("Roman", "Petrenko");
-        Person person5 = new Person("Roman", "Petrenko",1998);
+        Person person5 = new Person("Roman", "Petrenko", 1998);
 
         System.out.println(person1.toString());
         System.out.println(person2.toString());
@@ -48,6 +48,6 @@ public class Main {
         System.out.println(person5.toString());
         person5.output();
 
-
+        sc.close();//don't forget to close your scanner
     }
 }

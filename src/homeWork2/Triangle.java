@@ -1,5 +1,5 @@
 package homeWork2;
-
+//don't forget to format your code before commit
 public class Triangle {
     private int a;
     private int b;
@@ -18,10 +18,11 @@ public class Triangle {
         this.c = c;
     }
 
-    public void setP (){
-        p = a + b+ c;
+    public void setP() {
+        p = a + b + c;
     }
+
     public double getArea() {
-        return  Math.sqrt(p*((p-a)*(p-b)*(p-c)));
+        return Math.sqrt(p * ((p - a) * (p - b) * (p - c)));
     }
 }
