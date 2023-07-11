@@ -1,8 +1,5 @@
-package com.softserve.homework.homework5;
+package com.softserve.homework.homework5.task3;
 
-import com.softserve.homework.homework5.task3.Car;
-import com.softserve.homework.homework5.task3.CarType;
-import com.softserve.homework.homework5.task3.Homework05_03;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -15,10 +12,12 @@ public class Test05_03 {
         Car car3 = new Car(CarType.SUV, 2022, 5.0);
         Car car4 = new Car(CarType.HATCHBACK, 2012, 1.5);
         Car[] cars = {car1, car2, car3, car4};
+        Parking parking = new Parking();
+        parking.setCars(cars);
         int inputYear = 2022;
         Car actual;
 
-        actual = Homework05_03.findCertainModel(inputYear, cars);
+        actual = parking.getCertainModel(inputYear);
 
         Assertions.assertEquals(car3, actual);
     }
@@ -30,10 +29,12 @@ public class Test05_03 {
         Car car3 = new Car(CarType.SUV, 2022, 5.0);
         Car car4 = new Car(CarType.HATCHBACK, 2012, 1.5);
         Car[] cars = {car1, car2, car3, car4};
+        Parking parking = new Parking();
+        parking.setCars(cars);
         int inputYear = 0;
         Car actual;
 
-        actual = Homework05_03.findCertainModel(inputYear, cars);
+        actual = parking.getCertainModel(inputYear);
 
         Assertions.assertNull(actual);
     }
@@ -45,13 +46,15 @@ public class Test05_03 {
         Car car3 = new Car(CarType.SUV, 2022, 5.0);
         Car car4 = new Car(CarType.HATCHBACK, 2012, 1.5);
         Car[] cars = {car1, car2, car3, car4};
+        Parking parking = new Parking();
+        parking.setCars(cars);
         Car[] expected = {car1, car3, car4, car2};
 
-        Homework05_03.sortCarsByYear(cars);
+        parking.sortCarsByYear();
 
         Assertions.assertEquals(expected.length, cars.length);
         for(int i = 0; i < cars.length; i++){
-            Assertions.assertEquals(expected[i], cars[i]);
+            Assertions.assertEquals(expected[i], parking.getCars()[i]);
         }
     }
 }

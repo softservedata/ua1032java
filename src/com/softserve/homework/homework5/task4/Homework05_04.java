@@ -1,6 +1,5 @@
-package com.softserve.homework.homework5;
+package com.softserve.homework.homework5.task4;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Homework05_04 {
@@ -10,32 +9,20 @@ public class Homework05_04 {
     //      the program should display "Too low, try again." The program should use a loop that
     //      repeats until the user correctly guesses the random number.
 
-    public static boolean guessNumber(int actual, int expected){
-        if(actual == expected){
-            System.out.println("You guessed the number, it's " + expected);
-            return true;
-        } else if(actual > expected){
-            System.out.println("Too high, try again.");
-            return false;
-        } else {
-            System.out.println("Too low, try again.");
-            return false;
-        }
-    }
-
     public static void main(String[] args) {
-        Random rand = new Random();
         Scanner sc = new Scanner(System.in);
-        int range;
+        NumberGuesser ng = new NumberGuesser();
         int numberInput;
+        int range;
 
         System.out.print("Enter the range of generated number: ");
         range = sc.nextInt();
 
-        int numberRandom = rand.nextInt(range);
+        ng.generateNumber(range);
+
         do {
             System.out.print("Enter your number: ");
             numberInput = sc.nextInt();
-        } while(!guessNumber(numberInput, numberRandom));
+        } while(!ng.checkNumber(numberInput));
     }
 }

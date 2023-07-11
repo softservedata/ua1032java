@@ -9,33 +9,6 @@ public class Homework05_03 {
     //      certain model year (enter year in the console);
     //      sorted cars by the field “year of production ”.
 
-    public static Car findCertainModel(int inputYear, Car[] cars){
-        Car temp = null;
-
-        for (Car car : cars) {
-            if (car.getYear() == inputYear) {
-                System.out.println(car);
-                temp = car;
-            }
-        }
-
-        return temp;
-    }
-
-    public static void sortCarsByYear(Car[] cars){
-        Car temp;
-
-        for(int i = 0; i < cars.length - 1; i++){
-            for(int j = i + 1; j < cars.length; j++){
-                if (cars[i].getYear() < cars[j].getYear()) {
-                    temp = cars[i];
-                    cars[i] = cars[j];
-                    cars[j] = temp;
-                }
-            }
-        }
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Car car1 = new Car(CarType.MINIVAN, 2023, 3.0);
@@ -43,20 +16,19 @@ public class Homework05_03 {
         Car car3 = new Car(CarType.SUV, 2022, 5.0);
         Car car4 = new Car(CarType.HATCHBACK, 2012, 1.5);
         Car[] cars = {car1, car2, car3, car4};
+        Parking parking = new Parking();
+        parking.setCars(cars);
         int inputYear;
 
         System.out.print("Enter the year of a car: ");
         inputYear = sc.nextInt();
 
-        if(findCertainModel(inputYear, cars) == null){
+        if(parking.getCertainModel(inputYear) == null){
             System.out.println("There aren't any car with " + inputYear + " year.");
         }
         //
-        sortCarsByYear(cars);
+        parking.sortCarsByYear();
 
-        System.out.println("\nList of cars sorted by the year of production:");
-        for(Car car: cars){
-            System.out.println(car);
-        }
+        System.out.println("\nList of cars sorted by the year of production:\n" + parking.toString());
     }
 }
