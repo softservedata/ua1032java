@@ -29,6 +29,6 @@ public class Homework05_03 {
         //
         parking.sortCarsByYear();
 
-        System.out.println("\nList of cars sorted by the year of production:\n" + parking.toString());
+        System.out.println("\nList of cars sorted by the year of production:\n" + parking);
     }
 }

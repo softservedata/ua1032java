@@ -1,7 +1,5 @@
 package com.softserve.homework.homework5.task3;
 
-import java.util.Arrays;
-
 public class Parking {
     private Car[] cars;
 

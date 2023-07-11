@@ -9,7 +9,6 @@ public class Homework05_02 {
     //      otherwise, it should terminate.
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         Calculator calc = new Calculator();
         calc.startCalculations();
     }
