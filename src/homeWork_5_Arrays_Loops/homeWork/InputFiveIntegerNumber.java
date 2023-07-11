@@ -1,4 +1,4 @@
-package homeWork_5_Arrays_Loops.HomeWork;
+package homeWork_5_Arrays_Loops.homeWork;
 
 import java.util.Arrays;
 import java.util.Scanner;
