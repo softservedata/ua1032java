@@ -1,4 +1,4 @@
-package com.softserve.java_homework.lesson03;
+package com.softserve.java_homework.lesson04;
 
 public class Task04 {
     public static void main(String[] args) {

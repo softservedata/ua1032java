@@ -1,4 +1,4 @@
-package com.softserve.java_practical.lesson02;
+package com.softserve.java_practical.lesson03;
 
 public class Employee {
     private static double totalSum;

@@ -1,4 +1,4 @@
-package com.softserve.java_homework.lesson03;
+package com.softserve.java_homework.lesson04;
 
 public class Dog {
     enum Breed {

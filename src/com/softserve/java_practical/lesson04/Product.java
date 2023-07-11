@@ -1,4 +1,4 @@
-package com.softserve.java_practical.lesson03;
+package com.softserve.java_practical.lesson04;
 
 public class Product {
     private String name;

@@ -2,23 +2,24 @@ package com.softserve.java_homework.lesson03;
 
 import java.util.Scanner;
 
-public class Task01 {
+class Task01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        float[] numbers = new float[3];
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print("Enter a number: ");
-            numbers[i] = scanner.nextFloat();
-        }
+
+        System.out.print("Input side 1: " );
+        double side1 = scanner.nextDouble();
+        System.out.print("Input side 2: " );
+        double side2 = scanner.nextDouble();
+        System.out.print("Input side 3: " );
+        double side3 = scanner.nextDouble();
         scanner.close();
 
-        boolean result = checkRangeOfNumbers(numbers);
-        System.out.println("Are they all belong to the range [-5, 5]: " + result);
+        double area = Math.round(getArea(side1, side2, side3) * 100.0) / 100.0;
+        System.out.println("The area of the triangle is: : " + area);
     }
 
-    public static boolean checkRangeOfNumbers(float[] numbers) {
-        return numbers[0] <= 5 && numbers[0] >= -5
-                && numbers[1] <= 5 && numbers[1] >= -5
-                && numbers[2] <= 5 && numbers[2] >= -5;
+    public static double getArea(double a, double b, double c) {
+        double sp = (a + b + c) / 2;
+        return Math.sqrt(sp * (sp - a) * (sp - b) * (sp - c));
     }
 }

@@ -1,4 +1,4 @@
-package com.softserve.java_homework.lesson03;
+package com.softserve.java_homework.lesson04;
 
 public class Faculty {
     enum Season {SPRING, SUMMER, FALL, WINTER}
