@@ -18,13 +18,7 @@ public class HW5_task1_2 {
         }
         return number;
     }
-    public static void print(int[] array){
-        System.out.print("[ ");
-        for(int i = 0; i< array.length;i++ ){
-            System.out.print(array[i]+", ");
-        }
-        System.out.println("]");
-    }
+
     public static boolean isPositive(int[] array){
         for (int i = 0; i<array.length;i++){
             if (array[i]<0){
@@ -53,8 +47,7 @@ public class HW5_task1_2 {
 
     public static void main(String[] args)throws IOException {
         int[] array = inputArray();
-        int answer;
-        answer = func(array);
+        int answer = func(array);
         System.out.println("Answer: " + answer);
     }
 }
