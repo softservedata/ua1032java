@@ -9,7 +9,7 @@ abstract class Bird {
         this.layEggs = layEggs;
     }
 
-    abstract void fly();
+    public abstract void fly();
 
     public boolean isFeathers() {
         return feathers;
