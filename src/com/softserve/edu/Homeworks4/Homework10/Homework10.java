@@ -1,5 +1,24 @@
 package com.softserve.edu.Homeworks4.Homework10;
 import java.util.Scanner;
+enum Season{
+    //enum elements
+    WINTER("Winter"),
+    SPRING("Spring"),
+    SUMMER("Summer"),
+    AUTUMN("Autumn");
+
+    private String name;
+
+    //with constructor, we can write values into enum elements
+    private Season(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
 public class Homework10 {
     public static void main(String[] args) {
         Faculty faculty = new Faculty();
