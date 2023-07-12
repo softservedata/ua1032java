@@ -1,4 +1,4 @@
-package com.softserve.edu09clon;
+package com.softserve.edu07ab.edu09clon;
 
 public class App {
 	public static void main(String[] args) throws CloneNotSupportedException {

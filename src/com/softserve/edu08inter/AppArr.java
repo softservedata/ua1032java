@@ -9,7 +9,7 @@ public class AppArr {
 		int[] arr = new int[10];
 		Random rand = new Random();
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = rand.nextInt(10);
+			arr[i] = rand.nextInt(10) - 5;
 		}
 		//
 		System.out.println("Original Arrays: " + Arrays.toString(arr));

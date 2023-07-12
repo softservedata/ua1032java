@@ -1,4 +1,4 @@
-package com.softserve.edu09clon;
+package com.softserve.edu07ab.edu09clon;
 
 public class Person implements Cloneable { // extends Object
 	private FullName fullName;
