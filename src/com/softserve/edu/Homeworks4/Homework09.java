@@ -1,6 +1,6 @@
 package com.softserve.edu.Homeworks4;
 import java.util.Scanner;
-enum HTTPError{
+enum HTTPError {
     ERROR400(400, "bad request"),
     ERROR401(401, "authorization required") ,
     ERROR402(402, "payment required"),
@@ -16,9 +16,9 @@ enum HTTPError{
 
 
 
-    public void FindError(int num1){
-        for (HTTPError error: values()){
-            if(error.num == num1){
+    public void FindError(int num1) {
+        for (HTTPError error: values()) {
+            if(error.num == num1) {
                 System.out.println(error.name);
             }
         }
@@ -37,6 +37,7 @@ public class Homework09 {
         num1 = scan.nextInt();
 
         error.FindError(num1);
+        scan.close();
     }
 
 }

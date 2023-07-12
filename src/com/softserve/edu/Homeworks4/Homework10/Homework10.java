@@ -33,5 +33,6 @@ public class Homework10 {
         faculty.setNumStd(scan.nextInt());
 
         System.out.println(faculty.getCurSeason() + ": " + faculty.getNumStd() + " Students");
+        scan.close();
     }
 }

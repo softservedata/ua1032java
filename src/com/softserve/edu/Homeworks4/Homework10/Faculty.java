@@ -1,6 +1,6 @@
 package com.softserve.edu.Homeworks4.Homework10;
 
-public class Faculty{
+public class Faculty {
     //an instance variables or class fields
     private int numOfStudents;
     private Season currentSeason;

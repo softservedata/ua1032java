@@ -58,7 +58,7 @@ public class ConsoleApplication {
             } else if (a == 4) {
                 break;
             } else {
-                System.out.println("Невірне введення. Будь ласка, спробуйте ще раз.");//try to use English
+                System.out.println("Wrong value, please, try one more");
                 continue;
             }
         }
