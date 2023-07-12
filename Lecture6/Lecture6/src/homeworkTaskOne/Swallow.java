@@ -1,4 +1,4 @@
-package homework;
+package homeworkTaskOne;
 
 class Swallow extends FlyingBird {
     public Swallow() {

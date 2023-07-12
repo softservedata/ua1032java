@@ -1,4 +1,4 @@
-package homework;
+package homeworkTaskOne;
 
 class Penguin extends NonFlyingBird {
     public Penguin() {

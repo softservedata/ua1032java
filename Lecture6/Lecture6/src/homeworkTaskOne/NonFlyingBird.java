@@ -1,4 +1,4 @@
-package homework;
+package homeworkTaskOne;
 
 class NonFlyingBird extends Bird {
     public NonFlyingBird(String feathers, String layEggs) {

@@ -1,4 +1,4 @@
-package homework;
+package homeworkTaskOne;
 
 class Kiwi extends NonFlyingBird {
     public Kiwi() {

@@ -1,4 +1,4 @@
-package homework;
+package homeworkTaskOne;
 
 /* Create abstract class called Bird by scheme with attributes feathers and layEggs and an abstaract fly() method.
 -Create classes FlyingBird and NonFlyingBird.

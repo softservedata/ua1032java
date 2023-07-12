@@ -1,4 +1,4 @@
-package homework;
+package homeworkTaskOne;
 
 abstract class Bird {
     private String feathers;
