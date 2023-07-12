@@ -12,7 +12,8 @@ public class Triangle {
         secondSide = 0;
         thirdSide = 0;
     }
-    public Triangle (float firstSide, float secondSide, float thirdSide) {
+
+    public Triangle(float firstSide, float secondSide, float thirdSide) {
         this.firstSide = firstSide;
         this.secondSide = secondSide;
         this.thirdSide = thirdSide;
@@ -45,10 +46,10 @@ public class Triangle {
     @Override
     public String toString() {
         return "Triangle {" +
-                "firtsSide= " + firstSide +
-                ", secondSide= " + secondSide +
-                ", thirdSide= " + thirdSide +
-                '}';
+            "firtsSide= " + firstSide +
+            ", secondSide= " + secondSide +
+            ", thirdSide= " + thirdSide +
+            '}';
     }
 
     public void input() {
@@ -59,12 +60,13 @@ public class Triangle {
         this.secondSide = scanner.nextInt();
         System.out.println("Input side 3: ");
         this.thirdSide = scanner.nextInt();
+        scanner.close();
     }
 
     public double getArea() {
         double p = (this.firstSide + this.secondSide + this.thirdSide) / 2;
-        double s = Math.sqrt(p*(p-this.firstSide)*(p-this.secondSide)*(p-this.thirdSide));
-        return Math.round(s*100)/100D;
+        double s = Math.sqrt(p * (p - this.firstSide) * (p - this.secondSide) * (p - this.thirdSide));
+        return Math.round(s * 100) / 100D;
     }
 
 }

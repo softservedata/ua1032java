@@ -14,7 +14,7 @@ public class MinNum {
         thirdNum = 0;
     }
 
-    public MinNum (int firstNum, int secondNum, int thirdNum) {
+    public MinNum(int firstNum, int secondNum, int thirdNum) {
         this.firstNum = firstNum;
         this.secondNum = secondNum;
         this.thirdNum = thirdNum;
@@ -47,10 +47,10 @@ public class MinNum {
     @Override
     public String toString() {
         return "MinNum {" +
-                "firstNum= " + firstNum +
-                ", secondNum= " + secondNum +
-                ", thirdNum= " + thirdNum +
-                '}';
+            "firstNum= " + firstNum +
+            ", secondNum= " + secondNum +
+            ", thirdNum= " + thirdNum +
+            '}';
     }
 
     public void input() {
@@ -61,10 +61,11 @@ public class MinNum {
         this.secondNum = scanner.nextInt();
         System.out.println("Input the third number: ");
         this.thirdNum = scanner.nextInt();
+        scanner.close();
     }
-
+//по хорошому слід передбачити ситуацію, коли введені числа рівні, але це тільки імпрув який не вказано в умові
     public int getMin() {
-        if (Math.min(this.firstNum, this.secondNum)<=Math.min(this.secondNum, this.thirdNum))
+        if (Math.min(this.firstNum, this.secondNum) <= Math.min(this.secondNum, this.thirdNum))
             return Math.min(this.firstNum, this.secondNum);
         else
             return Math.min(this.secondNum, this.thirdNum);
