@@ -1,7 +1,10 @@
-package com.softserve.edu.Homeworks2.Homework06;
+package com.softserve.edu.Homeworks3.Homework03;
+
 import java.util.Scanner;
+
 public class ConsoleApplication {
     public static Scanner scan = new Scanner(System.in);
+
     public static String changeFirstName() {
         System.out.print("Enter first name: ");
         String fn = scan.nextLine();
@@ -13,6 +16,7 @@ public class ConsoleApplication {
         String ln = scan.nextLine();
         return ln;
     }
+
     public static void main(String[] args) {
         String fn, ln;
         int a;
@@ -31,10 +35,10 @@ public class ConsoleApplication {
         // cycle for changing name
         for (int i = 0; i < 5; i++) {
             System.out.print("1 - change first name" +
-                    "\n2 - change last name" +
-                    "\n3 - change both" +
-                    "\n4 - leave without changing" +
-                    "\nEnter your answer: ");
+                "\n2 - change last name" +
+                "\n3 - change both" +
+                "\n4 - leave without changing" +
+                "\nEnter your answer: ");
             a = scan.nextInt();
             scan.nextLine();
 
@@ -54,7 +58,7 @@ public class ConsoleApplication {
             } else if (a == 4) {
                 break;
             } else {
-                System.out.println("Невірне введення. Будь ласка, спробуйте ще раз.");
+                System.out.println("Невірне введення. Будь ласка, спробуйте ще раз.");//try to use English
                 continue;
             }
         }
@@ -64,7 +68,6 @@ public class ConsoleApplication {
         pers_4.output();
         pers_4.input();
         pers_4.output();
-
 
         Person pers_5 = new Person();
         pers_5.input();
