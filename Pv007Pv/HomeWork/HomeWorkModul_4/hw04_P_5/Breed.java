@@ -1,11 +1,17 @@
 package hw04_P_5;
 
-/** enum for field breed.*/
+/**
+ * enum for field breed.
+ */
 
 public enum Breed {
-    BULLDOG("Bulldog"), DOBERMAN("Doberman"), PUG("Poodle"), DACHSHUND("Dachshund"), CHIHUAHUA("Chihuahua");
+    BULLDOG("Bulldog"),
+    DOBERMAN("Doberman"),
+    PUG("Poodle"),
+    DACHSHUND("Dachshund"),
+    CHIHUAHUA("Chihuahua");
 
-    private String breed;
+    private final String breed;
 
     /**
      * Constructs a Breed with the specified breed name.
