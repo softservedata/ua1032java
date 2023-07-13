@@ -1,6 +1,6 @@
 package com.softserve.edu.Homeworks4.Homework10;
 import java.util.Scanner;
-enum Season{
+enum  Season {
     //enum elements
     WINTER("Winter"),
     SPRING("Spring"),
@@ -18,7 +18,6 @@ enum Season{
         return name;
     }
 }
-
 public class Homework10 {
     public static void main(String[] args) {
         Faculty faculty = new Faculty();
