@@ -8,6 +8,7 @@ public class ColorLine extends Line {
         this.color = color;
     }
 
+    @Override
     public void print() {
         System.out.println("[Color Line]");
         System.out.println("\tcolor: " + color);
