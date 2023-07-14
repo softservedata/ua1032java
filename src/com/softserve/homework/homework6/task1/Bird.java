@@ -1,8 +1,8 @@
 package com.softserve.homework.homework6.task1;
 
 public abstract class Bird {
-    private boolean feathers;
-    private int layEggs;
+    private final boolean feathers;
+    private final int layEggs;
 
     public Bird(boolean feathers, int layEggs) {
         this.feathers = feathers;
