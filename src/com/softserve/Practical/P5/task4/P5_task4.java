@@ -3,6 +3,7 @@ package com.softserve.Practical.P5.task4;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class P5_task4 {
     public static Employee[] array;
@@ -46,7 +47,10 @@ public class P5_task4 {
         sort();
 
         System.out.println(Arrays.toString(array));
-        List<Employee> list = employeeByDepartament(228);
+        System.out.print("Departament: ");
+        Scanner scanner = new Scanner(System.in);
+        int choice = scanner.nextInt();
+        List<Employee> list = employeeByDepartament(choice);
         System.out.println("---------------------------");
         System.out.println("\n" + list);
 
