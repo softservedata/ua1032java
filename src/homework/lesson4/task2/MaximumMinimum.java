@@ -19,26 +19,22 @@ public class MaximumMinimum {
 
         //
 
-        if (a>b&&a>c){
-            System.out.println("Maximum: a ["+ a +"] (first number)");
-        }
-        else if (b>a&&b>c) {
-            System.out.println("Maximum: b ["+ b +"] (second number)");
-        }
-        else {
-            System.out.println("Maximum: c ["+ c +"] (third number)");
+        if (a > b && a > c) {
+            System.out.println("Maximum: a [" + a + "] (first number)");
+        } else if (b > a && b > c) {
+            System.out.println("Maximum: b [" + b + "] (second number)");
+        } else {
+            System.out.println("Maximum: c [" + c + "] (third number)");
         }
 
         //
 
-        if (a<b&&a<c){
-            System.out.println("Minimum: a ["+ a +"] (first number)");
-        }
-        else if (b<a&&b<c) {
-            System.out.println("Minimum: b ["+ b +"] (second number)");
-        }
-        else {
-            System.out.println("Minimum: c ["+ c +"] (third number)");
+        if (a < b && a < c) {
+            System.out.println("Minimum: a [" + a + "] (first number)");
+        } else if (b < a && b < c) {
+            System.out.println("Minimum: b [" + b + "] (second number)");
+        } else {
+            System.out.println("Minimum: c [" + c + "] (third number)");
         }
 
     }

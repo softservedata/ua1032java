@@ -1,8 +1,8 @@
 package homework.lesson4.task4;
 
 public class Faculty {
-    private int studentsNumber;
-    private Profession profession;
+    private final int studentsNumber;
+    private final Profession profession;
 
     public Faculty(int studentsNumber, Profession profession) {
         this.studentsNumber = studentsNumber;
