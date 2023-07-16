@@ -28,7 +28,7 @@ public class Task02 {
     }
 
     public static int getValidNumber(Scanner scanner, String prompt) {
-        boolean isValid = false;
+        boolean isValid;
         int number;
         System.out.print(prompt);
         do {
