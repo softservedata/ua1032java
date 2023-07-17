@@ -1,6 +1,6 @@
 package com.softserve.edu.homework.homework7_OOP_Interfaces_Polymorphism.task_2;
 
-public class Passengers{
+public abstract class Passengers{
     private int passengers ;
     Passengers(int passengers){
         this.passengers = passengers;
