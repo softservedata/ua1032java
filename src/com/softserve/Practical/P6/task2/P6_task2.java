@@ -37,8 +37,6 @@ public class P6_task2 {
             System.out.println("-----------------------");
         }
 
-
-
         sort();
         System.out.println(Arrays.toString(parking));
 
