@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ProgCollections {
     public static void main(String[] args) {
-        //
+        /*
         List<String> list = new ArrayList<>();
         List<String> addList = List.of("add First", "add Second");
         list.add("First element");
@@ -29,8 +29,8 @@ public class ProgCollections {
         List<String> retainElements = List.of("First element", "Fourth element");
         list.retainAll(retainElements);
         System.out.println("Removed: another = " + list);
-        //
-        /*
+        */
+        // /*
         List<String> list = Arrays.asList("second", "third", "fourth", "first", "first");
         System.out.println("Original = " + list);
         Collections.reverse(list);
@@ -71,6 +71,6 @@ public class ProgCollections {
         //eturns the total number of occurrences of the
         // specified element in the list
         System.out.println("frequency: first = " + Collections.frequency(list, "first"));
-        */
+        // */
     }
 }
