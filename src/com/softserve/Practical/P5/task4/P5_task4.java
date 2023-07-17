@@ -32,7 +32,7 @@ public class P5_task4 {
         int size = 6;
         array = new Employee[size];
         for (int i = 0; i < size; i++){
-             array[i] = new Employee();
+            array[i] = new Employee();
             array[i].input();
             System.out.println("============================");
         }
