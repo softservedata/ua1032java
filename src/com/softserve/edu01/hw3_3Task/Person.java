@@ -1,5 +1,7 @@
 package com.softserve.edu01.hw3_3Task;
 
+import com.softserve.edu01.hw8.FullName;
+
 import java.util.Scanner;
 
 public class Person {
@@ -7,7 +9,7 @@ public class Person {
     private String lastName;
     private int birthYear;
 
-    public Person() {
+    public Person(FullName fullName, int age) {
     }
 
     public Person(String firstName, String lastName) {
@@ -65,5 +67,8 @@ public class Person {
         }
     }
 
+    public int info() {
+        return 0;
+    }
 }
 
