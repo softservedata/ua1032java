@@ -1,38 +1,47 @@
 package com.softserve.hw04.Task03;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
+enum HTTPEror{
+    BADREQUEST(400),
+    UNAUTHORIZED(401),
+    FORBIDDEN(403),
+    NOTFOUND(404),
+    UNTERNALSERVERERROR(500);
+
+    private int numberOFError;
+
+    private HTTPEror(int numberOFError) {
+        this.numberOFError = numberOFError;
+    }
+
+}
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-       Car [] cars = new Car[4];
-       cars[0] = new Car("Compartment", 2016, 1.6);
-       cars[1] = new Car("Sedan", 2010, 2.0);
-       cars[2] = new Car("Pickup", 2020, 2.5);
-       cars[3] = new Car("Limousine", 2021, 1.8);
-
-        // certain model year
-        System.out.println("Enter the model year: ");
-        int year = sc.nextInt();
-        for(Car carYear : cars){
-            if(carYear.getYearOfProduction() == year){
-                System.out.println(carYear);
-            }
+        HTTPEror httperror = null;
+        System.out.print("Enter the number of Error: ");
+        int number = sc.nextInt();
+        switch (number){
+            case 400:
+                httperror = HTTPEror.BADREQUEST;
+                break;
+            case 401:
+                httperror = HTTPEror.UNAUTHORIZED;
+                break;
+            case 403:
+                httperror = HTTPEror.FORBIDDEN;
+                break;
+            case 404:
+                httperror = HTTPEror.NOTFOUND;
+                break;
+            case 500:
+                httperror = HTTPEror.UNTERNALSERVERERROR;
+                break;
+            default:
+                System.out.println("Number not found\n");
+                throw new IllegalArgumentException("Error: Invalid Argument");
         }
-
-        // sorted cars by the field "year of production"
-        Car temp;
-        for(int i = 0; i < cars.length - 1; i++){
-            for(int j = 0; j < cars.length - 1 - i; j++){
-                if(cars[j].getYearOfProduction() > cars[j + 1].getYearOfProduction()){
-                    temp = cars[j];
-                    cars[j] = cars[j + 1];
-                    cars[j + 1] = temp;
-                }
-            }
-        }
-        System.out.println(Arrays.toString(cars));
-
+        System.out.println("Error = " + httperror);
     }
 }
