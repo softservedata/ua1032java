@@ -41,12 +41,17 @@ class Main {
         List<Integer> myCollection = new ArrayList<>( 10);
 
         //Fill myCollection from the console
-        for (int i = 0; i < 10; i++) {
-            System.out.print( "Enter an integer number: " );
-            int num = scanner.nextInt( );
-            myCollection.add( num );
-        }
+//        for (int i = 0; i < 10; i++) {
+//            System.out.print( "Enter an integer number: " );
+//            int num = scanner.nextInt( );
+//            myCollection.add( num );
+//        }
 
+//        Random random = new Random();
+//        for (int i = 0; i < 10; i++) {
+//            int randomNumber = random.nextInt();
+//            myCollection.add(randomNumber);
+//        }
 
 //        List<Integer> myCollection = new ArrayList<>( 10 );
 //        myCollection.add( 15 );
@@ -59,7 +64,9 @@ class Main {
 //        myCollection.add( 99 );
 //        myCollection.add( 47 );
 //        myCollection.add( -3 );
-        //System.out.println(myCollection.size() );
+//        System.out.println(myCollection.size() );
+
+
 
 
         // Swap the maximum and minimum elements in the list.
@@ -119,10 +126,11 @@ class Main {
         }
 
         //Print myCollection
-//        for (Object numbers : myCollection
-//        ) {
-//            System.out.println( numbers );
+//        for (Integer number : myCollection) {
+//            System.out.println(number);
 //        }
+
+//        System.out.println(myCollection );
 
         scanner.close( );
     }
