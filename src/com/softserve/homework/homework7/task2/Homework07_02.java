@@ -1,8 +1,5 @@
 package com.softserve.homework.homework7.task2;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
-
 public class Homework07_02 {
     // TODO: Create and test a program’s structure corresponding to the next schema
 
