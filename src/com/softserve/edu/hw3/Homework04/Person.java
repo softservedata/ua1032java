@@ -1,4 +1,4 @@
-package com.softserve.edu.Homeworks3.Homework04;
+package com.softserve.edu.hw3.Homework04;
 
 import java.time.LocalDate;
 import java.util.Scanner;

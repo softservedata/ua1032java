@@ -1,4 +1,4 @@
-package com.softserve.edu.Homeworks4;
+package com.softserve.edu.hw4;
 import java.util.Scanner;
 enum HTTPError {
     ERROR400(400, "bad request"),
