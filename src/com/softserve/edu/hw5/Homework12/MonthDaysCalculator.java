@@ -9,6 +9,7 @@ public class MonthDaysCalculator {
         System.out.println("Write number of month " +
                 "(it will output month's umber of days): ");
         monthNum = sc.nextInt();
+        sc.close();
     }
     public int numOfMonth()
     {

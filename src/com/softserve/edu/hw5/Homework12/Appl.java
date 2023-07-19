@@ -42,6 +42,8 @@ public class Appl {
             }
         }while (bool != true);
 
+        sc.close();
+
 
 
     }

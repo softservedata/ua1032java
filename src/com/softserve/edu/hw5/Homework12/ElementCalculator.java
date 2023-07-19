@@ -10,6 +10,7 @@ public class ElementCalculator {
             System.out.print("elements["+i+"]: ");
             elements[i] = sc.nextInt();
         }
+        sc.close();
         return elements;
     }
     public boolean checkIfPositive(int elements[], int num) {

@@ -12,6 +12,7 @@ public class ArrayOperations {
             elements[i] = sc.nextInt();
         }
         this.elements = elements;
+        sc.close();
     }
 
     public int findPositiveNum(){
