@@ -1,4 +1,4 @@
-package com.softserve.edu.Homeworks4.Homework10;
+package com.softserve.edu.hw4.Homewrk10;
 
 public class Faculty {
 
