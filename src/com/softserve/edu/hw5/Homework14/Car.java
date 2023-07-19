@@ -1,4 +1,4 @@
-package com.softserve.edu.hw5.Homewok14;
+package com.softserve.edu.hw5.Homework14;
 
 public class Car {
     private String type;
