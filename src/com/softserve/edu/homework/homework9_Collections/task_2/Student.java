@@ -17,14 +17,8 @@ public class Student {
     public String getName() {
         return name;
     }
-    public String getGroup() {
-        return group;
-    }
     public int getCourse() {
         return course;
-    }
-    public Map<String, Integer> getGrades() {
-        return grades;
     }
     @Override
     public String toString() {
@@ -61,6 +55,5 @@ public class Student {
         }
         return wishCourse.toString();
     }
-
 }
 
