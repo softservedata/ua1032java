@@ -1,4 +1,4 @@
-package com.softserve.HW7.task1.Class;
+package com.softserve.HomeWork.HW7.task1.Class;
 
 public class ContractEmployee extends Employee implements Payment{
     private double salary;

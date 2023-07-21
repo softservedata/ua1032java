@@ -1,4 +1,4 @@
-package com.softserve.HW7.task2.Class;
+package com.softserve.HomeWork.HW7.task2.Class;
 
 public class Car extends GroundVehicle {
     String model;

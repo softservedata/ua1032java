@@ -1,8 +1,8 @@
-package com.softserve.HW7.task1;
+package com.softserve.HomeWork.HW7.task1;
 
-import com.softserve.HW7.task1.Class.ContractEmployee;
-import com.softserve.HW7.task1.Class.Employee;
-import com.softserve.HW7.task1.Class.SalariedEmployee;
+import com.softserve.HomeWork.HW7.task1.Class.ContractEmployee;
+import com.softserve.HomeWork.HW7.task1.Class.Employee;
+import com.softserve.HomeWork.HW7.task1.Class.SalariedEmployee;
 
 import java.util.Arrays;
 
