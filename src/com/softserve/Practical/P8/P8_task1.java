@@ -1,6 +1,5 @@
 package com.softserve.Practical.P8;
 
-import com.softserve.HomeWork.HW8.task1.Class.Person;
 import com.softserve.Practical.P8.Class.Department;
 
 public class P8_task1 {
@@ -14,6 +13,5 @@ public class P8_task1 {
 
         System.out.println(d1);
         System.out.println(d2);
-
     }
 }
