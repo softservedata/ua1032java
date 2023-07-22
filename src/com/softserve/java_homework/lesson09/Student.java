@@ -52,7 +52,7 @@ public class Student {
         for (int grade : grades) {
             sum += grade;
         }
-        return sum / grades.size();
+        return (double) sum / grades.size();
     }
 
     public static void removeStudentWithLowAverage(List<Student> students) {

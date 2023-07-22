@@ -1,4 +1,4 @@
-package com.softserve.java_homework;
+package com.softserve.java_homework.lesson10;
 
 import java.util.HashSet;
 import java.util.Set;
