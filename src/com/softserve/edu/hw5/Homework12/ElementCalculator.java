@@ -3,7 +3,9 @@ package com.softserve.edu.hw5.Homework12;
 import java.util.Scanner;
 
 public class ElementCalculator {
-    public int[] input(){
+    private int[] elements;
+
+    public void input() {
         Scanner sc = new Scanner(System.in);
         int elements[] = new int[10];
         for (int i = 0; i < elements.length; i++) {
@@ -11,10 +13,15 @@ public class ElementCalculator {
             elements[i] = sc.nextInt();
         }
         sc.close();
-        return elements;
+        this.elements = elements;
     }
-    public boolean checkIfPositive(int elements[], int num) {
-        for (int i = 0; i < num; i++)
+    public void setElements(int[] elements) {
+        this.elements = elements;
+    }
+
+
+    public boolean checkIfPositive() {
+        for (int i = 0; i < 5; i++)
             if (elements[i] < 0) {
                 System.out.println("one or some of 5 first elements are not positive");
                 return false;
@@ -25,8 +32,7 @@ public class ElementCalculator {
 
 
     public int calcElements() {
-        int[] elements = input();
-        boolean bool = checkIfPositive(elements, 5);
+        boolean bool = checkIfPositive();
         if(bool) {
             int sum = 0;
             for(int i = 0; i < 5; i++)

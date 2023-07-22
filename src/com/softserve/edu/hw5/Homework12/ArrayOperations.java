@@ -14,6 +14,9 @@ public class ArrayOperations {
         this.elements = elements;
         sc.close();
     }
+    public void setElements(int elements[]){
+        this.elements = elements;
+    }
 
     public int findPositiveNum(){
         int i = 0;
@@ -40,7 +43,11 @@ public class ArrayOperations {
             }
             i++;
         }
-        System.out.println("found on position "+ i);
+        int j = 0;
+        while (min != elements[j]){
+            j++;
+        }
+        System.out.println("found on position "+ j);
         return min;
     }
 

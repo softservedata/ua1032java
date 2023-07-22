@@ -25,4 +25,23 @@ public class Car {
                 ", engineCapacity = " + engineCapacity +
                 ']';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj){ //check hashcode of two objects
+            return true;
+        }
+        if((obj == null) || (getClass() != obj.getClass())) { //(if object does not exist (null)) or (objects don't have the same class)
+            return false;
+        }
+        Car other = (Car) obj;
+
+        if(other.type == type &&
+                other.engineCapacity == engineCapacity &&
+                other.yearOfProduction == yearOfProduction) {
+            return true;
+        }
+        return false;
+
+    }
 }

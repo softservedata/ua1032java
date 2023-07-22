@@ -3,15 +3,20 @@ package com.softserve.edu.hw5.Homework13;
 import java.util.Scanner;
 
 public class ApplDoWhile {
+    public int Sum(int a, int b){
+        return a + b;
+    }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        ApplDoWhile applDoWhile = new ApplDoWhile();
         String answ1;
+        int a, b, sum;
         do{
             System.out.print("a = ");
-            int a = scan.nextInt();
+            a = scan.nextInt();
             System.out.print("b = ");
-            int b = scan.nextInt();
-            System.out.println("a + b = " + a + b);
+            b = scan.nextInt();
+            System.out.println("a + b = " + applDoWhile.Sum(a, b));
             scan.nextLine();
             System.out.print("You want to perform the operation again? " +
                     "\nThe answer should be 'yes', or 'no': ");
