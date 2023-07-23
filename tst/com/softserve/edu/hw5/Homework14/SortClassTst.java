@@ -3,6 +3,8 @@ package com.softserve.edu.hw5.Homework14;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 public class SortClassTst {
     @Test
     public void sortTst(){
@@ -21,14 +23,10 @@ public class SortClassTst {
         cars1[3] = new Car("sport-car", 2020, 11);
 
         Car[] cars2 = sortClass.sort(cars);
-        boolean expected = true;
-        boolean actual = true;
-        for(int i = 0; i < cars2.length; i++){
-            if(cars1[i].equals(cars2[i]) == false){
-                actual = false;
-            }
-        }
-        Assertions.assertEquals(expected, actual);
+
+        System.out.println(Arrays.equals(cars1, cars2));
+
+        Assertions.assertArrayEquals(cars1, cars2);
 
 
 

@@ -36,12 +36,13 @@ public class Car {
         }
         Car other = (Car) obj;
 
-        if(other.type == type &&
-                other.engineCapacity == engineCapacity &&
+        if(type.equals(other.type) &&
+                engineCapacity == other.engineCapacity &&
                 other.yearOfProduction == yearOfProduction) {
             return true;
         }
         return false;
 
     }
+
 }
