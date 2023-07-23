@@ -1,12 +1,7 @@
-package com.softserve.homework.homework8.task2;
+package com.softserve.homework.homework8.task1;
 
 public class Student extends Person {
     private int course;
-
-    public Student(FullName fullName, int age, int course) {
-        super(fullName, age);
-        this.course = course;
-    }
 
     public Student(String firstName, String lastName, int age, int course) {
         super(firstName, lastName, age);
