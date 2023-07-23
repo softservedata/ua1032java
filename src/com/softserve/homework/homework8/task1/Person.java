@@ -4,11 +4,6 @@ public abstract class Person implements Cloneable {
     private FullName fullName;
     private int age;
 
-    public Person(FullName fullName, int age) {
-        this.fullName = fullName;
-        this.age = age;
-    }
-
     public Person(String firstName, String lastName, int age) {
         fullName = new FullName(firstName, lastName);
         this.age = age;
