@@ -45,4 +45,14 @@ public class Car {
 
     }
 
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = type.hashCode();
+        result = 31 * result + yearOfProduction;
+        temp = Double.doubleToLongBits(engineCapacity);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
 }
