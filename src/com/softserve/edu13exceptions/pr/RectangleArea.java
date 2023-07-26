@@ -14,22 +14,30 @@ public class RectangleArea {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the two dimensions of the rectangle:");
 
-        try {
-            System.out.print("a: ");
-            int a = scanner.nextInt();
+        boolean continueInput = true; // додана змінна для управління циклом
 
-            System.out.print("b: ");
-            int b = scanner.nextInt();
+        do {
+            try {
+                System.out.println("Enter the two dimensions of the rectangle:");
 
-            int area = squareRectangle(a, b);
-            System.out.println("The area of the rectangle is: " + area);
+                System.out.print("a: ");
+                int a = scanner.nextInt();
 
-        } catch (InputMismatchException e) {
-            System.out.println("Please enter valid numeric values.");
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
+                System.out.print("b: ");
+                int b = scanner.nextInt();
+
+                int area = squareRectangle(a, b);
+                System.out.println("The area of the rectangle is: " + area);
+
+                continueInput = false; // завершити цикл, якщо все пройшло добре
+
+            } catch (InputMismatchException e) {
+                System.out.println("Please enter valid numeric values.");
+                scanner.nextLine(); // очистити вхідний потік
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (continueInput); // продовжуємо цикл, якщо сталася помилка
     }
 }
