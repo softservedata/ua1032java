@@ -3,8 +3,8 @@ package com.softserve.java_practical.lesson12;
 import java.util.Scanner;
 
 public class Task01 {
+        static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         try {
             int a = getNumeric(scanner, "Enter the value for length: ");
@@ -12,13 +12,9 @@ public class Task01 {
 
             int area = squareRectangle(a, b);
             System.out.println("Area of the rectangle: " + area);
-        } catch (NumberFormatException e) {
-            System.out.println(e.getMessage());
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
-        scanner.close();
-
     }
 
     public static int squareRectangle(int a, int b) {

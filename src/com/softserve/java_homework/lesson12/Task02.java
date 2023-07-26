@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Task02 {
+        static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         List<Integer> numbers = new ArrayList<>();
         int start = 1;
         int end = 100;
@@ -27,7 +27,6 @@ public class Task02 {
                 System.out.println(e.getMessage());
             }
         }
-
         System.out.println("Result: " + numbers);
     }
 
