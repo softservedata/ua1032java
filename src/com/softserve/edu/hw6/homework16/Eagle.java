@@ -1,8 +1,7 @@
-package com.softserve.edu.hw6;
+package com.softserve.edu.hw6.homework16;
 
-public class Kiwi extends NonFlyingBird{
-    private String birdName = "Kiwi";
-
+public class Eagle extends FlyingBird{
+    private String birdName = "Eagle";
     @Override
     public String toString() {
         return "Bird{" +

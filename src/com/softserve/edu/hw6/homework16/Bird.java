@@ -1,4 +1,4 @@
-package com.softserve.edu.hw6;
+package com.softserve.edu.hw6.homework16;
 
 public abstract class Bird {
 
