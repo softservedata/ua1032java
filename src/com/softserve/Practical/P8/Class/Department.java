@@ -5,7 +5,8 @@ import java.nio.channels.ClosedSelectorException;
 public class Department implements Cloneable {
     String name;
     Address address;
-    public static class Address{
+
+    public static class Address {
         String city;
         String street;
         int building;
@@ -15,6 +16,7 @@ public class Department implements Cloneable {
             this.street = street;
             this.building = building;
         }
+
         public Address(Address other) {
             this.city = other.city;
             this.street = other.street;
@@ -29,25 +31,29 @@ public class Department implements Cloneable {
         public String getCity() {
             return city;
         }
+
         public String getStreet() {
             return street;
         }
+
         public int getBuilding() {
             return building;
         }
 
     }
 
-    public Department(String name,String city, String street, int building) {
+    public Department(String name, String city, String street, int building) {
         this.name = name;
-        address = new Address(city,street,building);
+        address = new Address(city, street, building);
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Name: " + name + "\nAddress: \n" + address;
     }
+
     @Override
-    public Object clone() throws CloneNotSupportedException{
+    public Object clone() throws CloneNotSupportedException {
         Department clonedDepartment = (Department) super.clone();
         clonedDepartment.address = new Address(this.address);
         return clonedDepartment;
@@ -68,12 +74,15 @@ public class Department implements Cloneable {
     public void setAddress(Address address) {
         this.address = address;
     }
+
     public void setStreet(String street) {
         address.street = street;
     }
+
     public void setBuilding(int building) {
         address.building = building;
     }
+
     public void setCity(String city) {
         address.city = city;
     }

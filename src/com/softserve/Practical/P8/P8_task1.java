@@ -4,7 +4,7 @@ import com.softserve.Practical.P8.Class.Department;
 
 public class P8_task1 {
     public static void main(String[] args) throws CloneNotSupportedException {
-        Department d1 = new Department("Department1", "Lviv", "Bandera", 14 );
+        Department d1 = new Department("Department1", "Lviv", "Bandera", 14);
         Department d2 = (Department) d1.clone();
 
 //        d2.setCity("Kyiv");

@@ -3,106 +3,106 @@
   <ID>JAVA</ID>
   <OriginalElement>com.softserve.HomeWork.HW7.task2.Class.Liner</OriginalElement>
   <nodes>
-    <node x="459.51666666666665" y="126.0">com.softserve.HomeWork.HW7.task2.Class.WaterVehicle</node>
-    <node x="559.0" y="312.0">com.softserve.HomeWork.HW7.task2.Class.Boat</node>
-    <node x="-166.00000000000006" y="312.0">com.softserve.HomeWork.HW7.task2.Class.Motorcycle</node>
-    <node x="-330.00000000000006" y="312.0">com.softserve.HomeWork.HW7.task2.Class.Bus</node>
-    <node x="399.0" y="312.0">com.softserve.HomeWork.HW7.task2.Class.Liner</node>
-    <node x="192.0" y="325.0">com.softserve.HomeWork.HW7.task2.Class.Helicopter</node>
-    <node x="-222.27083333333337" y="-73.0">com.softserve.HomeWork.HW7.task2.Class.Passengers</node>
-    <node x="-493.0" y="312.0">com.softserve.HomeWork.HW7.task2.Class.Car</node>
-    <node x="24.0" y="300.0">com.softserve.HomeWork.HW7.task2.Class.Plane</node>
-    <node x="102.26666666666665" y="114.0">com.softserve.HomeWork.HW7.task2.Class.FlyingVehicle</node>
-    <node x="-342.50000000000006" y="126.0">com.softserve.HomeWork.HW7.task2.Class.GroundVehicle</node>
-    <node x="386.0374999999999" y="-18.5">com.softserve.HomeWork.HW7.task2.Class.Vehicle</node>
+    <node x="714.0" y="336.0">com.softserve.HomeWork.HW7.task2.Class.Motorcycle</node>
+    <node x="518.0" y="150.0">com.softserve.HomeWork.HW7.task2.Class.GroundVehicle</node>
+    <node x="8.766666666666595" y="138.0">com.softserve.HomeWork.HW7.task2.Class.FlyingVehicle</node>
+    <node x="-386.48333333333335" y="150.0">com.softserve.HomeWork.HW7.task2.Class.WaterVehicle</node>
+    <node x="-247.07916666666677" y="-6.5">com.softserve.HomeWork.HW7.task2.Class.Vehicle</node>
+    <node x="511.0" y="336.0">com.softserve.HomeWork.HW7.task2.Class.Car</node>
+    <node x="-493.0" y="336.0">com.softserve.HomeWork.HW7.task2.Class.Boat</node>
+    <node x="86.0" y="324.0">com.softserve.HomeWork.HW7.task2.Class.Plane</node>
+    <node x="-303.00000000000006" y="336.0">com.softserve.HomeWork.HW7.task2.Class.Liner</node>
+    <node x="-121.00000000000006" y="336.0">com.softserve.HomeWork.HW7.task2.Class.Helicopter</node>
+    <node x="381.3458333333333" y="-73.0">com.softserve.HomeWork.HW7.task2.Class.Passengers</node>
+    <node x="310.0" y="336.0">com.softserve.HomeWork.HW7.task2.Class.Bus</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.softserve.HomeWork.HW7.task2.Class.WaterVehicle" target="com.softserve.HomeWork.HW7.task2.Class.Vehicle" relationship="REALIZATION">
-      <point x="40.0" y="-56.0" />
-      <point x="579.5166666666667" y="84.0" />
-      <point x="439.5374999999999" y="84.0" />
-      <point x="0.0" y="14.0" />
-    </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.Bus" target="com.softserve.HomeWork.HW7.task2.Class.GroundVehicle" relationship="GENERALIZATION">
-      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="-92.5" />
+      <point x="400.5" y="299.0" />
+      <point x="602.5" y="299.0" />
       <point x="0.0" y="56.0" />
     </edge>
+    <edge source="com.softserve.HomeWork.HW7.task2.Class.WaterVehicle" target="com.softserve.HomeWork.HW7.task2.Class.Vehicle" relationship="REALIZATION">
+      <point x="-40.0" y="-56.0" />
+      <point x="-346.48333333333335" y="118.0" />
+      <point x="-193.57916666666677" y="118.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.Liner" target="com.softserve.HomeWork.HW7.task2.Class.WaterVehicle" relationship="GENERALIZATION">
-      <point x="0.0" y="-81.0" />
-      <point x="469.0" y="275.0" />
-      <point x="539.5166666666667" y="275.0" />
+      <point x="0.0" y="-92.5" />
+      <point x="-222.00000000000006" y="299.0" />
+      <point x="-306.48333333333335" y="299.0" />
       <point x="0.0" y="56.0" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.FlyingVehicle" target="com.softserve.HomeWork.HW7.task2.Class.Vehicle" relationship="REALIZATION">
-      <point x="40.0" y="-68.0" />
-      <point x="222.26666666666665" y="84.0" />
-      <point x="439.5374999999999" y="84.0" />
+      <point x="-40.0" y="-68.0" />
+      <point x="48.76666666666665" y="118.0" />
+      <point x="-193.57916666666677" y="118.0" />
       <point x="0.0" y="14.0" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.WaterVehicle" target="com.softserve.HomeWork.HW7.task2.Class.Passengers" relationship="GENERALIZATION">
-      <point x="-40.0" y="-56.0" />
-      <point x="499.51666666666665" y="94.0" />
-      <point x="-147.27083333333337" y="94.0" />
-      <point x="0.0" y="68.5" />
+      <point x="40.0" y="-56.0" />
+      <point x="-266.48333333333335" y="108.0" />
+      <point x="479.3458333333333" y="108.0" />
+      <point x="0.0" y="80.5" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.GroundVehicle" target="com.softserve.HomeWork.HW7.task2.Class.Passengers" relationship="GENERALIZATION">
-      <point x="-42.25" y="-56.0" />
-      <point x="-300.25000000000006" y="94.0" />
-      <point x="-147.27083333333337" y="94.0" />
-      <point x="0.0" y="68.5" />
+      <point x="42.25" y="-56.0" />
+      <point x="644.75" y="108.0" />
+      <point x="479.3458333333333" y="108.0" />
+      <point x="0.0" y="80.5" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.FlyingVehicle" target="com.softserve.HomeWork.HW7.task2.Class.Passengers" relationship="GENERALIZATION">
-      <point x="-40.0" y="-68.0" />
-      <point x="142.26666666666665" y="94.0" />
-      <point x="-147.27083333333337" y="94.0" />
-      <point x="0.0" y="68.5" />
+      <point x="40.0" y="-68.0" />
+      <point x="128.76666666666665" y="108.0" />
+      <point x="479.3458333333333" y="108.0" />
+      <point x="0.0" y="80.5" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.Helicopter" target="com.softserve.HomeWork.HW7.task2.Class.FlyingVehicle" relationship="GENERALIZATION">
-      <point x="0.0" y="-68.0" />
-      <point x="285.5" y="275.0" />
-      <point x="182.26666666666665" y="275.0" />
+      <point x="0.0" y="-92.5" />
+      <point x="-27.500000000000057" y="299.0" />
+      <point x="88.76666666666665" y="299.0" />
       <point x="0.0" y="68.0" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.Plane" target="com.softserve.HomeWork.HW7.task2.Class.FlyingVehicle" relationship="GENERALIZATION">
-      <point x="0.0" y="-93.0" />
-      <point x="98.0" y="275.0" />
-      <point x="182.26666666666665" y="275.0" />
+      <point x="0.0" y="-104.5" />
+      <point x="188.0" y="299.0" />
+      <point x="88.76666666666665" y="299.0" />
       <point x="0.0" y="68.0" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.Motorcycle" target="com.softserve.HomeWork.HW7.task2.Class.GroundVehicle" relationship="GENERALIZATION">
-      <point x="0.0" y="-81.0" />
-      <point x="-81.00000000000006" y="275.0" />
-      <point x="-258.00000000000006" y="275.0" />
+      <point x="0.0" y="-92.5" />
+      <point x="809.0" y="299.0" />
+      <point x="602.5" y="299.0" />
       <point x="0.0" y="56.0" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.Car" target="com.softserve.HomeWork.HW7.task2.Class.GroundVehicle" relationship="GENERALIZATION">
-      <point x="0.0" y="-81.0" />
-      <point x="-421.5" y="275.0" />
-      <point x="-258.00000000000006" y="275.0" />
+      <point x="0.0" y="-92.5" />
       <point x="0.0" y="56.0" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.GroundVehicle" target="com.softserve.HomeWork.HW7.task2.Class.Vehicle" relationship="REALIZATION">
-      <point x="42.25" y="-56.0" />
-      <point x="-215.7500000000001" y="84.0" />
-      <point x="439.5374999999999" y="84.0" />
+      <point x="-42.25" y="-56.0" />
+      <point x="560.25" y="118.0" />
+      <point x="-193.57916666666677" y="118.0" />
       <point x="0.0" y="14.0" />
     </edge>
     <edge source="com.softserve.HomeWork.HW7.task2.Class.Boat" target="com.softserve.HomeWork.HW7.task2.Class.WaterVehicle" relationship="GENERALIZATION">
-      <point x="0.0" y="-81.0" />
-      <point x="629.0" y="275.0" />
-      <point x="539.5166666666667" y="275.0" />
+      <point x="0.0" y="-92.5" />
+      <point x="-408.0" y="299.0" />
+      <point x="-306.48333333333335" y="299.0" />
       <point x="0.0" y="56.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="0.7589743589743589" showDependencies="false" x="113.0" y="138.5" />
-  <SelectedNodes />
+  <settings layout="Hierarchic" zoom="0.647847565278758" showDependencies="false" x="215.5" y="240.0" />
+  <SelectedNodes>
+    <node>com.softserve.HomeWork.HW7.task2.Class.Liner</node>
+  </SelectedNodes>
   <Categories>
     <Category>Constructors</Category>
     <Category>Fields</Category>
-    <Category>Inner Classes</Category>
     <Category>Methods</Category>
-    <Category>Properties</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

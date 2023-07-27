@@ -20,9 +20,9 @@ public class HW5_task1_3 {
         }
         return null;
     }
-    public static int minIndex(final int[] array){
-        int min = array[0];
+    public static int minIndex(int... array){
         int index = 0;
+        int min = array[index];
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
