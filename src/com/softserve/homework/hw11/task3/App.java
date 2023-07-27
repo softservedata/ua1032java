@@ -15,7 +15,7 @@ class App {
     public static void main(String[] args) {
         Pattern pattern = Pattern.compile("[$][\\d]+[.][\\d]{2}");
         Scanner scanner = new Scanner(System.in);
-        //?? ???????? ????? ???? ? ???????? ??????????? ?? ??? ??? ??????
+        //It's really good when there's a prompt to let the user know what they need to input.
         // System.out.println("Please, enter a text, that containing value in USA currency format:");
         String sentence = scanner.nextLine();
         Matcher matcher = pattern.matcher(sentence);
