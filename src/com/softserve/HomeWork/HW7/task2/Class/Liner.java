@@ -7,13 +7,16 @@ public class Liner extends WaterVehicle {
         super(passengers);
         this.floors = floors;
     }
+
     public Liner() {
         super();
     }
+
     @Override
     void isSailing() {
         System.out.println("No, this is not sailing");
     }
+
     public int getFloors() {
         return floors;
     }

@@ -6,7 +6,9 @@ public abstract class Passengers {
     public Passengers(int passengers) {
         this.passengers = passengers;
     }
-    public Passengers(){}
+
+    public Passengers() {
+    }
 
     public int getPassengers() {
         return passengers;

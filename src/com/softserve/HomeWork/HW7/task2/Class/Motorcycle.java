@@ -1,15 +1,17 @@
 package com.softserve.HomeWork.HW7.task2.Class;
 
-public class Motorcycle extends GroundVehicle{
+public class Motorcycle extends GroundVehicle {
     int maxSpeed;
 
     public Motorcycle(int passengers, int maxSpeed) {
         super(passengers);
         this.maxSpeed = maxSpeed;
     }
+
     public Motorcycle() {
         super();
     }
+
     public int getMaxSpeed() {
         return maxSpeed;
     }

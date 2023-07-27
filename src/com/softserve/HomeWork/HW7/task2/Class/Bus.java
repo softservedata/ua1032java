@@ -7,9 +7,11 @@ public class Bus extends GroundVehicle {
         super(passengers);
         this.route = route;
     }
+
     public Bus() {
         super();
     }
+
     public String getRoute() {
         return route;
     }

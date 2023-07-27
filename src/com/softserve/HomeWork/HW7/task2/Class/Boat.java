@@ -2,10 +2,12 @@ package com.softserve.HomeWork.HW7.task2.Class;
 
 public class Boat extends WaterVehicle {
     int volume;
-    public Boat(int passengers,int volume) {
+
+    public Boat(int passengers, int volume) {
         super(passengers);
         this.volume = volume;
     }
+
     public Boat() {
         super();
     }

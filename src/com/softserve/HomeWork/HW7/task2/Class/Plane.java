@@ -1,9 +1,9 @@
 package com.softserve.HomeWork.HW7.task2.Class;
 
-public class Plane extends FlyingVehicle{
+public class Plane extends FlyingVehicle {
     private int maxDistance;
 
-    public Plane(int passengers,int maxDistance) {
+    public Plane(int passengers, int maxDistance) {
         super(passengers);
         this.maxDistance = maxDistance;
     }
@@ -11,6 +11,7 @@ public class Plane extends FlyingVehicle{
     public Plane() {
         super();
     }
+
     @Override
     void fly() {
 

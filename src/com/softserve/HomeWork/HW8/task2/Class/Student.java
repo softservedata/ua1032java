@@ -9,10 +9,12 @@ public class Student extends Person {
         super(firstName, lastname, age);
         this.course = course;
     }
+
     @Override
-    public String info(){
-        return super.info() + ", Course: "+ course;
+    public String info() {
+        return super.info() + ", Course: " + course;
     }
+
     @Override
     public String activity() {
         return "I study at university";

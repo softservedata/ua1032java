@@ -15,9 +15,9 @@ public class HW_task2 {
         }
     }
 
-    public static void printStudents(List<Student> list, int course){
-        for (Student s: list){
-            if (s.getCourse() == course){
+    public static void printStudents(List<Student> list, int course) {
+        for (Student s : list) {
+            if (s.getCourse() == course) {
                 System.out.println(s);
             }
         }
