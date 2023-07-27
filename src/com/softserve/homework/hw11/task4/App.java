@@ -8,13 +8,6 @@ To validate the user input, utilize String class methods, control loops, and reg
 Generate the random greeting message (use printf() method for output) by creating an array of
 phrases that contain various text options with the user's name inserted.
 
-4*. Створіть консольну програму, яка перевіряє введені користувачем ім’я та прізвище, гарантуючи це
-вони містять лише англійські літери, пробіли та дефіси.
-Якщо введені дані неправильні, запропонуйте користувачеві повторно ввести дані.
-Після успішного введення імені та прізвища користувача створіть довільне вітальне повідомлення, яке містить ім’я користувача.
-Щоб перевірити введені користувачем дані, використовуйте методи класу String, цикли керування та регулярні вирази.
-Згенеруйте довільне вітальне повідомлення (для виведення використовуйте метод printf()), створивши масив
-фрази, які містять різні текстові варіанти зі вставленим іменем користувача.
  */
 
 import java.util.Random;
@@ -63,7 +56,7 @@ class NameValidationAndGreeting {
         scanner.close();
     }
 }
-//? ?? ???? ??????
+//I would do it this way
 //class NameValidationAndGreetingImproved {
 //
 //    private static final Scanner scanner = new Scanner(System.in);
