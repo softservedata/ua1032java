@@ -22,48 +22,86 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 class NameValidationAndGreeting {
-    public static void main ( String[] args ) {
-                Scanner scanner = new Scanner( System.in );
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Pattern pattern = Pattern.compile("^[a-zA-Z -]+$");
+        String firstName, lastName;
+        boolean validFirstName = false, validLastName = false;
 
-                Pattern pattern = Pattern.compile( "^[a-zA-Z -]+$" );
+        do {
+            System.out.println("Yours first and last name, ensuring that they only contain English letters, spaces, and hyphens");
+            System.out.print("\nEnter your first name: ");
+            firstName = scanner.nextLine().trim();
+            if (pattern.matcher(firstName).matches()) {
+                validFirstName = true;
+            } else {
+                System.out.println("Invalid input. Only English letters, spaces, and hyphens are allowed.");
+            }
+        } while (!validFirstName);
 
+        do {
+            System.out.print("\nEnter your last name: ");
+            lastName = scanner.nextLine().trim();
+            if (pattern.matcher(lastName).matches()) {
+                validLastName = true;
+            } else {
+                System.out.println("Invalid input. Only English letters, spaces, and hyphens are allowed.");
+            }
+        } while (!validLastName);
 
+        String[] greetingPhrases = {
+            "Hello, %s %s!",
+            "Greetings, %s %s!",
+            "Hey there, %s %s!",
+            "Hi, %s %s! How are you?",};
 
-                String firstName, lastName;
-                boolean validFirstName = false, validLastName = false;
+        Random random = new Random();
+        String randomGreeting = greetingPhrases[random.nextInt(greetingPhrases.length)];
 
-                do {
-                    System.out.println("Yours first and last name, ensuring that they only contain English letters, spaces, and hyphens" );
-                    System.out.print( "\nEnter your first name: " );
-                    firstName = scanner.nextLine( ).trim( );
-                    if ( pattern.matcher( firstName ).matches( ) ) {
-                        validFirstName = true;
-                    } else {
-                        System.out.println( "Invalid input. Only English letters, spaces, and hyphens are allowed." );
-                    }
-                } while (!validFirstName);
+        System.out.printf("\n" + randomGreeting, firstName, lastName);
 
-                do {
-                    System.out.print( "\nEnter your last name: " );
-                    lastName = scanner.nextLine( ).trim( );
-                    if ( pattern.matcher( lastName ).matches( ) ) {
-                        validLastName = true;
-                    } else {
-                        System.out.println( "Invalid input. Only English letters, spaces, and hyphens are allowed." );
-                    }
-                } while (!validLastName);
-
-                String[] greetingPhrases = {
-                "Hello, %s %s!",
-                "Greetings, %s %s!",
-                "Hey there, %s %s!",
-                "Hi, %s %s! How are you?", };
-
-                Random random = new Random( );
-                String randomGreeting = greetingPhrases[random.nextInt( greetingPhrases.length )];
-
-                System.out.printf( "\n" + randomGreeting, firstName, lastName );
-
-                scanner.close( );
+        scanner.close();
     }
 }
+//? ?? ???? ??????
+//class NameValidationAndGreetingImproved {
+//
+//    private static final Scanner scanner = new Scanner(System.in);
+//    private static final Pattern pattern = Pattern.compile("^[a-zA-Z -]+$");
+//
+//    public static void main(String[] args) {
+//        String firstName = promptForValidName("Enter your first name: ");
+//        String lastName = promptForValidName("Enter your last name: ");
+//
+//        displayRandomGreeting(firstName, lastName);
+//
+//        scanner.close();
+//    }
+//
+//    private static String promptForValidName(String promptMessage) {
+//        String name;
+//        while (true) {
+//            System.out.print(promptMessage);
+//            name = scanner.nextLine().trim();
+//            if (pattern.matcher(name).matches()) {
+//                return name;
+//            } else {
+//                System.out.println("Invalid input. Only English letters, spaces, and hyphens are allowed.");
+//            }
+//        }
+//    }
+//
+//    private static void displayRandomGreeting(String firstName, String lastName) {
+//        String[] greetingPhrases = {
+//            "Hello, %s %s!",
+//            "Greetings, %s %s!",
+//            "Hey there, %s %s!",
+//            "Hi, %s %s! How are you?",
+//        };
+//
+//        Random random = new Random();
+//        String randomGreeting = greetingPhrases[random.nextInt(greetingPhrases.length)];
+//
+//        System.out.printf(randomGreeting + "\n", firstName, lastName);
+//    }
+//}
