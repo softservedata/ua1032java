@@ -1,4 +1,4 @@
-package com.softserve.homework.hw12.task1;
+package com.softserve.homework.hw09.hw12.task1;
 /*
 Create div() method, which calculates the dividing of two double type numbers.
 In main() method input 2 double numbers and call this method.

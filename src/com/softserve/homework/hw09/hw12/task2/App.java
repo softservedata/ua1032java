@@ -1,4 +1,4 @@
-package com.softserve.homework.hw12.task2;
+package com.softserve.homework.hw09.hw12.task2;
 /*
 Create a method readNumber(int start, int end), that read from console integer number and return it, if it is in the range [start...end].
 If an invalid number or non-number text is read, the method should throw an exception.

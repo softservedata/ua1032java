@@ -14,46 +14,51 @@ The following actions must be performed:
 
  */
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
 public class App {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main ( String[] args ) {
+        Scanner scanner = new Scanner( System.in );
         String theLongestWord;
 
-        List<String> sentence = new LinkedList<>();
+        System.out.println("Enter your sentence of 5 words");
 
-        String text = scanner.nextLine();
+//        List<String> sentence = new LinkedList<>();
+            List<String> sentence = new ArrayList<>( );
 
-        Pattern pattern = Pattern.compile("\\b[a-zA-Z']+\\b");
-        Matcher matcher = pattern.matcher(text);
+            String text = scanner.nextLine( );
 
-        System.out.println();
+            Pattern pattern = Pattern.compile( "\\b[a-zA-Z']+\\b" );
+            Matcher matcher = pattern.matcher( text );
 
-        while (matcher.find()) {
-            sentence.add(text.substring(matcher.start(), matcher.end()));
-        }
+                while (matcher.find( )) {
+                    sentence.add( text.substring( matcher.start( ), matcher.end( ) ) );
+                }
 
-        //_____
-        theLongestWord = sentence.get(0);
+//        if (sentence.size() < 4){
+//            System.out.println("You didn't enter 5 words");
+//        }
+//
+
+
+        //Determine the number of letters in the longest word.
+        theLongestWord = sentence.get( 0 );
 
         for (String word : sentence) {
-            if (word.length() > theLongestWord.length()) {
+            if ( word.length( ) > theLongestWord.length( ) ) {
                 theLongestWord = word;
             }
         }
-        System.out.println("The longest word is: " + "\"" + theLongestWord + "\"" + " It has: " + theLongestWord.length() + " letters");
+        System.out.println( "The longest word is: " + "\"" + theLongestWord + "\"" + " It has: " + theLongestWord.length( ) + " letters" );
 
-        //____
-        StringBuilder stringBuilder = new StringBuilder(sentence.get(1));
-        System.out.println("Reverse second word: " + stringBuilder.reverse());
+        //Display the second word of the sentence in reverse order on the console.
+        StringBuilder stringBuilder = new StringBuilder( sentence.get( 1 ) );
+        System.out.println( "Reverse second word: " + stringBuilder.reverse( ) );
 
-        scanner.close();
+        scanner.close( );
     }
 }
 // Need to add a check for the number of words and display an error message if not enough words are entered.
