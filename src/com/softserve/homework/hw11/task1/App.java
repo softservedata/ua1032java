@@ -39,20 +39,29 @@ public class App {
             sentence.add(text.substring(matcher.start(), matcher.end()));
         }
 
-        //___________________________________________________________________________________________________
+        //_____
         theLongestWord = sentence.get(0);
 
-        for (String word: sentence) {
-            if (word.length() > theLongestWord.length()){
+        for (String word : sentence) {
+            if (word.length() > theLongestWord.length()) {
                 theLongestWord = word;
             }
         }
         System.out.println("The longest word is: " + "\"" + theLongestWord + "\"" + " It has: " + theLongestWord.length() + " letters");
 
-        //___________________________________________________________________________________________________
+        //____
         StringBuilder stringBuilder = new StringBuilder(sentence.get(1));
         System.out.println("Reverse second word: " + stringBuilder.reverse());
 
         scanner.close();
     }
 }
+// Need to add a check for the number of words and display an error message if not enough words are entered.
+// This is because there will be an exception when trying to access a list element that doesn't exist.
+
+// Instead of using a regular expression to extract words, you could use the split() method,if words are separated by spaces.
+// But your approach is more versatile.
+
+// It's better to use ArrayList to store words in a list.
+
+// Instead of concatenating strings, you can use String.format() for clearer string formatting.
