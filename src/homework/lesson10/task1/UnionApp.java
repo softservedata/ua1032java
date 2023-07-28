@@ -6,19 +6,20 @@ import java.util.Set;
 
 public class UnionApp {
 
-    public static Set<Integer> union (Set<Integer> set1, Set<Integer> set2){
+    public static Set<Integer> union(Set<Integer> set1, Set<Integer> set2) {
         Set<Integer> united = new HashSet<>();
         united.addAll(set1);
         united.addAll(set2);
         return united;
     }
-    public static Set<Integer> intersection (Set<Integer> set1, Set<Integer> set2){
+
+    public static Set<Integer> intersection(Set<Integer> set1, Set<Integer> set2) {
         Set<Integer> intersected = new HashSet<>();
 
         Iterator<Integer> it = set1.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             int element = it.next();
-            if(set2.contains(element)){
+            if (set2.contains(element)) {
                 intersected.add(element);
             }
         }
@@ -29,10 +30,10 @@ public class UnionApp {
     public static void main(String[] args) {
         Set<Integer> set1 = new HashSet<>();
         Set<Integer> set2 = new HashSet<>();
-        for (int i = 0; i < 6; i++){
+        for (int i = 0; i < 6; i++) {
             set1.add(i);
         }
-        for (int i = 3; i < 9; i++){
+        for (int i = 3; i < 9; i++) {
             set2.add(i);
         }
         System.out.println("Set1: " + set1);
