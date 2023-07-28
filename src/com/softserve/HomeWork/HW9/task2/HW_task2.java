@@ -1,9 +1,8 @@
 package com.softserve.HomeWork.HW9.task2;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 public class HW_task2 {
     public static void nextCourse(List<Student> list) {
