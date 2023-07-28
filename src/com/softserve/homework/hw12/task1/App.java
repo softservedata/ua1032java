@@ -14,10 +14,20 @@ public class App {
     public static double div ( double num1, double num2 ) {
         try {
             return num1 / num2;
-        } catch (ArithmeticException exception) {
+        } catch (ArithmeticException | NumberFormatException exception) { // ArithmeticException  якщо вводимо 0
             System.err.println( "Exception was found: " + exception );
         } catch (Exception exception) {
             exception.printStackTrace( );
+            /*
+            Якоїсь ви хочете вивести інформацію про виключення в консоль, то пишіть e.printStackTrace(),
+            адже це виводить більш повну інформацію, ніж System.err.println(e.getMessage()).
+
+            printStackTrace виводить відразу три речі:
+                 назва класу виключення,
+                     повідомлення (message якщо воно є, тобто не дорівнює null)
+                         і stack trace.
+                             Це більш громіздко, але саме для діагностики краще
+         */
         }
         return 0;
     }
