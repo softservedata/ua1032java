@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.Random;
 
 public class HW9_task1 {
-    public static List<Integer> generateRandomNumber(int size) {
+    public static List<Integer> generateRandomNumber(int size, int a, int b) {
         List<Integer> list = new ArrayList<>();
         Random random = new Random();
 
         for (int i = 0; i < 10; i++) {
-            list.add(random.nextInt(-10, 11)); //[a;b);
+            list.add(random.nextInt(Math.min(a,b), Math.max(a,b)+1)); //[a;b];
         }
         return list;
     }
@@ -109,7 +109,7 @@ public class HW9_task1 {
     }
 
     public static void main(String[] args) {
-        List<Integer> list = generateRandomNumber(10);
+        List<Integer> list = generateRandomNumber(10, -10,10);
         System.out.println("Generated list: " + list);
 
         swapMinMax(list);
