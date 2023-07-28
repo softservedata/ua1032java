@@ -24,25 +24,27 @@ public class App {
         Scanner scanner = new Scanner( System.in );
         String theLongestWord;
 
-        System.out.println("Enter your sentence of 5 words");
+        System.out.print( "Enter a sentence of 5 words: " + "\n" );
 
-//        List<String> sentence = new LinkedList<>();
-            List<String> sentence = new ArrayList<>( );
+        List<String> sentence = new ArrayList<>( );
 
-            String text = scanner.nextLine( );
+        String text = scanner.nextLine( );
 
-            Pattern pattern = Pattern.compile( "\\b[a-zA-Z']+\\b" );
-            Matcher matcher = pattern.matcher( text );
+//                Pattern pattern = Pattern.compile( "\\b[a-zA-Z']+\\b" );
+//                Matcher matcher = pattern.matcher( text );
+//                while (matcher.find( )) {
+//                    sentence.add( text.substring( matcher.start( ), matcher.end( ) ) );
+//                }
 
-                while (matcher.find( )) {
-                    sentence.add( text.substring( matcher.start( ), matcher.end( ) ) );
-                }
+        String[] words = text.split( "\\s+" );
 
-//        if (sentence.size() < 4){
-//            System.out.println("You didn't enter 5 words");
-//        }
-//
+        Collections.addAll( sentence, words );
+//        System.out.println( sentence );
 
+        if ( sentence.size( ) != 5 ) {
+            System.out.println( "Enter exactly 5 words." );
+            return;
+        }
 
         //Determine the number of letters in the longest word.
         theLongestWord = sentence.get( 0 );
