@@ -8,13 +8,13 @@ import java.util.Comparator;
 
 public class MainLesson5 {
     public static void main(String[] args) {
-/**---------------------------Task1.1---------------------------*/
+/**---------------------------UnionAndIntersection.1---------------------------*/
 //        System.out.println(DayOfMonth.seekDayOFMonth(1));
 //        System.out.println(DayOfMonth.seekDayOFMonth(2));
 //        System.out.println(DayOfMonth.seekDayOFMonth(12));
-/**---------------------------Task1.2---------------------------*/
+/**---------------------------UnionAndIntersection.2---------------------------*/
 //        System.out.println(TenNumbers.addOrMultiply());
-/**---------------------------Task1.3---------------------------*/
+/**---------------------------UnionAndIntersection.3---------------------------*/
 //        FiveNumbers.method();
 /**---------------------------Task2---------------------------*/
 //        AddTwoNumbers.addNumber();

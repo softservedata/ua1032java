@@ -8,7 +8,7 @@ import com.softserve.practical.practicalHW_7.task2.*;
 
 public class mainPractical_7 {
     public static void main(String[] args) {
-/**--------------------Task1---------------------------*/
+/**--------------------UnionAndIntersection---------------------------*/
 //        Animal[] a = new Animal[4];
 //        a[0] = new Cat();
 //        a[1] = new Cat();

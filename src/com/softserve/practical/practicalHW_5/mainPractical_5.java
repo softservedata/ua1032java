@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class mainPractical_5 {
     public static void main(String[] args) {
-/**---------------------------Task1---------------------------*/
+/**---------------------------UnionAndIntersection---------------------------*/
 //        TaskOneArray.stringArraySort();
 //        int[] arr = TaskOneArray.intArrayAVG();
 //        System.out.println(TaskOneArray.methodCheck(arr));
