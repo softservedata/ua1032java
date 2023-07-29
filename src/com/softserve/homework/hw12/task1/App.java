@@ -17,9 +17,8 @@ public class App {
     }
 
     public static void main ( String[] args ) {
-        MyScannerClass myScanner = new MyScannerClass( );
 
-        try {
+        try (MyScannerClass myScanner = new MyScannerClass( )) {
             System.out.println( "Enter two double numbers: " + "\n" );
             double num1 = myScanner.readDouble( );
             double num2 = myScanner.readDouble( );
@@ -27,8 +26,19 @@ public class App {
 
         } catch (ArithmeticException | NumberFormatException exception) {
             System.out.println( exception.getMessage( ) );
-        }catch (Exception exception) {
+        } catch (Exception exception) {
             System.out.println( "Please enter exactly number, or other problem." );
+//            exception.printStackTrace( );
+            /*
+        Якоїсь ви хочете вивести інформацію про виключення в консоль, то пишіть e.printStackTrace(),
+        адже це виводить більш повну інформацію, ніж System.err.println(e.getMessage()).
+
+        printStackTrace виводить відразу три речі:
+        назва класу виключення,
+        повідомлення (message якщо воно є, тобто не дорівнює null)
+        і stack trace.
+        Це більш громіздко, але саме для діагностики краще
+         */
         } finally {
             System.out.println( "Good job!" );
         }

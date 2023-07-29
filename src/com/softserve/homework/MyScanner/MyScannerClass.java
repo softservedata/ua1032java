@@ -2,7 +2,7 @@ package com.softserve.homework.MyScanner;
 
 import java.util.Scanner;
 
-public class MyScannerClass {
+public class MyScannerClass implements AutoCloseable {
     // Поле для зберігання об'єкту Scanner
     private Scanner scanner;
 
@@ -34,5 +34,10 @@ public class MyScannerClass {
     // Метод для закриття Scanner після використання
     public void closeScanner() {
         scanner.close();
+    }
+
+    @Override
+    public void close () throws Exception {
+
     }
 }
