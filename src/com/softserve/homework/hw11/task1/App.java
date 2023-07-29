@@ -38,8 +38,12 @@ public class App {
 
         String[] words = text.split( "\\s+" );
 
-        Collections.addAll( sentence, words );
-//        System.out.println( sentence );
+        for ( String index : words) {
+            sentence.add( index );
+        }
+
+        //        Collections.addAll( sentence, words );
+        //        System.out.println( sentence );
 
         if ( sentence.size( ) != 5 ) {
             System.out.println( "Enter exactly 5 words." );
