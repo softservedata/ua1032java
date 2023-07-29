@@ -7,9 +7,6 @@ Catch all exceptions.
 
 import com.softserve.homework.MyScanner.MyScannerClass;
 
-import java.io.IOException;
-import java.io.ObjectInput;
-
 public class App {
 
     public static double div ( double num1, double num2 ) throws ArithmeticException {
