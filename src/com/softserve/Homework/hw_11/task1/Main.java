@@ -11,7 +11,7 @@ public class Main {
         String longestWord = "";
         for (String word : words) {
             if (word.length() > longestWord.length()) {
-                longestWord = word;
+                longestWord =  word;
             }
         }
         System.out.println("The longest word is: " + longestWord);

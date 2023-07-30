@@ -11,7 +11,7 @@ public class Main {
         String text = scanner.nextLine();
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(text);
-        System.out.println("The occurrences of US currency format in the text are: ");
+        System.out.println("The occurrences of US currency format in the text are:  ");
         while (m.find()) {
             System.out.println(m.group(0));
         }

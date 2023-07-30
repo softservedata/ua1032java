@@ -27,7 +27,7 @@ public class Main {
                 System.out.println("Invalid input. Last name can only contain English letters, spaces, and hyphens.");
             }
         }
-        String[] greetings = {"Hello %s %s! Nice to meet you!", "Hi %s %s! How are you doing?", "Greetings %s %s! Hope you're having a great day!"};
+        String[] greetings = {"Hello %s %s! Nice to meet you!", "Hi %s %s! How are you doing?", "Greetings %s %s! Hope you're having a great day!" };
         Random random = new Random();
         int index = random.nextInt(greetings.length);
         System.out.printf(greetings[index], firstName, lastName);

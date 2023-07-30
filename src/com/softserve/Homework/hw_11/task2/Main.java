@@ -7,6 +7,6 @@ public class Main {
         System.out.println("Enter a sentence: ");
         String sentence = scanner.nextLine();
         String result = sentence.replaceAll("\\s+", " ");
-        System.out.println("The result: " + result);
+        System.out.println("The result:  " + result);
     }
 }
