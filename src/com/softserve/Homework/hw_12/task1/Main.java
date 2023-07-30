@@ -29,7 +29,7 @@ public class Main {
 
     public static double div(double num1, double num2) throws Exception {
         if (num2 == 0) {
-            throw new Exception("Cannot divide by zero");
+            throw new Exception("Can not divide by zero");
         }
          return num1 / num2;
     }

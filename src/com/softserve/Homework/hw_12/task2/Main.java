@@ -24,7 +24,7 @@ public class Main {
                 if (number > start && number < end) {
                      validInput = true;
                 } else {
-                    throw new Exception("Invalid. Number must be in the range [" + start + "..." + end + "].");
+                    throw new Exception("Invalid input. Number must be in the range [" + start + "..." + end + "].");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter an integer number.");
