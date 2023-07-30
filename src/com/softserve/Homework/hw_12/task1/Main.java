@@ -13,7 +13,7 @@ public class Main {
                 System.out.println("Enter two double numbers: ");
                 num1 = scanner.nextDouble();
                 num2 = scanner.nextDouble();
-                validInput = true;
+                validInput = true ;
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter two double numbers.");
                 scanner.nextLine();

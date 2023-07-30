@@ -28,7 +28,7 @@ public class Main {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter an integer number.");
-                scanner.nextLine();
+                scanner.nextLine() ;
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
