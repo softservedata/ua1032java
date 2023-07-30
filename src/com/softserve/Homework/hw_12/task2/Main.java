@@ -22,9 +22,9 @@ public class Main {
                 System.out.println("Enter a number in the range [" + start + "..." + end + "]: ");
                 number = scanner.nextInt();
                 if (number > start && number < end) {
-                    validInput = true;
+                     validInput = true;
                 } else {
-                    throw new Exception("Invalid input. Number must be in the range [" + start + "..." + end + "].");
+                    throw new Exception("Invalid. Number must be in the range [" + start + "..." + end + "].");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter an integer number.");

@@ -31,7 +31,7 @@ public class Main {
         if (num2 == 0) {
             throw new Exception("Cannot divide by zero");
         }
-        return num1 / num2;
+         return num1 / num2;
     }
 }
 
