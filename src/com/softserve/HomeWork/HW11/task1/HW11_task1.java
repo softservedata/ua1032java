@@ -14,18 +14,19 @@ public class HW11_task1 {
         String longestString = longestELement(words);
         System.out.println("The logest string in sentence:" + longestString + "; size: " + longestString.length());
 
-        String reverse = reverseString(words.get(2));
+       // String reverse = reverseString(words.get(2));
+        String reverse = new StringBuilder(words.get(2)).reverse().toString();
         System.out.println("Reverse String: " + reverse);
     }
 
-    public static String reverseString(String str) {
-        StringBuilder reverse = new StringBuilder();
-
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reverse.append(str.charAt(i));
-        }
-        return reverse.toString();
-    }
+//    public static String reverseString(String str) {
+//        StringBuilder reverse = new StringBuilder();
+//
+//        for (int i = str.length() - 1; i >= 0; i--) {
+//            reverse.append(str.charAt(i));
+//        }
+//        return reverse.toString();
+//    }
 
     public static String longestELement(List<String> words) {
         String longestString = words.get(0);
