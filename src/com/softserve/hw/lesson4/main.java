@@ -1,19 +1,13 @@
 package com.softserve.hw.lesson4;
 
-import com.softserve.hw.lesson4.task1_2.TasckOneAndTwo;
-import com.softserve.hw.lesson4.task3.Error;
-import com.softserve.hw.lesson4.task4.Faculty;
-import com.softserve.hw.lesson4.task4.Seasons;
 import com.softserve.hw.lesson4.task5.Breed;
 import com.softserve.hw.lesson4.task5.Dog;
-
-import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
 /**------------------------Task1_2-----------------------------*/
-//        TasckOneAndTwo.range();
-//        TasckOneAndTwo.maxAndMin();
+//        TasksOneAndTwo.range();
+//        TasksOneAndTwo.maxAndMin();
 /**-------------------------Task3-----------------------------*/
 //        Error a = Error.ERROR_400;
 //        Error b = Error.ERROR_401;

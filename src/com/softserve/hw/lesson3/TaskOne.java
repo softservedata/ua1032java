@@ -1,6 +1,7 @@
 package com.softserve.hw.lesson3;
 
 import java.util.Scanner;
+
 //додатково можно було виконати тут перевірку на те чи існує такий трикутник
 public class TaskOne {
     public static double calculateTheArea() {

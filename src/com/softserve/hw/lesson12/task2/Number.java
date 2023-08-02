@@ -5,16 +5,20 @@ import java.util.Scanner;
 
 public class Number {
     public static int readNumber(int start, int end) {
-        try {
-            int number = new Scanner(System.in).nextInt();
-            if (number < start || number > end) {
-                throw new IllegalArgumentException("You input invalid argument");
-            } else return number;
-        } catch (InputMismatchException | IllegalArgumentException e) {
-            System.out.println("error");
-            System.out.println(e);
-            return 0;
-        }
-
+        Scanner scanner = new Scanner(System.in);
+        int number;
+        do {
+            try {
+                number = scanner.nextInt();
+                if (number < start || number > end) {
+                    System.out.println("You input an invalid number. Please try again.");
+                } else {
+                    return number;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("You input an invalid argument. Please try again.");
+                scanner.next(); // Clear the invalid input from the scanner buffer
+            }
+        } while (true);
     }
 }

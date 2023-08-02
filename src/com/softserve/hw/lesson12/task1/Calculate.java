@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Calculate {
     public static double div(double valueOne, double valueTwo) {
         if (valueTwo == 0) {
-            throw new ArithmeticException("You divide by zero ");
+            throw new IllegalArgumentException("You cannot divide by zero");
         }
         return valueOne/valueTwo;
     }

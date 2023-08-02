@@ -4,11 +4,11 @@ import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class DataPatern {
+public class DatePatternValidator {
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("MM.dd.yy");
     public static boolean checkCorrectDate(String date) {
-        DateTimeFormatter dt = DateTimeFormatter.ofPattern("MM.dd.yy");
         try {
-            LocalDate localDate = LocalDate.parse(date, dt);
+            LocalDate localDate = LocalDate.parse(date, DATE_FORMATTER);
             return true;
         } catch (DateTimeException e) {
             return false;
