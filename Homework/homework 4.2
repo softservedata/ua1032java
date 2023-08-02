@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Input three integer numbers:");
+
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+        int num3 = scanner.nextInt();
+
+        int max = findMax(num1, num2, num3);
+        int min = findMin(num1, num2, num3);
+
+        System.out.println("Maximum value: " + max);
+        System.out.println("Minimum value: " + min);
+
+        scanner.close();
+    }
+
+
+    private static int findMax(int a, int b, int c) {
+        return Math.max(a, Math.max(b, c));
+    }
+
+
+    private static int findMin(int a, int b, int c) {
+        return Math.min(a, Math.min(b, c));
+    }
+}
