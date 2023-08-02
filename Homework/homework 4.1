@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Input three float numbers:");
+
+        float num1 = scanner.nextFloat();
+        float num2 = scanner.nextFloat();
+        float num3 = scanner.nextFloat();
+
+        boolean allInRange = checkRange(num1) && checkRange(num2) && checkRange(num3);
+
+        if (allInRange) {
+            System.out.println("All numbers are within the range [-5, 5].");
+        } else {
+            System.out.println("Not all numbers are within the range [-5, 5].");
+        }
+
+        scanner.close();
+    }
+
+    private static boolean checkRange(float number) {
+        return number >= -5 && number <= 5;
+    }
+}
