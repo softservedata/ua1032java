@@ -1,21 +1,32 @@
 package com.softserve.HomeWork.HW11.task3;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HW11_task3 {
     public static Scanner scanner = new Scanner(System.in);
+
+    public static List<String> findPattern(String text) {
+        List<String> list = new ArrayList<>();
+        Pattern pattern = Pattern.compile("\\$\\d+\\.\\d{2}");
+        Matcher matcher = pattern.matcher(text);
+        
+        while (matcher.find()) {
+            list.add(matcher.group());
+        }
+
+        return list;
+    }
     public static void main(String[] args) {
-        String form = "(\\$)[\\d]+|[.,](\\d{2})";
-        System.out.print("Number: ");
-        String currency = scanner.nextLine();
+        System.out.print("Text: ");
+        String inputText = scanner.nextLine();
+        scanner.close();
 
-        Pattern p = Pattern.compile(form);
-        Matcher m = p.matcher(currency);
-        System.out.println("Found: ");
+        List<String> list = findPattern(inputText);
 
-        while (m.find())
-            System.out.print(currency.substring(m.start(), m.end()));
+        System.out.println(list);
     }
 }
