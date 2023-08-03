@@ -8,6 +8,7 @@ public class Task04 {
     public static void main(String[] args) {
         LocalDate birthday = LocalDate.of(1999, 8, 6);
         System.out.println("My birthday: " + birthday);
+        printDayOfWeek(birthday);
     }
 
     public static void printDayOfWeek(LocalDate date) {
