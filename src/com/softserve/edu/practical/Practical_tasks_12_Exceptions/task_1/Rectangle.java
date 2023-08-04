@@ -1,4 +1,4 @@
-package com.softserve.edu.homework.homework_12_Exceptions.task_1;
+package com.softserve.edu.practical.Practical_tasks_12_Exceptions.task_1;
 
 import java.util.Scanner;
 
@@ -33,5 +33,6 @@ public class Rectangle {
         System.out.println("Result = " + result);
     }
 }
+
 
 
