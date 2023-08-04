@@ -26,6 +26,8 @@ public class Five_Words {
     }
     public static String reverse_word(String line){
         System.out.print("The reverse second word in the sentence : ");
+        //String[] words = line.split(\\s+);
+        //because can be more than one space
         String[] words = line.split(" ");
         if(words.length > 1){
             String secondWord = words[1];
