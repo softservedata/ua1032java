@@ -52,7 +52,7 @@ public class Student {
         students.add(new Student("Ihor", 6));
 
         System.out.println("\n~The list of students sorted by name: ");
-        Collections.sort(students, Comparator.comparing(Student::getName));
+        students.sort(Comparator.comparing(Student::getName));//another way: Collections.sort(students, Comparator.comparing(Student::getName));
         for (Student student : students) {
             System.out.println(student.getName() + " - Course: " + student.getCourse());
         }

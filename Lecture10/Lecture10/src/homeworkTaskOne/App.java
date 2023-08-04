@@ -33,7 +33,9 @@ public class App {
         union.addAll(set2);
         return union;
     }
-
+//better
+//public static <T> Set<T> union(Set<T> set1, Set<T> set2) {
+//    Set<T> union = new HashSet<>(set1);
     public static <T> Set intersect(Set<T> set1, Set<T> set2) {
         Set intersect = new HashSet<>(set1);
         intersect.retainAll(set2);
