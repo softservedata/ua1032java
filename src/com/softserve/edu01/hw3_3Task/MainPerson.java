@@ -6,7 +6,12 @@ public class MainPerson {
         for (int i = 0; i < 5; i++) {
             System.out.println("Person " + (i + 1) + ":");
             String fullName = null;
-            Person person = new Person(fullName, fullName);
+            Person person = new Person(fullName, fullName) {
+                @Override
+                public String activity() {
+                    return null;
+                }
+            };
             person.input();
             people[i] = person;
             System.out.println();

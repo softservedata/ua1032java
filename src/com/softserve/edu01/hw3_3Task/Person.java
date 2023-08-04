@@ -1,10 +1,10 @@
 package com.softserve.edu01.hw3_3Task;
 
-import com.softserve.edu01.hw8.FullName;
+import com.softserve.edu01.hw8.task1.FullName;
 
 import java.util.Scanner;
 
-public class Person {
+public abstract class Person {
     private String firstName;
     private String lastName;
     private int birthYear;
@@ -70,5 +70,7 @@ public class Person {
     public int info() {
         return 0;
     }
+
+    public abstract String activity();
 }
 

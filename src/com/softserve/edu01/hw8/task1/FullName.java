@@ -1,4 +1,4 @@
-package com.softserve.edu01.hw8;
+package com.softserve.edu01.hw8.task1;
 
 public class FullName {
     private String firstName;
@@ -13,12 +13,12 @@ public class FullName {
         return firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public void setLastName(String lastName) {
