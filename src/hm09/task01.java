@@ -1,5 +1,13 @@
 package hm09;
-
+//improve the code
+/**
+ *
+ * In removeLastEvenElement, you're iterating through the list to find the last even element
+ * and then using collection.remove(lastEven);
+ * which has a time complexity of O(n). Y
+ * ou can improve efficiency by iterating the list backward
+ * and removing the first even element you encounter.
+ * */
 import java.util.*;
 
 class CollectionOperations{

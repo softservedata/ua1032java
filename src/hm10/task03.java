@@ -45,7 +45,7 @@ public static class Main{
             Student.printStudents(students, 1);
 
             Collections.sort(students, Student.nameComparator);
-
+           // students.sort(Student.nameComparator);//can be used instead of Collections.sort
             System.out.println("\nStudents sorted by names:");
             for (Student student : students) {
                 System.out.println(student.getName() + " - Course " + student.getCourse());
