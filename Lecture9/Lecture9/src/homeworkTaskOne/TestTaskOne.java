@@ -130,3 +130,10 @@ public class TestTaskOne {
         } */
     }
 }
+/**
+ * Closing a scanner closes the underlying input stream (System.in in your case).
+ * This means once you've closed it, you can't read from it again in the rest of your application.
+ * This can be problematic in larger applications where input may be needed again.
+ * A typical practice is to close a scanner when you're absolutely sure you're done with input.
+ * In this case, since inputIntegers() is the only method where you use a scanner, it's okay to close it there.
+ * */
