@@ -11,9 +11,8 @@ public class Employee {
     public Employee(String name){
         this.name = name;
     }
-    public String getName(){
-        return name;
-    }
+    public String getName() { return name; }
+
     public static Optional<String> mostPopularName() {
         Stream<Employee> employeeStream = Stream.of(
                 new Employee("William"),
