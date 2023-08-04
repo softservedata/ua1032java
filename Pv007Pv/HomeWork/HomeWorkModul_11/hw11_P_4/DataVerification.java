@@ -13,6 +13,10 @@ import java.util.Random;
  * phrases that contain various text options with the user's name inserted.
  */
 
+//Since both name and surname use the same validation process,
+// you might consider simplifying the code to use a single method that gets both values.
+
+//You might want to trim the input before validation to handle accidental leading or trailing spaces.
 public class DataVerification {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

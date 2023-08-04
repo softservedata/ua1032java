@@ -17,12 +17,14 @@ public class Currency {
 
         // Ask the user to enter text containing instances of the US currency format.
         System.out.print("Enter text containing instances of the US currency format: ");
-        String text = new String(scanner.nextLine());
+        String text = new String(scanner.nextLine());//new String() - redundant
 
         // Close the Scanner object.
         scanner.close();
 
         // Use a regular expression to find instances of the US currency format.
+
+        //"\\$\\d{1,3}(?:,\\d{3})*(?:\\.\\d{2})?" is a better pattern
         String currencyPattern = "\\$\\d+(\\.\\d{1,2})?(,\\d{1,2})?|\\$\\d+(,\\d{1,2})?(\\.\\d{1,2})?";
         Pattern pattern = Pattern.compile(currencyPattern);
         Matcher matcher = pattern.matcher(text);

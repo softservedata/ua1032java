@@ -27,6 +27,8 @@ public class App {
 
     public static void main(String[] args) {
         Set<Integer> set1 = new HashSet<>();
+        //In Java 9 and later, you can use the Set.of(), but remember that method to create an immutable set.
+        //Set<Integer> set1 = Set.of(1, 2, 3);
         set1.add(1);
         set1.add(2);
         set1.add(3);

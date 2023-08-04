@@ -1,4 +1,4 @@
-package hw09_P_2;
+package HomeWork.HomeWorkModul_9.hw09_P_2;
 /**
  * 2. Create a class called Student which includes the following fields: name, group, course, and
  grades in different subjects. Create a collection that holds all objects. Write a methods that:
@@ -9,7 +9,7 @@ package hw09_P_2;
  are enrolled in the specified course number to the console.
  • In main() method create collection and output result.
  */
-
+//the same about comments
 import java.util.ArrayList;
 import java.util.List;
 
