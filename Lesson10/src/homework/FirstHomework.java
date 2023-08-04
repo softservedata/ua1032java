@@ -6,6 +6,8 @@ import java.util.Set;
 public class FirstHomework {
     public static void main(String[] args) {
         Set<Integer> set1 = new HashSet<>();
+        // from Java 9, but remember that with Set.of() you can't add or remove elements
+      //  Set<Integer> set1 = Set.of(1, 5, 6);
         set1.add(1);
         set1.add(2);
         set1.add(3);
