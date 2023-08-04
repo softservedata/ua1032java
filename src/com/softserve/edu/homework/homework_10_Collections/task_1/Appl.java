@@ -5,6 +5,8 @@ import java.util.Set;
 public class Appl {
     public static void main(String[] args) {
         Set<String> set1 = new HashSet<>();
+        //alternative way to add elements to set (set1.addAll(Arrays.asList("William", "Benjamin", "Mike"));)
+        //but remember that Arrays.asList() returns fixed-size list
         set1.add("William");
         set1.add("Benjamin");
         set1.add("Mike");

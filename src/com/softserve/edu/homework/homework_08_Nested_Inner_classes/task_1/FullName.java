@@ -1,8 +1,8 @@
 package com.softserve.edu.homework.homework_08_Nested_Inner_classes.task_1;
 
 public class FullName {
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
     public FullName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;

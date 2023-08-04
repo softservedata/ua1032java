@@ -32,6 +32,7 @@ public class Methods {
         System.out.println("Max : "+ max + ";  Min : " + min);
         return copyList;
     }
+    //random_three_digit_number not ok naming method for Java
     public static LinkedList<Integer> random_three_digit_number(LinkedList<Integer> myCollection) {
         System.out.println("-----------------\n" + "↓  Insert a random three-digit number before the first negative element of the list  ↓");
         Random random = new Random();
