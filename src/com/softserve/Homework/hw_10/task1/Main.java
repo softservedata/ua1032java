@@ -2,6 +2,7 @@ package com.softserve.Homework.hw_10.task1;
 import java.util.*;
 
 public class Main {
+    //often using names getUnion, getIntersection
     public static <T> Set<T> union(Set<T> set1, Set<T> set2) {
         Set<T> result = new HashSet<>(set1);
         result.addAll(set2);

@@ -8,5 +8,7 @@ public class Main {
         String sentence = scanner.nextLine();
         String result = sentence.replaceAll("\\s+", " ");
         System.out.println("The result:  " + result);
+        scanner.close();//don`t forget to close scanner
+        //it`s not critical here, but in other cases it can cause problems
     }
 }
