@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class HomeworkTasks {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);//I don`t understand why we need to create new scanner
         Random random = new Random();
         while (true) {
             Scanner sc = new Scanner(System.in);
@@ -26,6 +26,8 @@ public class HomeworkTasks {
                 case 3 -> thirdHometask(scanner);
                 case 4 -> fourthHometask(scanner, random);
                 case 5 -> {
+                    //System.out.println("Goodbye");
+                    //System.exit(0);
                     sc.close();
                     scanner.close();
 
@@ -79,6 +81,7 @@ public class HomeworkTasks {
         System.out.println("Input a sentence that contains words separated by more than:");
         String sentence = scanner.nextLine();
         System.out.println("Sentence Original: " + sentence);
+       // String sentence1 = sentence.replaceAll("\\s+", " "); //better pattern
         String sentence1= sentence.replace("  ", " ");
         System.out.println("Sentence: " + sentence1);
     }
@@ -87,6 +90,7 @@ public class HomeworkTasks {
         System.out.println("Enter text containing US currency format:");
         String text = scanner.nextLine();
 
+        //Pattern pattern = Pattern.compile("\\$\\d+(\\.\\d{2})?"); //better pattern
         Pattern pattern = Pattern.compile("(\\$)[\\d]+|[.,](\\d{2})");
         Matcher matcher = pattern.matcher(text);
 
@@ -113,6 +117,7 @@ public class HomeworkTasks {
     }
 
     private static String validName(String s1, Scanner scanner) {
+        //Pattern pattern = Pattern.compile("^[A-Za-z -]+$"); //better pattern
         Pattern pattern = Pattern.compile("[A-Za-z -]");
         while (true) {
             System.out.println(s1);
