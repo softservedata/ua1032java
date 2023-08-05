@@ -1,10 +1,7 @@
 package com.softserve.hw.lesson14.task1;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Product {
@@ -67,6 +64,7 @@ public class Product {
                 .filter(price -> price.getPrice() > 3000)
                 .filter(manufactureCategory -> manufactureCategory.getManufactureCategory().equals("Smartphone"))
                 .filter(year -> year.getDateOfManufacture().isBefore(LocalDate.now().minusYears(1)))
+                .sorted(Comparator.comparing(Product::getPrice))
                 .collect(Collectors.toList());
 
     }
