@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Homework12_01 {
     // TODO: Create div() method, which calculates the dividing of two double type numbers. In main()
     //      method input 2 double numbers and call this method. Catch all exceptions.
-
+//при діленні даблів на 0, буде безкінечність, тому там немає як такого арифметичного вийнятку.
+    //подумай про це
     public static double div(double a, double b) throws ArithmeticException {
         if(b == 0) throw new ArithmeticException("Division by zero isn't allowed!");
         return a / b;

@@ -17,5 +17,6 @@ public class Homework13_03 {
         System.out.print("Enter year: ");
         year = sc.nextInt();
         System.out.println("Year is leap: " + isLeapYear(year));
+        sc.close();//не забувай, бо у таких маленьких аплікаціях проблеми не буде, але у великих може призвести до витоків
     }
 }
