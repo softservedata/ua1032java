@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 /**
  * 2. Create method to validate date according to format "mm.dd.yy"
  * */
-
+//Great job!
 public class App2 {
 
     public static boolean isValidDateFormat(String dateStr) {

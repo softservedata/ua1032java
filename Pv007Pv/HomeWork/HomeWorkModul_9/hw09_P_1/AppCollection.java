@@ -1,4 +1,4 @@
-package hw09_P_1;
+package HomeWork.HomeWorkModul_9.hw09_P_1;
 
 import java.util.*;
 
@@ -12,7 +12,6 @@ public class AppCollection {
         List<Integer> originalCollection = new ArrayList<>(myCollection); // Create a copy of the input list.
 
         System.out.println("myCollection ArrayList: " + originalCollection);
-
 
 
         // Swap the maximum and minimum elements in the list.
@@ -44,7 +43,6 @@ public class AppCollection {
             }
         }
         System.out.println("myCollection after inserting a random number: " + myCollection);
-
 
 
         //Insert a zero between all neighboring elements collection myCollection with different signs
@@ -82,7 +80,7 @@ public class AppCollection {
         }
 
         System.out.println("Copied first " + k +
-                " elements of myCollection to list1 in direct order: " + list1);
+            " elements of myCollection to list1 in direct order: " + list1);
         System.out.println("The rest copied to list2 in reverse order: " + list2);
 
 
@@ -127,6 +125,7 @@ public class AppCollection {
     }
 
     //The method fills the Collection with random numbers from -100 to 100.
+    //don`t forget about naming conventions -> createCollection
     private static void CreateCollection(List<Integer> Collection) {
         Random random = new Random();
         for (int i = 0; i < 10; i++) {
@@ -135,3 +134,26 @@ public class AppCollection {
         }
     }
 }
+/*
+ * Variable Declarations:
+ *
+ * Instead of declaring the myCollection variable and then assigning it after a few operations,
+ * you can declare it right before it's needed, which makes code more readable and maintainable.
+ * Likewise, reassigning myCollection to the originalCollection is unnecessary.
+ * Instead, you can operate on a new list, which will reduce the risk of mistakes if the program is expanded in the future.
+ *
+ * Comments:
+ * remember that in real-world code, it's often preferable to use self-explanatory method names
+ * and limit comments to only those parts of the code that are non-trivial or counter-intuitive.
+ *
+ * Performance Consideration:
+ * Your solution is suitable for a collection of 10 integers.
+ * If the collection's size was considerably larger,
+ * there might be performance considerations to take into account,
+ * especially when using operations that require shifting large portions of the list
+ * (like inserting in the middle of an ArrayList).
+ * In such cases, a LinkedList might be more efficient for certain operations.
+ *
+ * For consistency, you can also use Collections.reverse() when you need to reverse a list.
+ *
+ */

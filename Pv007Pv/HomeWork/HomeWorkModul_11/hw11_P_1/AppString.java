@@ -17,12 +17,14 @@ public class AppString {
 
         // Ask the user to enter a sentence with five words.
         System.out.print("Enter a sentence with five words: ");
-        String sentence = new String(scanner.nextLine());
+        String sentence = new String(scanner.nextLine());//new String() - redundant
 
         // Close the Scanner object.
         scanner.close();
 
         // Check if the sentence contains five words.
+       // String[] words = sentence.trim().split("\\s+");
+        // it's better to use, because it will work with any number of spaces
         String[] words = sentence.split(" ");
         if (words.length == 5) {
             System.out.println("You entered a sentence with five words: " + sentence);

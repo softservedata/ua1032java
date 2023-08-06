@@ -1,4 +1,4 @@
-package hw10_P_3;
+package HomeWork.HomeWorkModul_10.hw10_P_3;
 
 /**
  3. Create a class named Student that stores information about the student's name and

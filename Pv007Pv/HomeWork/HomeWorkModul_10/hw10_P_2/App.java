@@ -1,4 +1,4 @@
-package hw10_P_2;
+package HomeWork.HomeWorkModul_10.hw10_P_2;
 
 import java.util.HashMap;
 import java.util.HashSet;

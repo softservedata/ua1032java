@@ -1,4 +1,4 @@
-package hw04_P_5;
+package HomeWork.HomeWorkModul_4.hw04_P_5;
 
 /**
  * enum for field breed.

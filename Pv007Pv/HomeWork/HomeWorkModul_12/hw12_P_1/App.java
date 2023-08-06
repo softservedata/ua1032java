@@ -7,6 +7,12 @@ import java.util.Scanner; // Importing the Scanner class to read input from the 
  * method input 2 double numbers and call this method. Catch all exceptions.
  * */
 
+//In Java, dividing a double by zero does not throw an ArithmeticException.
+// Instead, it results in Double.POSITIVE_INFINITY if the numerator is positive,
+// Double.NEGATIVE_INFINITY if the numerator is negative,
+// and Double.NaN (Not-a-Number) if both numerator and denominator are zero.
+// https://www.baeldung.com/java-divide-by-zero
+//InputMismatchException - if the next token does not match the Double regular expression, or is out of range
 public class App {
 
     // Method for dividing two numbers of type double.

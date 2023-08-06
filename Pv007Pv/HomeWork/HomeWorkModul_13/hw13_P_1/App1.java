@@ -9,7 +9,7 @@ import java.util.Scanner;
  * on n positions in alphabet (e.g. encrypt("abc", 3) returns "def“). Method decrypt should
  * return decoded value
  * */
-
+//Overall, the code is well-written and adheres to best practices. Good job!
 public class App1 {
 
     // Lambda function for encrypting a message
