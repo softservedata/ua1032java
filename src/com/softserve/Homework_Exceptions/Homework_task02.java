@@ -23,7 +23,7 @@ public class Homework_task02 {
 
     public static void main(String[] args) {
         int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
-5
+
         try {
             a1 = readNumber(1, 99);
             a2 = readNumber(a1 + 1, 99);

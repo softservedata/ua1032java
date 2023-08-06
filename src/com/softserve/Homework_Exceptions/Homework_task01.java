@@ -1,6 +1,7 @@
 package com.softserve.Homework_Exceptions;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+//у даблів немає арифметичного ексепшину при діленні на нуль, там буде бескінечність
 public class Homework_task01 {
     public static double div(double a, double b) throws ArithmeticException {
         if (b == 0) {
