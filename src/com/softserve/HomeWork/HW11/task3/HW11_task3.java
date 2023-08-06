@@ -23,7 +23,7 @@ public class HW11_task3 {
     public static void main(String[] args) {
         System.out.print("Text: ");
         String inputText = scanner.nextLine();
-        scanner.close();
+        scanner.close();//не обов'язково, він у тебе статичний тому точно закриється в кінці відпрацювання класу
 
         List<String> list = findPattern(inputText);
 

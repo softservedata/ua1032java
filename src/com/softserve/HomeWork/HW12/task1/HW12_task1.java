@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class HW12_task1 {
     public static Scanner sc = new Scanner(System.in);
-
+//у ділення на нуль немає ArithmeticException
     public static double div(double a, double b){
         if (b == 0){
             throw new ArithmeticException("Division by zero.");

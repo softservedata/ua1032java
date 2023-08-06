@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class HW10_task1 {
+    @SafeVarargs
     public static Set<Integer> union(Set<Integer>... set) {
         Set<Integer> newSet = new HashSet<>();
         for (Set<Integer> element: set){
@@ -13,6 +14,8 @@ public class HW10_task1 {
         }
         return newSet;
     }
+    //в такому випадку краще додати анотацію
+    @SafeVarargs
     public static Set<Integer> intersect(Set<Integer>... set) {
         Set<Integer> newSet = new HashSet<>(set[0]);
         for (Set<Integer> element: set){

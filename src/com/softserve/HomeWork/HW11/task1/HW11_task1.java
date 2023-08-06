@@ -9,6 +9,8 @@ public class HW11_task1 {
 
     public static void main(String[] args) {
         String sentence = scanner.nextLine();
+        //краще паттерн \\s+ оскільки він більш універсальний, бо може бути більше одного пробіла,
+        // або додати trim до твого варіанту
         List<String> words = new ArrayList<>(List.of(sentence.split(" ")));
         System.out.println(words);
         String longestString = longestELement(words);
