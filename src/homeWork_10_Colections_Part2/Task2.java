@@ -37,6 +37,7 @@ public class Task2 {
         doSomethinkWithMap.removePersonFromMap(personMap,name);
 
         System.out.println(personMap);
+        sc.close();
 
 
 
