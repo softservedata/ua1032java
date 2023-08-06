@@ -1,4 +1,4 @@
-package hw14_P_2;
+package HomeWorkModul_14.hw14_P_2;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
  empl3.name = “Sam”, empl4.name = “Sam”
  “Sam” should be returned.
  */
+
 
 class Employee {
     private String name;

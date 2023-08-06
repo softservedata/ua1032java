@@ -1,4 +1,4 @@
-package hw14_P_1;
+package HomeWorkModul_14.hw14_P_1;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -15,6 +15,7 @@ import java.util.stream.Stream;
  static Optional<String> mostPopularName(Stream< Employee> employees) {
  return null; }
  */
+
 
 public class Product {
     private String manufacturer; // Manufacturer
