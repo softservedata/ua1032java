@@ -17,7 +17,7 @@ public class Number {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("You input an invalid argument. Please try again.");
-                scanner.next(); // Clear the invalid input from the scanner buffer
+                scanner.next();
             }
         } while (true);
     }
