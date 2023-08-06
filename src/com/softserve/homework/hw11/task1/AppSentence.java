@@ -14,7 +14,7 @@ public class AppSentence {
         // Continue to prompt the user until a valid sentence with exactly 5 words is entered
         while (true) {
             input = sc.nextLine();
-            sentence = input.split(" ");
+            sentence = input.split(" ");// \\s+ підійде краще, раптом там більше одного пробіла
 
             if (sentence.length == 5) {
                 break;

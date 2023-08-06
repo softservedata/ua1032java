@@ -10,6 +10,7 @@ public class Appl {
         System.out.println("stud1: firstname = " + st1.getFirstname()
                 + "  lastname = " + st1.getLasttname()
                 + "  age = " + st1.getAge());
+
     }
 
 }

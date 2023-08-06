@@ -9,6 +9,7 @@ public class Methods {
 
     //Swap the maximum and minimum elements in the list.
     public static List<Integer> swapMaxAndMin(List<Integer> list) {
+        //краще list.isEmpty()
         if (list.size() == 0) {
             return null;
         } else {
