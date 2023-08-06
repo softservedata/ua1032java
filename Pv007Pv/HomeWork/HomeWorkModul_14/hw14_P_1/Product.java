@@ -11,9 +11,7 @@ import java.util.stream.Stream;
  * • Create list Product with 20 objects
  * • Obtain a sorted by the price list of products belong to category Phone with
  * price > 3000, and the date of manufacture was more then 1 year ago.
- * • Realize method
- * static Optional<String> mostPopularName(Stream< Employee> employees) {
- * return null; }
+ * • Realize method static Optional<String> mostPopularName(Stream< Employee> employees) { return null; }
  */
 
 public class Product {
