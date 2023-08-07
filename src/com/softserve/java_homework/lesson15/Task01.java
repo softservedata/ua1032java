@@ -1,63 +1,36 @@
 package com.softserve.java_homework.lesson15;
 
-public class Task01 {
-    public static void main(String[] args) {
-        Thread t1 = new Thread(new FirstThread());
-        Thread t2 = new Thread(new SecondThread());
-        Thread t3 = new Thread(new ThirdThread());
-
-        t1.start();
-        t2.start();
-
-        try {
-            t1.join();
-            t2.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        t3.start();
+public class Task01 implements Runnable {
+    private static final int MAX_ATTEMPTS = 5;
+    private final int interval;
+    public static void main(String[] args) throws InterruptedException {
+        Thread thread1 = new Thread(new Task01(1000));
+        Thread thread2 = new Thread(new Task01(1000));
+        Thread thread3 = new Thread(new Task01(1000));
+        thread1.start();
+        thread2.start();
+        thread1.join();
+        thread2.join();
+        thread3.start();
+        thread3.join();
+        System.out.println("Thread " + Thread.currentThread()
+                .getName() + " finish.");
     }
-}
 
-class FirstThread implements Runnable {
+     public Task01(int interval) {
+        this.interval = interval;
+     }
+
     @Override
     public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Thread 1 - Message " + (i + 1));
+        for (int i = 0; i < MAX_ATTEMPTS; i++) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(interval);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                throw new RuntimeException(e);
             }
-        }
-    }
-}
-
-class SecondThread implements Runnable {
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Thread 2 - Message " + (i + 1));
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-}
-
-class ThirdThread implements Runnable {
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Thread 3 - Message " + (i + 1));
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            System.out.println("Thread name: " + Thread.currentThread()
+                    .getName());
         }
     }
 }
