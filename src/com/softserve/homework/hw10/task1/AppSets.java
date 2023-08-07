@@ -6,6 +6,7 @@ import java.util.Set;
 public class AppSets {
     public static void main(String[] args) {
         Set<Integer> set1 = new HashSet<>();
+        //Set<Integer> set4 = Set.of(1, 2, 3, 4);//якщо тобі підходить незмінюваний список, то так простіше
         set1.add(3);
         set1.add(2);
         set1.add(1);
