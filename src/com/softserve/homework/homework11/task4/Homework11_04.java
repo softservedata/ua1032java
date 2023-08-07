@@ -1,4 +1,4 @@
-package com.softserve.homework.homework11;
+package com.softserve.homework.homework11.task4;
 
 import java.util.Random;
 import java.util.Scanner;
