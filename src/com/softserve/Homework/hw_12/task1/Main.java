@@ -26,6 +26,8 @@ public class Main {
             System.out.println("An error occurred: " + e.getMessage());
         }
     }
+//Double can divide by zero, but it will return Infinity
+     //So, here can be Double.NaN instead of Exception or Infinity
 
     public static double div(double num1, double num2) throws Exception {
         if (num2 == 0) {
