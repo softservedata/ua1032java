@@ -9,7 +9,7 @@ public class Homework_task01 {
         String sentence = scanner.nextLine();
 
         // Split the sentence into words
-        String[] words = sentence.split(" ");
+        String[] words = sentence.split(" ");// \\s+ буде універсальніше
 
         // Find the longest word
         String longestWord = findLongestWord(words);
