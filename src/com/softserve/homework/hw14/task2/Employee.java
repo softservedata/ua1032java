@@ -1,4 +1,4 @@
-package com.softserve.homework.hw14.task1;
+package com.softserve.homework.hw14.task2;
 
 import java.util.Collections;
 import java.util.Map;
@@ -25,16 +25,11 @@ public class Employee {
     }
 
     public static Optional<String> mostPopularName(Stream<Employee> employees) {
-        Map<String, Long> nameCounts = employees
-                .collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
+        Map<String, Long> nameCounts = employees.collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
 
         nameCounts.forEach((name, count) -> System.out.println(name + ": " + count));
 
 
-        return nameCounts
-                .entrySet()
-                .stream()
-                .max(Map.Entry.comparingByValue())
-                .map(Map.Entry::getKey);
+        return nameCounts.entrySet().stream().max(Map.Entry.comparingByValue()).map(Map.Entry::getKey);
     }
 }
