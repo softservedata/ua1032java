@@ -1,0 +1,3 @@
+Number of lines: 6
+Longest line is "configuring already existing code (such as a framework or existing code base). Most programmers have"
+Birthday: Maksym, 1 May

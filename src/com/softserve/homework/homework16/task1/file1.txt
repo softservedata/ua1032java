@@ -1,0 +1,6 @@
+A programmer is someone who writes/creates computer software or applications generally by providing
+instructions (commonly through the use of a specific programming language) to the computer or by
+configuring already existing code (such as a framework or existing code base). Most programmers have
+extensive computing and coding experience in many varieties of programming languages and platforms,
+such as Structured Query Language (SQL), Perl, Extensible Markup Language (XML), PHP, HTML, C, C++
+and Java.
