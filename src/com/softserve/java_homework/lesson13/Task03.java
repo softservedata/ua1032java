@@ -12,7 +12,7 @@ public class Task03 {
         System.out.println("Year " + year1 + " is leap: " + isLeapYear(year1));
         System.out.println("Year " + year2 + " is leap: " + isLeapYear(year2));
     }
-
+//тут можна було одразу зробити return
     public static boolean isLeapYear(int year) {
         if (year % 4 == 0) {
             if (year % 100 == 0) {

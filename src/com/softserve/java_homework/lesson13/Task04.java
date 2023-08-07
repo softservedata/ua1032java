@@ -22,7 +22,7 @@ public class Task04 {
             String dayOfWeekAfter12Months = date.plusMonths(12).getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
             System.out.println("Day of week after 12 months: " + dayOfWeekAfter12Months);
         } catch (Exception e) {
-            System.out.println("Error occured. " + e.getMessage());
+            System.out.println("Error is occurred. " + e.getMessage());
         }
     }
 }

@@ -9,7 +9,8 @@ public class Task01 {
             System.out.println(e.getMessage());
         }
     }
-
+// у ділення даблів немає арифметичного винятку, там буде бескінечність або NaN
+    //подумай над тим
     public static double div(double a, double b) throws ArithmeticException {
         if (a == 0 || b == 0) throw new IllegalArgumentException("Division by zero error. The result is zero");
         return a / b;

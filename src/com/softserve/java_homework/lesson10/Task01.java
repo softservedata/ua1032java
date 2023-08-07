@@ -6,6 +6,8 @@ import java.util.Set;
 public class Task01 {
     public static void main(String[] args) {
         Set<Integer> set1 = new HashSet<>();
+        //може бути альтернативою, якщо у тебе буде незмінюваний список
+      //  Set<Integer> set1 = Set.of(1,2,3,4);
         set1.add(1);
         set1.add(2);
         set1.add(3);
@@ -31,7 +33,7 @@ public class Task01 {
         unionSet.addAll(set2);
         return unionSet;
     }
-
+//на практиці частіше використовуються для методів дієслова getIntercection
     public static Set<Integer> intersect(Set<Integer> set1, Set<Integer> set2) {
         Set<Integer> intersectSet = new HashSet<>(set1);
         intersectSet.retainAll(set2);
