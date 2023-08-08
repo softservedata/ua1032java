@@ -16,7 +16,7 @@ public class Dollar {
         Pattern pattern = Pattern.compile(currencyPattern);
         Matcher matcher = pattern.matcher(inputText);
 
-        System.out.println("US Currency format occurrences:");
+        System.out.println("US Currency format occurrences: ");
         while (matcher.find()) {
             String currencyMatch = matcher.group();
             System.out.println(currencyMatch);
