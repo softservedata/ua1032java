@@ -51,11 +51,29 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof User user)) return false;
-        return getUserID() == user.getUserID() && getPin() == user.getPin() && getName().equals(user.getName()) && getBalance()==(user.getBalance());
+        return getUserID() == user.getUserID() && getPin() == user.getPin() && getName().equals(user.getName()) && getBalance() == (user.getBalance());
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(getUserID(), getName(), getPin(), getBalance());
+    }
+
+    public void withdraw(double amount) {
+        if (getBalance() >= amount) {
+            balance = getBalance() - amount;
+        } else {
+            System.out.println("Balance is less than amount of withdraw");
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userID=" + userID +
+                ", name=" + name +
+                ", pin=" + pin +
+                ", balance=" + balance +
+                '}';
     }
 }

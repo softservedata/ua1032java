@@ -1,5 +1,6 @@
 package com.softserve.projectForGraduation.CashMachine;
 
+import java.util.List;
 import java.util.Objects;
 
 public class ATM {
@@ -47,5 +48,37 @@ public class ATM {
     @Override
     public int hashCode() {
         return Objects.hash(getAtmID(), getLocation(), getBalance());
+    }
+
+
+
+    public void loadMoney(int amount) {
+        balance = getBalance() + amount;
+    }
+
+    public void withdrawMoney(int amount) {
+        if(getBalance() >= amount){
+            balance = getBalance() - amount;
+        }else {
+            System.out.println("Balance is less than amount of withdraw");
+        }
+    }
+
+    public static ATM getATMByID(List<ATM> atms, int id) {
+        for (ATM atm : atms) {
+            if (atm.getAtmID() == id) {
+                return atm;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "ATM{" +
+                "atmID=" + atmID +
+                ", location='" + location + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }

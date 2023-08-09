@@ -58,4 +58,14 @@ public class Admin {
     public int hashCode() {
         return Objects.hash(getAdminID(), getName(), getPin(), getPassword());
     }
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "adminID=" + adminID +
+                ", name=" + name +
+                ", pin=" + pin +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

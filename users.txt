@@ -1,0 +1,1 @@
+1,com.softserve.projectForGraduation.CashMachine.FullName@76fb509a,4321,5000.0
