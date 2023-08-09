@@ -46,6 +46,6 @@ public class NumberReading {
         }
 
         System.out.println("The list of numbers: " + numbers);
-
+        
     }
 }
