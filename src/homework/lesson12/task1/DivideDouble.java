@@ -3,6 +3,8 @@ package homework.lesson12.task1;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+// double doen`t have ArithmeticException
+//It can be Double.isInfinite() or Double.isNaN()
 
 public class DivideDouble {
     public static double div(double a, double b) throws ArithmeticException {

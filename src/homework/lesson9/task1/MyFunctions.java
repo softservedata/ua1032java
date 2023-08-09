@@ -3,8 +3,8 @@ package homework.lesson9.task1;
 import java.util.*;
 
 public class MyFunctions {
-    public static List <Integer> generateRandomList(int size) {
-        List<Integer> myCollection = new ArrayList< >();
+    public static List<Integer> generateRandomList(int size) {
+        List<Integer> myCollection = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < size; i++) {
             int randomNumber = random.nextInt(10) - 3;
@@ -14,12 +14,12 @@ public class MyFunctions {
         return myCollection;
     }
 
-    public static List<Integer> generateManualList(int size){
+    public static List<Integer> generateManualList(int size) {
         Scanner sc = new Scanner(System.in);
         List<Integer> myCollection = new ArrayList<>();
         System.out.println("Input 10 integers:");
-        for (int i = 0; i < 10; i++){
-            System.out.print("#" + (i+1) + ": ");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("#" + (i + 1) + ": ");
             int input = sc.nextInt();
             myCollection.add(i, input);
         }
@@ -58,39 +58,35 @@ public class MyFunctions {
         int randomNumberBetween = random.nextInt(1000) - 300;
         int numberBetweenPos = 0;
 
-        for(
-                int i = 0; i<myCollection.size();i++)
-
-        {
+        for (
+            int i = 0; i < myCollection.size(); i++) {
             if (myCollection.get(i) < 0) {
                 numberBetweenPos = i;
                 break;
             }
         }
         System.out.println("Inserted a random three-digit number before first negative element");
-        myCollection.add(numberBetweenPos,randomNumberBetween);
+        myCollection.add(numberBetweenPos, randomNumberBetween);
     }
 
-    public static void insertZero (List<Integer> myCollection){
-        for (int i = 0; i < myCollection.size()-1; i++){
-            if (myCollection.get(i) > 0 && myCollection.get(i + 1) < 0){
+    public static void insertZero(List<Integer> myCollection) {
+        for (int i = 0; i < myCollection.size() - 1; i++) {
+            if (myCollection.get(i) > 0 && myCollection.get(i + 1) < 0) {
                 myCollection.add(i + 1, 0);
-            }
-            else if (myCollection.get(i) < 0 && myCollection.get(i + 1) > 0){
+            } else if (myCollection.get(i) < 0 && myCollection.get(i + 1) > 0) {
                 myCollection.add(i + 1, 0);
             }
         }
         System.out.println("Inserted 0 between sign-changing elements");
     }
 
-    public static void copyK (List<Integer> myCollection, int k){
+    public static void copyK(List<Integer> myCollection, int k) {
         List<Integer> list1 = new LinkedList<>();
         List<Integer> list2 = new LinkedList<>();
-        for (int i = 0; i < myCollection.size(); i++){
-            if (i < k){
+        for (int i = 0; i < myCollection.size(); i++) {
+            if (i < k) {
                 list1.add(myCollection.get(i));
-            }
-            else {
+            } else {
                 list2.add(myCollection.get(i));
             }
         }
@@ -101,10 +97,10 @@ public class MyFunctions {
         System.out.println("list2: " + list2);
     }
 
-    public static void removeLastEven(List<Integer> myCollection){
+    public static void removeLastEven(List<Integer> myCollection) {
         boolean noEven = true;
-        for (int i = myCollection.size()-1; i >= 0; i--){
-            if (i % 2 == 0){
+        for (int i = myCollection.size() - 1; i >= 0; i--) {
+            if (i % 2 == 0) {
                 myCollection.remove(i);
                 System.out.println("Deleted last even element");
                 noEven = false;
@@ -112,11 +108,12 @@ public class MyFunctions {
             }
         }
 
-        if(noEven == true){
+        if (noEven) {
             System.out.println("List has no even elements");
         }
     }
-    public static void removeElementFollowingMinimum(List<Integer> myCollection){
+
+    public static void removeElementFollowingMinimum(List<Integer> myCollection) {
         int min = myCollection.get(0);
         int minPos = 0;
         for (int i = 0; i < myCollection.size(); i++) {
@@ -125,12 +122,12 @@ public class MyFunctions {
                 minPos = i;
             }
         }
-        if(minPos == (myCollection.size() - 1))
+        if (minPos == (myCollection.size() - 1))
             System.out.println("Minimal element is at the last position");
-         else {
+        else {
             myCollection.remove(minPos + 1);
             System.out.println("Removed element following the minimum from the list [" + myCollection.get(minPos + 1) +
-                                "]");
+                "]");
         }
     }
 }

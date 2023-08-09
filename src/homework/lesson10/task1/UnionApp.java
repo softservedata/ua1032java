@@ -12,7 +12,7 @@ public class UnionApp {
         united.addAll(set2);
         return united;
     }
-
+//developers often use naming getUnion, getIntersection, getDifference, getSymmetricDifference
     public static Set<Integer> intersection(Set<Integer> set1, Set<Integer> set2) {
         Set<Integer> intersected = new HashSet<>();
 
