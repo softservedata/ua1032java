@@ -12,7 +12,7 @@ public class Homework14_02 {
     //      “Sam” should be returned.
 
     static Optional<String> mostPopularName(Stream<Employee> employees) {
-        boolean unique = false;
+        boolean unique;
         Map<String, Long> names = employees.collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
         Optional<Map.Entry<String, Long>> temp = names
                 .entrySet().stream()
