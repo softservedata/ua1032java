@@ -1,0 +1,15 @@
+private class Example {
+    private int value;
+
+    private Example(int value) {
+        this.value = value;
+    }
+
+    private int getValue() {
+        return value;
+    }
+
+    private void printMessage(String message) {
+        System.out.println(message);
+    }
+}

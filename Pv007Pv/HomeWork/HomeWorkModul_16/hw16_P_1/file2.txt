@@ -1,0 +1,4 @@
+Number of lines in the file file1.txt: 6
+Longest line in the file file1.txt: Through a series of projects and tasks, I have gained significant experience in software development.
+Your name: Ivan
+Birthdate: January 10, 1995.
