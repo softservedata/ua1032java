@@ -1,0 +1,3 @@
+Number of lines 4
+Longest Line: I have been trying to learn Java by myself for two years
+my birthday is April 19, 2003
