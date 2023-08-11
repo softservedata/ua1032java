@@ -1,6 +1,5 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.entities;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class Transaction {
@@ -60,12 +59,10 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "transactionID=" + transactionID +
+        return "transactionID=" + transactionID +
                 ", timestamp=" + timestamp +
                 ", userID=" + userID +
                 ", type=" + type +
-                ", amount=" + amount +
-                '}';
+                ", amount=" + amount;
     }
 }

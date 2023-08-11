@@ -1,0 +1,10 @@
+1,Street1,14600
+2,Street2,30000
+3,Street3,45000
+4,Street4,59800
+5,Street5,75000
+6,Street6,90000
+7,Street7,105000
+8,Street8,120000
+9,Street9,135000
+10,Street10,150000

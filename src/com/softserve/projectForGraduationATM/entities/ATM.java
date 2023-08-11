@@ -1,4 +1,4 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.entities;
 
 import java.util.List;
 import java.util.Objects;

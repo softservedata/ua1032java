@@ -1,4 +1,7 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.management;
+
+import com.softserve.projectForGraduationATM.entities.*;
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -6,42 +9,112 @@ import java.nio.file.StandardOpenOption;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FileHandler {
-    private String usersFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduation/CashMachine/DataBase/users.txt";
-    private String adminsFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduation/CashMachine/DataBase/admins.txt";
-    private String atmFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduation/CashMachine/DataBase/atms.txt";
-    private String transactionsFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduation/CashMachine/DataBase/transactions.txt";
+    private final String usersFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduationATM/DataBase/users.txt";
+    private final String adminsFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduationATM/DataBase/admins.txt";
+    private final String atmFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduationATM/DataBase/atms.txt";
+    private final String transactionsFileName = "C:/java_soft/ua1032java/src/com/softserve/projectForGraduationATM/DataBase/transactions.txt";
 
     public FileHandler() {
     }
 
-    public void saveUser(User user) {
+    public void saveUser(User newUser) {
+        List<User> usersList = loadUsers();
+
+        // Check if the new user already exists in the list
+        User existingUser = null;
+        for (User user : usersList) {
+            if (user.getUserID() == newUser.getUserID()) {
+                existingUser = user;
+                break;
+            }
+        }
+
+        if (existingUser != null) {
+            usersList.remove(existingUser);
+        }
+
+        // Only add the new user if it's not null or empty
+        if (newUser != null && newUser.getUserID() != 0) {
+            usersList.add(newUser);
+        }
+
         try {
-            String userString = userToString(user);
-            List<String> userLine = Collections.singletonList(userString);
-            Files.write(Paths.get(usersFileName), userLine, StandardOpenOption.APPEND);
+            List<String> userLines = usersList.stream()
+                    .sorted(Comparator.comparingInt(User::getUserID)) // Sort by ID in ascending order
+                    .map(this::userToString)
+                    .collect(Collectors.toList());
+            Files.write(Paths.get(usersFileName), userLines, StandardOpenOption.CREATE);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void saveAdmin(Admin admin) {
+
+
+    public void saveAdmin(Admin newAdmin) {
+        List<Admin> adminsList = loadAdmins();
+
+        Admin existingAdmin = null;
+
+        for (Admin admin : adminsList) {
+            if (admin.getAdminID() == newAdmin.getAdminID()) {
+                existingAdmin = admin;
+                break;
+            }
+        }
+
+        if (existingAdmin != null) {
+            adminsList.remove(existingAdmin);
+        }
+
+
+        adminsList.add(newAdmin);
+
         try {
-            String adminString = adminToString(admin);
-            List<String> adminLine = Collections.singletonList(adminString);
-            Files.write(Paths.get(adminsFileName), adminLine, StandardOpenOption.APPEND);
+
+            List<String> adminsLines = adminsList.stream()
+                    .sorted(Comparator.comparingInt(Admin::getAdminID)) // Sort by ID in ascending order
+                    .map(this::adminToString)
+                    .collect(Collectors.toList());
+            Files.write(Paths.get(adminsFileName), adminsLines, StandardOpenOption.CREATE);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void saveATM(ATM atm) {
+    public void saveATM(ATM newAtm) {
+        List<ATM> ATMsList = loadATMs();
+
+        ATM existingATM = null;
+
+        for (ATM atm : ATMsList) {
+            if (atm.getAtmID() == newAtm.getAtmID()) {
+                existingATM = atm;
+                break;
+            }
+        }
+
+        if (existingATM != null) {
+            ATMsList.remove(existingATM);
+        }
+
+
+        ATMsList.add(newAtm);
+
         try {
-            String atmString = atmToString(atm);
-            List<String> atmLine = Collections.singletonList(atmString);
-            Files.write(Paths.get(atmFileName), atmLine, StandardOpenOption.APPEND);
+
+            List<String> ATMsLines = ATMsList.stream()
+                    .sorted(Comparator.comparingInt(ATM::getAtmID)) // Sort by ID in ascending order
+                    .map(this::atmToString)
+                    .collect(Collectors.toList());
+            Files.write(Paths.get(atmFileName), ATMsLines, StandardOpenOption.CREATE);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -62,13 +135,17 @@ public class FileHandler {
         try (BufferedReader reader = new BufferedReader(new FileReader(usersFileName))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                users.add(parseUser(line));
+                line = line.trim(); // Remove leading and trailing whitespace
+                if (!line.isEmpty()) {
+                    users.add(parseUser(line));
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
         return users;
     }
+
 
     public List<Admin> loadAdmins() {
         List<Admin> admins = new ArrayList<>();
@@ -186,3 +263,4 @@ public class FileHandler {
     }
 
 }
+

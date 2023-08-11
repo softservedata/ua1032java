@@ -1,4 +1,4 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.entities;
 
 import java.util.Objects;
 
@@ -67,6 +67,10 @@ public class User {
         }
     }
 
+    public void load(int amount){
+        balance = getBalance() + amount;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -77,3 +81,4 @@ public class User {
                 '}';
     }
 }
+

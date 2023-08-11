@@ -1,6 +1,10 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.management;
+
+
+import com.softserve.projectForGraduationATM.entities.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class AtmService {
 
@@ -19,16 +23,35 @@ public class AtmService {
         fileHandler.saveATM(atm);
     }
 
+    public boolean loadMoneyToCard(int amount, User user) {
+        User newUser = new User(user.getUserID(), user.getName(),user.getPin(), (user.getBalance()+amount));
+        System.out.println(newUser.getBalance());
+
+        user.load(amount);
+        atm.loadMoney(amount);
+
+        fileHandler.saveUser(newUser);
+        return true;
+    }
+
+
     public double checkBalance(User user) {
         return user.getBalance();
     }
 
     public boolean withdrawMoney(User user, int amount, ATM atm) {
+        FileHandler fileHandler = new FileHandler();
+        List<Transaction> transactions = fileHandler.loadTransactions();
+
         if (amount > user.getBalance() || amount > atm.getBalance()) {
             return false;
         }
 
-        int newTransactionId = ++transactionId;
+        int newTransactionId = transactions.stream()
+                .mapToInt(Transaction::getTransactionID)
+                .max()
+                .orElse(0) + 1;
+
         LocalDateTime timestamp = LocalDateTime.now();
 
         user.withdraw(amount);
@@ -36,8 +59,6 @@ public class AtmService {
 
         Transaction transaction = new Transaction(newTransactionId, timestamp, user.getUserID(), TransactionType.WITHDRAWAL, amount);
         System.out.println(transaction);
-        System.out.println(user);
-        System.out.println(atm);
 
         fileHandler.saveTransaction(transaction);
         fileHandler.saveUser(user);
@@ -45,4 +66,5 @@ public class AtmService {
 
         return true;
     }
+
 }

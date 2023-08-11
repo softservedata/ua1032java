@@ -1,7 +1,9 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.management;
 
-import java.util.List;
+import com.softserve.projectForGraduationATM.entities.*;
+
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class AuthorizationService {
@@ -28,15 +30,18 @@ public class AuthorizationService {
         do {
             try {
                 System.out.print("Input your user's id: ");
-                userId = sc.nextInt();
+                userId = Integer.parseInt(sc.nextLine());
 
                 System.out.print("Input pin to id " + userId + ": ");
-                pin = sc.nextInt();
+                pin = Integer.parseInt(sc.nextLine());
                 //assign value if user was found
                 userAuthorized = checkValidUserAuthorizationData(userId, pin, listOfUsers);
                 if (userAuthorized == null) {
                     countOfTries++;
                     System.out.println("Invalid user ID or PIN. Remaining tries: " + (5 - countOfTries));
+                    if (countOfTries>=5){
+                        System.exit(0);
+                    }
                 } else {
                     break;
                 }
@@ -45,10 +50,9 @@ public class AuthorizationService {
                 sc.nextLine();
             }
         } while (countOfTries < 5);
-
-        sc.close();
         return userAuthorized;
     }
+
 
     //Admin authorization
     public Admin checkValidAdminAuthorizationData(int adminID, int pin, String password, List<Admin> listOfAdmins) {

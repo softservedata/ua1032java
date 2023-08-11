@@ -1,11 +1,10 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.management;
 
-import com.softserve.edu10box.A;
+import com.softserve.projectForGraduationATM.entities.ATM;
+import com.softserve.projectForGraduationATM.entities.Transaction;
+import com.softserve.projectForGraduationATM.entities.User;
 
-import java.security.Timestamp;
-import java.time.LocalDateTime;
 import java.util.List;
-
 public class UserService {
     private User user;
     private ATM atm;
@@ -26,7 +25,15 @@ public class UserService {
         return  atmService.withdrawMoney(user, amount, atm);
     }
 
+    public boolean loadMoneyToCard(int amount, User user) {
+        AtmService atmService = new AtmService(atm, fileHandler);
+        return  atmService.loadMoneyToCard(amount, user);
+    }
+
+
+
     public List<Transaction> viewTransactionHistory() {
+        System.out.println(user.getUserID());
         return fileHandler.loadTransactionsByUserId(user.getUserID());
     }
 }

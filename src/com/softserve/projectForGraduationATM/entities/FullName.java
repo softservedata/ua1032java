@@ -1,6 +1,7 @@
-package com.softserve.projectForGraduation.CashMachine;
+package com.softserve.projectForGraduationATM.entities;
 
 public class FullName {
+
     private String firstName;
     private String lastName;
 
