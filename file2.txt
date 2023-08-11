@@ -1,0 +1,4 @@
+Count lines: 8
+Longest line: There, I had the opportunity to serve as a team lead on a website project for a restaurant.
+Name: Augustin
+Birthday date: 1999-08-06

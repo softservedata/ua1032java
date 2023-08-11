@@ -20,8 +20,7 @@ public class Task03 {
             } else {
                 return true;
             }
-        } else {
-            return false;
         }
+        return false;
     }
 }
