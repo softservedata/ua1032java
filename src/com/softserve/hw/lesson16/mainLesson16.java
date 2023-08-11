@@ -1,7 +1,7 @@
 package com.softserve.hw.lesson16;
 
 import com.softserve.hw.lesson16.task1.HelperFile;
-import com.softserve.hw.lesson16.task2.Cla;
+import com.softserve.hw.lesson16.task2.Change;
 
 import java.io.*;
 
@@ -15,6 +15,6 @@ public class mainLesson16 {
         System.out.println("task2");
         File fileOne = new File("D:\\JAVA\\softServe\\src\\com\\softserve\\hw\\lesson16\\task2\\fileOne.txt");
         File fileTwo = new File("D:\\JAVA\\softServe\\src\\com\\softserve\\hw\\lesson16\\task2\\fileTwo.txt");
-        Cla.method(fileOne,fileTwo);
+        Change.toPrivate(fileOne,fileTwo);
     }
 }

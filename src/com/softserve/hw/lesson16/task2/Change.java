@@ -2,8 +2,8 @@ package com.softserve.hw.lesson16.task2;
 
 import java.io.*;
 
-public class Cla {
-    public static void method(File file, File file2) {
+public class Change {
+    public static void toPrivate(File file, File file2) {
         try (BufferedReader br = new BufferedReader(new FileReader(file));
              BufferedWriter bw = new BufferedWriter(new FileWriter(file2))) {
             String s;
