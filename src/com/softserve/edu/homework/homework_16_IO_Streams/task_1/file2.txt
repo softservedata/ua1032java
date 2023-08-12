@@ -1,4 +1,4 @@
 Name : Lev
 Birthday : 01-08-2005
-The number of lines in the file file1.txt : 9
+The number of lines in the file file1.txt : 6
 You are not tied to one place and can work from any corner of the earth	- the longest line that contains 71
