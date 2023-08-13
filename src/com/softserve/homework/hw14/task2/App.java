@@ -18,10 +18,10 @@ import java.util.stream.Stream;
 public class App {
     static Optional<String> mostPopularName ( Stream<Employee> employeeStream ) {
 
-        Map<String, Long> map = employeeStream.map ( el -> el.getName ( ) ).
-                collect ( Collectors.groupingBy ( name -> name, Collectors.counting ( ) ) );
+        Map<String, Long> map = employeeStream.map ( Employee::getName )
+        .collect ( Collectors.groupingBy ( name -> name, Collectors.counting ( ) ) );
 
-        return map.entrySet ( ).stream ( ).max ( Comparator.comparing ( el -> el.getValue ( ) ) ).map ( eS -> eS.getKey ( ) );
+        return map.entrySet ( ).stream ( ).max ( Map.Entry.comparingByValue ( ) ).map ( Map.Entry::getKey );
     }
 
     public static void main ( String[] args ) {

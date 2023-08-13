@@ -14,6 +14,7 @@ Realize method
 Отримайте відсортовані за прейскурантом товари, що належать до категорії Телефони з ціною > 3000, і датою виробництва більше 1 року тому.
 
  */
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -23,20 +24,20 @@ import java.util.stream.Stream;
 
 public class App {
 
-    public static void main(String[] args) {
-        ArrayList<Product> list = Product.base ();
-        System.out.println("\nBefore\n" + list);
+    public static void main ( String[] args ) {
+        ArrayList<Product> list = Product.base ( );
+        System.out.println ( "\nBefore\n" + list );
 
-        List<Product> res = list.stream().
-                sorted(new Product.ByPrice()).
-                filter(el -> el.getPrice() > 3000).
-                filter(el -> {
-                    return (LocalDate.now().minusYears(1).compareTo(el.getDateOfManufacture()) > 0) ? true : false;
-                }).
-                filter(el -> el.getManufactureCategory().equals(Product.PHONE_CATEGORY)).
-                collect(Collectors.toList());
+        List<Product> res = list.stream ( )
+                .sorted ( new Product.ByPrice ( ) )
+                .filter ( el -> el.getPrice ( ) > 3000 )
+                .filter ( el -> {
+                    return LocalDate.now ( ).minusYears ( 1 ).compareTo ( el.getDateOfManufacture ( ) ) > 0;
+                } )
+                .filter ( el -> el.getManufactureCategory ( ).equals ( Product.PHONE_CATEGORY ) )
+                .toList ( );
 
-        System.out.println("\nAfter\n" + res);
+        System.out.println ( "\nAfter\n" + res );
     }
 }
 
