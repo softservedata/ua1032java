@@ -18,18 +18,35 @@ public class AtmService {
         this.fileHandler = fileHandler;
     }
 
-    public void loadMoney(int amount) {
+    public boolean loadMoney(int amount) {
         atm.loadMoney(amount);
         fileHandler.saveATM(atm);
+        return  true;
     }
 
     public boolean loadMoneyToCard(int amount, User user) {
         User newUser = new User(user.getUserID(), user.getName(),user.getPin(), (user.getBalance()+amount));
         System.out.println(newUser.getBalance());
 
+        List<Transaction> transactions = fileHandler.loadTransactions();
+
         user.load(amount);
         atm.loadMoney(amount);
 
+        int newTransactionId = transactions.stream()
+                .mapToInt(Transaction::getTransactionID)
+                .max()
+                .orElse(0) + 1;
+
+        LocalDateTime timestamp = LocalDateTime.now();
+
+        user.withdraw(amount);
+        atm.withdrawMoney(amount);
+
+        Transaction transaction = new Transaction(newTransactionId, timestamp, user.getUserID(), TransactionType.LOAD, amount);
+        System.out.println(transaction);
+
+        fileHandler.saveTransaction(transaction);
         fileHandler.saveUser(newUser);
         return true;
     }

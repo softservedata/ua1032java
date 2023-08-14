@@ -6,6 +6,8 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+import static java.lang.Integer.*;
+
 public class AuthorizationService {
     public AuthorizationService() {
     }
@@ -30,10 +32,10 @@ public class AuthorizationService {
         do {
             try {
                 System.out.print("Input your user's id: ");
-                userId = Integer.parseInt(sc.nextLine());
+                userId = parseInt(sc.nextLine());
 
                 System.out.print("Input pin to id " + userId + ": ");
-                pin = Integer.parseInt(sc.nextLine());
+                pin = parseInt(sc.nextLine());
                 //assign value if user was found
                 userAuthorized = checkValidUserAuthorizationData(userId, pin, listOfUsers);
                 if (userAuthorized == null) {
@@ -55,7 +57,7 @@ public class AuthorizationService {
 
 
     //Admin authorization
-    public Admin checkValidAdminAuthorizationData(int adminID, int pin, String password, List<Admin> listOfAdmins) {
+    public static Admin checkValidAdminAuthorizationData(int adminID, int pin, String password, List<Admin> listOfAdmins) {
         for (Admin admin : listOfAdmins) {
             if (adminID == admin.getAdminID() && pin == admin.getPin() && password.equals(admin.getPassword())) {
                 return admin;
@@ -65,7 +67,7 @@ public class AuthorizationService {
     }
 
     // If user inputs incorrect pin or user id 5 times, the method stops and returns null
-    public Admin adminAuthorization(List<Admin> listOfAdmins) {
+    public static Admin adminAuthorization(List<Admin> listOfAdmins) {
         Scanner sc = new Scanner(System.in);
         Admin adminAuthorized = null;
         int countOfTries = 0;
@@ -74,19 +76,22 @@ public class AuthorizationService {
         String password;
         do {
             try {
-                System.out.print("Input your admins' id: ");
-                adminId = sc.nextInt();
+                System.out.print("Input your admin id: ");
+                adminId = parseInt(sc.nextLine());
 
                 System.out.print("Input pin to id " + adminId + ": ");
-                pin = sc.nextInt();
+                pin = parseInt(sc.nextLine());
 
-                System.out.print("Input password to id  " + adminId + ": ");
-                password = sc.nextLine();
+                System.out.print("Input password to id " + adminId + ": ");
+                password =sc.nextLine();
                 //assign value if admin was found
-                adminAuthorized = checkValidAdminAuthorizationData(adminId, pin, password, listOfAdmins);
+                adminAuthorized = checkValidAdminAuthorizationData(adminId, pin, password, listOfAdmins) ;
                 if (adminAuthorized == null) {
                     countOfTries++;
-                    System.out.println("Invalid admin ID or PIN. Remaining tries: " + (5 - countOfTries));
+                    System.out.println("Invalid admin authorization. Remaining tries: " + (5 - countOfTries));
+                    if (countOfTries>=5){
+                        System.exit(0);
+                    }
                 } else {
                     break;
                 }
@@ -95,8 +100,8 @@ public class AuthorizationService {
                 sc.nextLine();
             }
         } while (countOfTries < 5);
-
-        sc.close();
         return adminAuthorized;
     }
+
+
 }

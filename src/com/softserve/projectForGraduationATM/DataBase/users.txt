@@ -1,5 +1,5 @@
-1,1First 1Last,1111,1600.0
-2,2First 2Last,2222,2000.0
+1,1First 1Last,1111,6000.0
+2,2First 2Last,2222,5000.0
 3,3First 3Last,3333,3000.0
 4,4First 4Last,4444,4000.0
 5,5First 5Last,5555,5000.0

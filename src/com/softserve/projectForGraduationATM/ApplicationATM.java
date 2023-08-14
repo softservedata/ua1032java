@@ -15,9 +15,6 @@ public class ApplicationATM {
         ATM atm;
         User user;
 
-        Scanner sc = new Scanner(System.in);
-
-//
 //        // Create admins
 //        for (int i = 1; i <= 10; i++) {
 //            admin = new Admin(i, new FullName(i + "First", i + "Last"), (i * 1111), "pas" + i);
@@ -37,16 +34,13 @@ public class ApplicationATM {
 //            user = new User(i, new FullName(i + "First", i + "Last"), (i * 1111), (i * 1000));
 //            fileHandler.saveUser(user);
 //        }
-
-
+//
+//
         //load lists from files
         List<Admin> listOfAdmins = fileHandler.loadAdmins();
         List<ATM> listOfATMs = fileHandler.loadATMs();
         List<User> listOfUsers = fileHandler.loadUsers();
 
-
-        System.out.println(listOfUsers);
-        System.out.println(listOfATMs);
 
         //generate rand atm from list of atms
         ATM atmRand = ATMMenu.generateRandomATM(listOfATMs);
@@ -61,19 +55,18 @@ public class ApplicationATM {
             UserService userService = new UserService(userAuthorized, atmRand, fileHandler);
             System.out.println("User " + userAuthorized.getUserID() + " authorized!");
             //perform operations
-            ATMMenu.performOperations(userService, atmService, userAuthorized);
+            ATMMenu.performUserOperations(userService, atmService, userAuthorized);
         } else {
-            System.out.println("Admin");
+            // Admin authorization
+            Scanner sc = new Scanner(System.in);
+            Admin adminAuthorized = AuthorizationService.adminAuthorization(listOfAdmins);
+            AdminService adminService = new AdminService(adminAuthorized, atmRand, fileHandler);
+
+              System.out.println("Admin " + adminAuthorized.getAdminID() + " authorized!");
+
+//            //perform operation
+            ATMMenu.performAdminOperations(adminService, atmService, adminAuthorized);
+
         }
     }
-
-
-//
-//        // Admin authorization and ATM loading money
-//        authService.adminAuthorization(listOfAdmins);
-//        atmService.loadMoney(5000);
-//
-
-//
 }
-

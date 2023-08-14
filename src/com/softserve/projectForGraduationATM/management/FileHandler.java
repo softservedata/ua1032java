@@ -44,16 +44,13 @@ public class FileHandler {
         }
 
         try {
-            List<String> userLines = usersList.stream()
-                    .sorted(Comparator.comparingInt(User::getUserID)) // Sort by ID in ascending order
-                    .map(this::userToString)
-                    .collect(Collectors.toList());
+            List<String> userLines = usersList.stream().sorted(Comparator.comparingInt(User::getUserID)) // Sort by ID in ascending order
+                    .map(this::userToString).collect(Collectors.toList());
             Files.write(Paths.get(usersFileName), userLines, StandardOpenOption.CREATE);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
 
     public void saveAdmin(Admin newAdmin) {
@@ -77,10 +74,8 @@ public class FileHandler {
 
         try {
 
-            List<String> adminsLines = adminsList.stream()
-                    .sorted(Comparator.comparingInt(Admin::getAdminID)) // Sort by ID in ascending order
-                    .map(this::adminToString)
-                    .collect(Collectors.toList());
+            List<String> adminsLines = adminsList.stream().sorted(Comparator.comparingInt(Admin::getAdminID)) // Sort by ID in ascending order
+                    .map(this::adminToString).collect(Collectors.toList());
             Files.write(Paths.get(adminsFileName), adminsLines, StandardOpenOption.CREATE);
 
         } catch (IOException e) {
@@ -109,10 +104,8 @@ public class FileHandler {
 
         try {
 
-            List<String> ATMsLines = ATMsList.stream()
-                    .sorted(Comparator.comparingInt(ATM::getAtmID)) // Sort by ID in ascending order
-                    .map(this::atmToString)
-                    .collect(Collectors.toList());
+            List<String> ATMsLines = ATMsList.stream().sorted(Comparator.comparingInt(ATM::getAtmID)) // Sort by ID in ascending order
+                    .map(this::atmToString).collect(Collectors.toList());
             Files.write(Paths.get(atmFileName), ATMsLines, StandardOpenOption.CREATE);
 
         } catch (IOException e) {
@@ -152,6 +145,7 @@ public class FileHandler {
         try (BufferedReader reader = new BufferedReader(new FileReader(adminsFileName))) {
             String line;
             while ((line = reader.readLine()) != null) {
+                line = line.trim(); // Remove leading and trailing whitespace
                 admins.add(parseAdmin(line));
             }
         } catch (IOException e) {
@@ -165,6 +159,7 @@ public class FileHandler {
         try (BufferedReader reader = new BufferedReader(new FileReader(atmFileName))) {
             String line;
             while ((line = reader.readLine()) != null) {
+                line = line.trim(); // Remove leading and trailing whitespace
                 atms.add(parseATM(line));
             }
         } catch (IOException e) {
@@ -199,8 +194,7 @@ public class FileHandler {
     }
 
     private String transactionToString(Transaction transaction) {
-        return transaction.getTransactionID() + "," + transaction.getTimestamp() + "," +
-                transaction.getUserID() + "," + transaction.getTransactionType() + "," + transaction.getAmount();
+        return transaction.getTransactionID() + "," + transaction.getTimestamp() + "," + transaction.getUserID() + "," + transaction.getTransactionType() + "," + transaction.getAmount();
     }
 
     private User parseUser(String line) {
@@ -261,6 +255,23 @@ public class FileHandler {
         }
         return transactions;
     }
+
+//    public List<Transaction> loadTransactionsByAtmID(int atmID) {
+//        List<Transaction> transactions = new ArrayList<>();
+//        try (BufferedReader reader = new BufferedReader(new FileReader(transactionsFileName))) {
+//            String line;
+//            while ((line = reader.readLine()) != null) {
+//                Transaction transaction = parseTransaction(line);
+//                if (transaction.getAtmID() == atmID) {
+//                    transactions.add(transaction);
+//                }
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return transactions;
+//    }
+
 
 }
 
