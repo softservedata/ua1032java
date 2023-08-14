@@ -1,0 +1,3 @@
+6
+Optional[Read context from file into array of strings. Each array item contains one line from file.]
+Taras Bohoslavets 08.08.1983
