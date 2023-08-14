@@ -11,9 +11,9 @@ public class ApplCar {
 
        SortClass sortClass = new SortClass();
 
-       Car[] cars1 = sortClass.sort(cars);
+       sortClass.sort(cars);
 
-       for (Car car : cars1){
+       for (Car car : cars){
            System.out.println(car);
        }
     }

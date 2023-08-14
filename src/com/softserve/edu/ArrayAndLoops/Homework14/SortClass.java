@@ -1,7 +1,7 @@
 package com.softserve.edu.ArrayAndLoops.Homework14;
 
 public class SortClass {
-    public Car[] sort(Car[] cars){
+    public void sort(Car[] cars){
         int len = cars.length; //size of array cars
         Car car;
         for (int i = 0; i < len - 1; i++) { //bubble sort
@@ -13,6 +13,5 @@ public class SortClass {
                 }
             }
         }
-        return cars;
     }
 }

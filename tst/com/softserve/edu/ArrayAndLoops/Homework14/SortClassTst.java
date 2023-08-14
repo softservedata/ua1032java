@@ -22,11 +22,11 @@ public class SortClassTst {
         cars1[2] = new Car("sedan", 2010, 2.0);
         cars1[3] = new Car("sport-car", 2020, 11);
 
-        Car[] cars2 = sortClass.sort(cars);
+        sortClass.sort(cars);
 
-        System.out.println(Arrays.equals(cars1, cars2));
+        System.out.println(Arrays.equals(cars1, cars));
 
-        Assertions.assertArrayEquals(cars1, cars2);
+        Assertions.assertArrayEquals(cars1, cars);
 
 
 
