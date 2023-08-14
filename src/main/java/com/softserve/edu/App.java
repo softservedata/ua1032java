@@ -12,8 +12,8 @@ public class App {
         Connection con = null;
         String username = "postgres";
         String password = "root";
-        //String URL = "jdbc:postgresql://localhost:5432/";
-        String URL = "jdbc:postgresql://localhost:5432/test4";
+        String URL = "jdbc:postgresql://localhost:5432/";
+        //String URL = "jdbc:postgresql://localhost:5432/test4";
         //
         con = DriverManager.getConnection(URL, username, password);
         if (con != null) {
@@ -26,6 +26,9 @@ public class App {
         //
         // Create Database
 		//st.execute("CREATE DATABASE test4;");
+        //
+        // Drop
+        String query = "Drop DATABASE test4;";
         //
         // PostGreSQL
         /*
@@ -46,7 +49,7 @@ public class App {
         //String query = "UPDATE temp SET name='Ira' WHERE id=1;";
         //
         // Delete rows
-        String query ="DELETE FROM temp WHERE name='Ira';";
+        //String query ="DELETE FROM temp WHERE name='Ira';";
         //
         st.execute(query);
         //
