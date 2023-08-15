@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // Create file1.txt
-        File file1 = new File("file1.txt");
+        File file1 = new File("src\\com\\softserve\\Homework\\hw_16\\Task1\\file1.txt");
         FileWriter fileWriter = new FileWriter(file1);
         fileWriter.write("A programmer is someone who writes/creates computer software or applications generally by providing\n" +
                 "instructions (commonly through the use of a specific programming language) to the computer or by\n" +
@@ -40,7 +40,7 @@ public class Main {
         }
 
         // Write to file2.txt
-        File file2 = new File("file2.txt");
+        File file2 = new File("src\\com\\softserve\\Homework\\hw_16\\Task1\\file2.txt");
         FileWriter fileWriter2 = new FileWriter(file2);
         fileWriter2.write("The number of lines in file1.txt is: " + numberOfLines + "\n");
         fileWriter2.write("The longest line in file1.txt is: " + longestLine + "\n");

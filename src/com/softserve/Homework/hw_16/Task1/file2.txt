@@ -1,0 +1,3 @@
+The number of lines in file1.txt is: 6
+The longest line in file1.txt is: configuring already existing code (such as a framework or existing code base). Most programmers have
+My name is Yura, and my birthday date is 2005-05-24.
