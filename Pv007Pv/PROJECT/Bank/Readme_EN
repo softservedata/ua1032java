@@ -1,0 +1,29 @@
+"Bank" is a software project that simulates a system for managing bank accounts and clients.
+The project consists of various classes that interact with each other to ensure the functionality of the banking system.
+The main goal of the project is to demonstrate work with object-oriented programming and basic concepts of bank account management.
+
+1. Enum AccountType: This enum type defines two possible bank account types: "Savings" and "Loan".
+It contains constants for both account types and has a method to get the name of the account type.
+
+2. Abstract Class BankAccount: This abstract class defines common attributes and methods for bank accounts.
+It has private fields for account number, owner and account balance. The constructor sets the initial values of these attributes.
+This class also defines the processTransaction and withdrawCash abstract methods that descendants must implement.
+This class is used to create a basic structure for different types of accounts.
+
+3. Class BankingApp: This is the main class of the application, which contains the main method.
+In the main method, customers and accounts are created, various operations on accounts are performed, and customers are sorted by balance.
+This class demonstrates the interaction between classes and the use of their methods to manage bank accounts and customers.
+
+4. Class CreditAccount: This class represents a credit account with a bank.
+It inherits properties and methods from the BankAccount base class. The class has fields for the account's opening balance and account type.
+The constructor sets the initial values, and the processTransaction and withdrawCash methods are overridden to handle credit account transactions accordingly.
+
+5. Class Customer: This class represents the customer of the bank.
+It contains the customer's name and address, as well as a list of accounts belonging to that customer.
+This class has methods to get and set the name and address of a customer, and methods to manage a list of accounts.
+
+6. Class SavingsAccount: This class inherits properties and methods from the base class BankAccount and represents a savings account (debit account) without the ability to withdraw cash.
+The class has a field for the account type, and the processTransaction and withdrawCash methods are overridden to process transactions and prevent cash withdrawals from the savings account.
+
+In general, the project creates a hierarchy of classes to model and interact with different types of bank accounts.
+Each class has a defined role in the system and is responsible for a specific aspect of banking operations.
