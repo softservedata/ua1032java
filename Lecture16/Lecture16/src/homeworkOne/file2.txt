@@ -1,0 +1,4 @@
+The quantity of lines is : 5.
+The longest line is: I am currently studying a programming Java Fundamentals course at SoftServe University that I really adore.
+Iryna
+Birthday date: 2004-12-27
