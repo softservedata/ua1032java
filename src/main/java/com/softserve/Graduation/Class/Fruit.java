@@ -1,10 +1,9 @@
 package com.softserve.Graduation.Class;
 
 import java.io.*;
-import java.util.List;
 import java.util.Scanner;
 
-public class Fruit {
+public class Fruit implements Serializable {
     private String name;
     private String color;
 

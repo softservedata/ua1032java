@@ -1,12 +1,9 @@
 package com.softserve.Graduation.Class;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
-public class Citrus extends Fruit {
+public class Citrus extends Fruit implements Serializable {
     private double vitaminC;
 
     public Citrus(String name, String color, double vitaminC) {
@@ -48,8 +45,8 @@ public class Citrus extends Fruit {
         return super.print() + "; vitamin C = " + getVitaminC();
     }
 
-    @Override
-    public String print(File nameFile) throws IOException {
-        return super.print(nameFile);
-    }
+//    @Override
+//    public String print(File nameFile) throws IOException {
+//        return super.print(nameFile);
+//    }
 }
