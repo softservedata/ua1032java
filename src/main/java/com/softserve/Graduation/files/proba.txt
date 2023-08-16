@@ -1,0 +1,10 @@
+Fruit: name = apple; color = red
+Fruit: name = appleTow; color = yellow
+Fruit: name = banana; color = yellow
+Fruit: name = cherry; color = red
+Fruit: name = grapefruit; color = orange; vitamin C = 2.5
+Fruit: name = lemon; color = yellow; vitamin C = 3.5
+Fruit: name = orange; color = orange; vitamin C = 1.5
+Fruit: name = orangeTwo; color = orangeTwo; vitamin C = 4.5
+Fruit: name = pineapple; color = green
+Fruit: name = plum; color = yellow; vitamin C = 5.5
