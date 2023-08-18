@@ -1,0 +1,4 @@
+Number of lines in file1.txt: 5
+Longest line in file1.txt: I have already finished HTML & CSS & JS course, and I am going to attend all parts of the Java Developer course.
+Name: Roman
+Birthday: 30.11.2003
